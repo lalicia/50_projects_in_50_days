@@ -4,6 +4,8 @@ import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+import ExpandingCards from "./pages/ExpandingCards.js";
+
 //import { render } from "react-dom";
 import {
   BrowserRouter,
@@ -17,8 +19,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/expanding-cards" element={<ExpandingCards />} />
       </Routes>
-    </BrowserRouter>,
+    </BrowserRouter>
   </React.StrictMode>
 );
 

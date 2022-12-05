@@ -108,4 +108,5 @@ video {
 .card img {
   max-width: 90%;
   border-radius: 16px;
+  margin: 0 auto;
 }
