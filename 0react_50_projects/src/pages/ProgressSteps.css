@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --line-border-fill: #3498db;
+    --line-border-empty: #e0e0e0;
+}
+
+body {
+    background-color: #f6f7fb;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.ps-container {
+    text-align: center;
+}
+
+.ps-progress-container {
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+    width: 18rem;
+}
+
+.ps-progress-container::before {
+    /* when using before of after pseudo selectors you need content*/
+    content: "";
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /*this makes it actually central not the top of the line in the center*/
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    z-index: -1;
+}
+
+.ps-progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    /*this makes it actually central not the top of the line in the center*/
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: .4s ease;
+}
+
+.ps-circle {
+    background-color: white;
+    color: #999;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid var(--line-border-empty);
+    transition: .4s ease;
+}
+
+.ps-circle.active {
+    border-color: var(--line-border-fill);
+}
+
+.ps-btn {
+    background-color: var(--line-border-fill);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: .5rem 2rem;
+    margin: 5px;
+    font-size: .9rem;
+}
+
+.ps-btn.active {
+    transform: scale(0.98);
+}
+
+.ps-btn:focus {
+    outline: 0;
+}
+
+.ps-btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+}

@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import ExpandingCards from "./pages/ExpandingCards.js";
 import ecdata from "./assets/expandingcardsdata.js";
 
+import ProgressSteps from "./pages/ProgressSteps.js";
+
 //import { render } from "react-dom";
 import {
   BrowserRouter,
@@ -21,6 +23,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/expanding-cards" element={<ExpandingCards ecdata={ecdata}/>} />
+        <Route path="/progress-steps" element={<ProgressSteps />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
