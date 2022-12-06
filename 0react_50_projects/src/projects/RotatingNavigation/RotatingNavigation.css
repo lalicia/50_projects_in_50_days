@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+.rn-big-container {
     font-family: 'Lato', sans-serif;
     background-color: #333;
     color: #222;
@@ -13,7 +13,7 @@ body {
     margin: 0;
 }
 
-.rn-container {
+.rn-small-container {
     background-color: #fafafa;
     transform-origin: top left;
     transition: transform 0.5s linear;
@@ -22,7 +22,7 @@ body {
     padding: 3rem;
 }
 
-.rn-container.show-nav {
+.rn-small-container.show-nav {
     transform: rotate(-20deg);
 }
 
@@ -41,7 +41,7 @@ body {
     transition: transform 0.5s linear;
 }
 
-.rn-container.show-nav + .rn-circle-container {
+.rn-small-container.show-nav + .rn-circle-container {
     transform: rotate(-90deg);
 }
 
@@ -71,7 +71,7 @@ body {
     transform-origin: top left;
 }
 
-.rn-container.show-nav ~ nav li {
+.rn-small-container.show-nav ~ nav li {
     transform: translateX(0);
     transition-delay: 0.3s;
 }
@@ -123,15 +123,26 @@ nav ul li  + li + li {
 }
 
 .rn-content h1 {
-    margin: 0;
+    margin-top: 1rem;
+    font-size: 3rem;
 }
 
 .rn-content small {
+    margin: 0;
     color: #555;
     font-style: italic;
+    font-size: 1.5rem;
 }
 
 .rn-content p {
+    margin: 1rem 0;
     color: #333;
     line-height: 1.5;
+    font-size: 1.1rem;
+}
+
+.rn-content h3 {
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    font-size: 1.7rem;
 }

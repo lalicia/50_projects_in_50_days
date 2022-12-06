@@ -1,14 +1,25 @@
 import React from "react";
+import {useState} from "react";
 
-
+import "./RotatingNavigation.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
+import { faXmark } from '@fortawesome/free-solid-svg-icons'
+import { faHouse } from '@fortawesome/free-solid-svg-icons'
+import { faUser } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 function RotatingNavigation() {
+    const [nav, setNav] = useState(false);
 
+    function handleClick() {
+        setNav(!nav);
+    }
 
     return (
-        <>
-            <div class="rn-container">
-                <div class="rn-content">
+        <div className="rn-big-container">
+            <div className={nav === false ? "rn-small-container" : "rn-small-container show-nav"}>
+                <div className="rn-content">
                     <h1>Amazing Article</h1>
                     <small>@lalicia</small>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -19,27 +30,26 @@ function RotatingNavigation() {
                 </div>
             </div>
 
-            <div class="rn-circle-container">
-                <div class="rn-circle">
-                    <button id="close">
-                        {/*<i> with fas class is from font-awesome and gives us the icons*/}
-                        <i class="fas fa-times"></i>
+            <div className="rn-circle-container">
+                <div className="rn-circle">
+                    <button id="close" onClick={handleClick}>
+                        <FontAwesomeIcon icon={faXmark} />
                     </button>
-                    <button id="open">
-                        <i class="fas fa-bars"></i>
+                    <button id="open" onClick={handleClick}>
+                        <FontAwesomeIcon icon={faBars} />
                     </button>
                 </div>
             </div>
 
             <nav>
                 <ul>
-                    <li><i class="fas fa-home"></i> Home</li>
-                    <li><i class="fas fa-user-alt"></i> About</li>
-                    <li><i class="fas fa-envelope"></i> Contact</li>
+                    <li><FontAwesomeIcon icon={faHouse} /> Home</li>
+                    <li><FontAwesomeIcon icon={faUser} /> About</li>
+                    <li><FontAwesomeIcon icon={faEnvelope} /> Contact</li>
                 </ul>
             </nav>
-        </>
+        </div>
     )
 }
 
-export default RotatingNavigation();
+export default RotatingNavigation;

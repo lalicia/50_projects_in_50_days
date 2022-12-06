@@ -8,7 +8,7 @@ import ExpandingCards from "./projects/ExpandingCards/ExpandingCards.js";
 import ecdata from "./projects/ExpandingCards/expandingcardsdata.js";
 
 import ProgressSteps from "./projects/ProgressSteps/ProgressSteps.js";
-// import RotatingNavigation from "./projects/RotatingNavigation/RotatingNavigation.js";
+import RotatingNavigation from "./projects/RotatingNavigation/RotatingNavigation.js";
 
 //import { render } from "react-dom";
 import {
@@ -25,7 +25,7 @@ root.render(
         <Route path="/" element={<App />} />
         <Route path="/expanding-cards" element={<ExpandingCards ecdata={ecdata}/>} />
         <Route path="/progress-steps" element={<ProgressSteps />} />
-        {/* <Route path="/rotating-navigation" element={<RotatingNavigation />} /> */}
+        <Route path="/rotating-navigation" element={<RotatingNavigation />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
