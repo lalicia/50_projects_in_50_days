@@ -12,6 +12,12 @@ const projectsdata = [
         description: "A visual display for progressing through a number of steps, with buttons to move to next or previous",
         image: require("./progresssteps.JPG"),
         link: "/progress-steps"
+    },
+    {
+        name: "Rotating Navigation",
+        description: "A side navigation bar that swings in and tilts the rest of the page on button-click",
+        image: require("./rotatingnavigation.JPG"),
+        link: "/rotating-navigation"
     }
 
 ]

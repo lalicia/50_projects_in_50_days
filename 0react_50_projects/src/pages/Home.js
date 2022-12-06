@@ -1,5 +1,7 @@
 import React from "react";
 
+import "../../src/App.css"
+
 import projects from "../assets/projectsdata.js";
 import ProjectCard from "../components/ProjectCard.js";
 

@@ -44,6 +44,10 @@ body {
   font-family: 'Roboto', sans-serif;
   /* background-color: lightgray; */
   color: black;
+  /* background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 /* responsive images/videos */
