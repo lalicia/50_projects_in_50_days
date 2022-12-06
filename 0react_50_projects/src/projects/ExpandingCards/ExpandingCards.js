@@ -3,7 +3,7 @@ import {useState} from "react";
 
 import "./ExpandingCards.css";
 
-import ExpandingCard from "../components/ExpandingCard.js";
+import ExpandingCard from "./ExpandingCard.js";
 
 function ExpandingCards({ecdata}) {
     const [data, setData] = useState(ecdata)

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../pages/ExpandingCards.css";
+import "./ExpandingCards.css";
 
 function ExpandingCard({title, url, id, active, onPanelClick}) {
 

@@ -4,10 +4,10 @@ import './App.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import ExpandingCards from "./pages/ExpandingCards.js";
-import ecdata from "./assets/expandingcardsdata.js";
+import ExpandingCards from "./projects/ExpandingCards/ExpandingCards.js";
+import ecdata from "./projects/ExpandingCards/expandingcardsdata.js";
 
-import ProgressSteps from "./pages/ProgressSteps.js";
+import ProgressSteps from "./projects/ProgressSteps/ProgressSteps.js";
 
 //import { render } from "react-dom";
 import {

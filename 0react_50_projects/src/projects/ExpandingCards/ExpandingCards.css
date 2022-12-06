@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap');
 
-body {
+/* body {
     font-family: 'Mulish', sans-serif;
     display: flex;
     align-items: center;
@@ -8,11 +8,17 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
-}
+} */
 
 .ec-container {
     display: flex;
     width: 90vw;
+    font-family: 'Mulish', sans-serif;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
 }
 
 .ec-panel {

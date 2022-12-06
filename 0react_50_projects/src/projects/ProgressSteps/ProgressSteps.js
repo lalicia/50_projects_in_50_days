@@ -2,7 +2,7 @@ import React from "react";
 import {useState, useEffect} from "react";
 
 import "./ProgressSteps.css";
-import PsCircle from "../components/PsCircle.js";
+import PsCircle from "./PsCircle.js";
 
 function ProgressSteps() {
     const [circle, setCircle] = useState(4);

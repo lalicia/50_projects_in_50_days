@@ -41,7 +41,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
   /* background-color: lightgray; */
   color: black;
   /* background-color: white;
@@ -61,11 +61,11 @@ video {
 
 
 /************************************************Home.js*/
-
 .container {
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container h1 {

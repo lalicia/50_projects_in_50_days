@@ -1,6 +1,6 @@
 import React from "react";
 
-import "../pages/ProgressSteps.css";
+import "./ProgressSteps.css";
 
 function PsCircle({classname, children}) {
 
