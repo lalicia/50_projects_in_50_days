@@ -28,9 +28,12 @@ function ProgressSteps() {
                 {arr}
             </div>
 
-            <button className="ps-btn" id="prev" disabled={active > 0 ? false : true} onClick={() => {active <= 0 ? setActive(0) : setActive(active - 1)}}>Prev</button>
+            <div className="ps-buttons">
+                <button className="ps-btn" id="prev" disabled={active > 0 ? false : true} onClick={() => {active <= 0 ? setActive(0) : setActive(active - 1)}}>Prev</button>
+                
+                <button className="ps-btn" id="next" disabled={active >= circle - 1 ? true : false} onClick={() => {active >= circle ? setActive(circle) : setActive(active + 1)}}>Next</button>
+            </div>
             
-            <button className="ps-btn" id="next" disabled={active >= circle - 1 ? true : false} onClick={() => {active >= circle ? setActive(circle) : setActive(active + 1)}}>Next</button>
         </div>
     )
 }
