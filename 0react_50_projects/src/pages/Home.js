@@ -15,7 +15,7 @@ function Home() {
 
             <div className="cards-container">
                 {projects.map((project) => {
-                    return <ProjectCard name={project.name} description={project.description} image={project.image} link={project.link} />
+                    return <ProjectCard key={project.id} name={project.name} description={project.description} image={project.image} link={project.link} />
                 })}
             </div>
         </div>
