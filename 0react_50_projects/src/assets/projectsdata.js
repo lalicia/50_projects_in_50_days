@@ -21,6 +21,13 @@ const projectsdata = [
         description: "A side navigation bar that swings in and tilts the rest of the page on button-click",
         image: require("../projects/RotatingNavigation/rotatingnavigation.JPG"),
         link: "/rotating-navigation"
+    },
+    {
+        id: 4,
+        name: "Hidden Search Widget",
+        description: "A search widget that expands when the icon is clicked to allow searching",
+        image: require("../projects/HiddenSearchWidget/hiddensearchwidget.JPG"),
+        link: "/hidden-search-widget"
     }
 
 ]

@@ -9,6 +9,7 @@ import ecdata from "./projects/ExpandingCards/expandingcardsdata.js";
 
 import ProgressSteps from "./projects/ProgressSteps/ProgressSteps.js";
 import RotatingNavigation from "./projects/RotatingNavigation/RotatingNavigation.js";
+import HiddenSearchWidget from "./projects/HiddenSearchWidget/HiddenSearchWidget.js";
 
 //import { render } from "react-dom";
 import {
@@ -26,6 +27,7 @@ root.render(
         <Route path="/expanding-cards" element={<ExpandingCards ecdata={ecdata}/>} />
         <Route path="/progress-steps" element={<ProgressSteps />} />
         <Route path="/rotating-navigation" element={<RotatingNavigation />} />
+        <Route path="/hidden-search-widget" element={<HiddenSearchWidget />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
