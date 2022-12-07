@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 
 import "./HiddenSearchWidget.css";
+import HomeButton from "../../components/HomeButton.js";
 
 function HiddenSearchWidget() {
     const [active, setActive] = useState(false);
@@ -25,6 +26,7 @@ function HiddenSearchWidget() {
                     <FontAwesomeIcon icon={faSearch} />
                 </button>
             </div>
+            <HomeButton />
         </div>
         
     )

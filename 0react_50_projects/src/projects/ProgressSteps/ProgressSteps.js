@@ -3,6 +3,7 @@ import {useState, useEffect} from "react";
 
 import "./ProgressSteps.css";
 import PsCircle from "./PsCircle.js";
+import HomeButton from "../../components/HomeButton.js";
 
 function ProgressSteps() {
     const [circle, setCircle] = useState(4);
@@ -34,6 +35,7 @@ function ProgressSteps() {
                 <button className="ps-btn" id="next" disabled={active >= circle - 1 ? true : false} onClick={() => {active >= circle ? setActive(circle) : setActive(active + 1)}}>Next</button>
             </div>
             
+            <HomeButton />
         </div>
     )
 }

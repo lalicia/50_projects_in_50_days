@@ -4,6 +4,7 @@ import {useState} from "react";
 import "./ExpandingCards.css";
 
 import ExpandingCard from "./ExpandingCard.js";
+import HomeButton from "../../components/HomeButton.js";
 
 function ExpandingCards({ecdata}) {
     const [data, setData] = useState(ecdata)
@@ -22,6 +23,7 @@ function ExpandingCards({ecdata}) {
         <div className="ec-container">
             {data.map((card) => <ExpandingCard key={card.id} id={card.id} title={card.title} url={card.url} active={card.active} onPanelClick={onPanelClick}/>
             )}
+            <HomeButton />
         </div>
     )
 }

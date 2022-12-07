@@ -114,3 +114,14 @@ video {
   border-radius: 16px;
   margin: 0 auto;
 }
+
+/*********************************HomeButton.js*/
+.home-btn {
+  /*needs to be fixed or won't move when scroll*/
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+}

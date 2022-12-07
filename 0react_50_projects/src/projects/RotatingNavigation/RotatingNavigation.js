@@ -9,6 +9,8 @@ import { faHouse } from '@fortawesome/free-solid-svg-icons'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
+import HomeButton from "../../components/HomeButton.js";
+
 function RotatingNavigation() {
     const [nav, setNav] = useState(false);
 
@@ -48,6 +50,8 @@ function RotatingNavigation() {
                     <li><FontAwesomeIcon icon={faEnvelope} /> Contact</li>
                 </ul>
             </nav>
+
+            <HomeButton />
         </div>
     )
 }
