@@ -10,6 +10,7 @@ import ecdata from "./projects/ExpandingCards/expandingcardsdata.js";
 import ProgressSteps from "./projects/ProgressSteps/ProgressSteps.js";
 import RotatingNavigation from "./projects/RotatingNavigation/RotatingNavigation.js";
 import HiddenSearchWidget from "./projects/HiddenSearchWidget/HiddenSearchWidget.js";
+import BlurryLoading from "./projects/BlurryLoading/BlurryLoading.js";
 
 //import { render } from "react-dom";
 import {
@@ -28,6 +29,7 @@ root.render(
         <Route path="/progress-steps" element={<ProgressSteps />} />
         <Route path="/rotating-navigation" element={<RotatingNavigation />} />
         <Route path="/hidden-search-widget" element={<HiddenSearchWidget />} />
+        <Route path="/blurry-loading" element={<BlurryLoading />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -28,6 +28,13 @@ const projectsdata = [
         description: "A search widget that expands when the icon is clicked to allow searching",
         image: require("../projects/HiddenSearchWidget/hiddensearchwidget.JPG"),
         link: "/hidden-search-widget"
+    },
+    {
+        id: 5,
+        name: "Blurry Loading",
+        description: "A blurred background image that sharpens into focus, with an in-focus loading percentage that fades out of view",
+        image: require("../projects/BlurryLoading/blurryloading.JPG"),
+        link: "/blurry-loading"
     }
 
 ]
