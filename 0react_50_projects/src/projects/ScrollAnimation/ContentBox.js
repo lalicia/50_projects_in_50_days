@@ -2,10 +2,10 @@ import React from "react";
 
 import "./ScrollAnimation.css";
 
-function ContentBox() {
+function ContentBox({className}) {
 
     return (
-        <div className="sa-box"><h2>Content</h2></div>
+        <div className={className}><h2>Content</h2></div>
     )
 }
 

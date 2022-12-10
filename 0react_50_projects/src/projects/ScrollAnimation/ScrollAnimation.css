@@ -28,18 +28,34 @@
     margin: .625rem;
     border-radius: 10px;
     box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
-    transform: translateX(0%);
-    transition: transform 0.4s ease;
+    /*using intersection observer you CANNOT have the element completely offscreen like we did in vanilla, otherwise it won't detect the intersection. For this reason, keep within 100% / - 100%. Have added opacity so element initially not visible - unsure if strictly required.*/
+    transform: translateX(90%);
+    transition: transform 1s ease;
+    opacity: 0;
 }
 
 .sa-box:nth-of-type(even) {
-    transform: translateX(-400%);
+    transform: translateX(-90%);
 }
 
-.sa-box.show {
-    transform: translateX(0);
+.sa-box-show {
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+    height: 12.5rem;
+    margin: .625rem;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0,0,0,0.3);
+    transform: translateX(0%);
+    transition: transform 1s ease;
+    /* opacity: 1;  this is a cute thing where it won't move but it animates in the opacity
+    transition: opacity .5s ease; */
 }
 
-.sa-box h2 {
+.sa-box h2,
+.sa-box-show h2 {
     font-size: 2.5rem;
 }
