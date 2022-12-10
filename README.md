@@ -26,7 +26,7 @@ This is a very simple app in terms of it doesn't really 'do' anything, but for m
 
 ## Tech
 
-React, CSS, JavaScript, HTML, Font-Awesome, Netlify
+React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Netlify
 
 ## Some Thoughts
 
