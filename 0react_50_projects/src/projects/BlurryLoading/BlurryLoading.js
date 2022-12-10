@@ -9,6 +9,13 @@ function BlurryLoading() {
     const [count, setCount] = useState(0);
     const savedCallback = useRef();
 
+    const [second, setSecond] = useState(false);
+
+    useEffect(() => {
+        setSecond(true);
+    })
+
+    //used article for this - essentially setInterval unpredictable with React and needs wrapping in hook and callback using - this is doing that 
     function callback() {
         if (count < 100) {
             setCount(count + 1);
@@ -44,8 +51,8 @@ function BlurryLoading() {
 
     return (
         <div className="bl-container">
-            <section className="bl-bg"></section>
-            <div className="bl-loading-text">{count}%</div>
+            <section className={second ? "bl-bg second" : "bl-bg"}></section>
+            <div className={second ? "bl-loading-text second" : "bl-loading-text"}>{count}%</div>
 
             <HomeButton />
         </div>

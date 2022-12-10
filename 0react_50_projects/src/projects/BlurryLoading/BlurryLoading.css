@@ -16,15 +16,28 @@
     position: absolute;
     /* width: 100vw;
     height: 100vh; */
-    top: -30px;
-    left: -30px;
-    width: calc(100vw + 60px);
-    height: calc(100vh + 60px);
+    top: -35px;
+    left: -35px;
+    width: calc(100vw + 70px);
+    height: calc(100vh + 70px);
     z-index: -1;
+    filter: blur(30px);
+    transition: filter 3s;
+}
+
+.bl-bg.second {
     filter: blur(0px);
+    transition: filter 3s;
 }
 
 .bl-loading-text {
     font-size: 3.25rem;
     color: white;
+    opacity: 1;
+    transition: opacity 3.2s;
+}
+
+.bl-loading-text.second {
+    opacity: 0;
+    transition: opacity 3.2s;
 }
