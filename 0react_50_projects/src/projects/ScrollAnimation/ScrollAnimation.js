@@ -2,6 +2,7 @@ import React from "react";
 import {useState, useEffect, useRef} from "react";
 
 import "./ScrollAnimation.css";
+import HomeButton from "../../components/HomeButton.js";
 
 import ContentBox from "./ContentBox.js";
 
@@ -23,6 +24,7 @@ function ScrollAnimation() {
             <h1 className="sa-h1">Scroll to see the animation</h1>
             {arr}
         
+            <HomeButton />
         </div>
     )
 }

@@ -3,6 +3,7 @@ import {useState, useRef} from "react";
 
 import "./BlurryLoading.css";
 
+import HomeButton from "../../components/HomeButton.js";
 
 function BlurryLoading() {
     const [count, setCount] = useState(0);
@@ -45,6 +46,8 @@ function BlurryLoading() {
         <div className="bl-container">
             <section className="bl-bg"></section>
             <div className="bl-loading-text">{count}%</div>
+
+            <HomeButton />
         </div>
     )
 }
