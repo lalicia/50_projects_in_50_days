@@ -42,6 +42,13 @@ const projectsdata = [
         description: "Animated content that moves into view from opposite sides as the user scrolls",
         image: require("../projects/ScrollAnimation/scrollanimation.JPG"),
         link: "/scroll-animation"
+    },
+    {
+        id: 7,
+        name: "Split Landing Page",
+        description: "Each side expands when hovered over",
+        image: require("../projects/SplitLandingPage/splitlandingpage.JPG"),
+        link: "/split-landing-page"
     }
 
 ]

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --slp-left-bg-color: rgba(87, 84, 236, 0.7);
+    --slp-right-bg-color: rgba(43, 43, 43, 0.8);
+    --slp-left-btn-hover-color: rgba(87, 84, 236, 1);
+    --slp-right-btn-hover-color: rgba(28, 122, 28, 1);
+    --slp-hover-width: 75%;
+    --slp-other-width: 25%;
+    --slp-speed: 1000ms;
+}
+
+.slp-container {
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.slp-h1 {
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+}
+
+.slp-btn {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    /* text-decoration: none; */
+    background-color: inherit;
+    color: white;
+    border: white solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+}
+
+.slp-split.slp-left .slp-btn:hover {
+    background-color: var(--slp-left-btn-hover-color);
+    border-color: var(--slp-left-btn-hover-color);
+}
+
+.slp-split.slp-right .slp-btn:hover {
+    background-color: var(--slp-right-btn-hover-color);
+    border-color: var(--slp-right-btn-hover-color);
+}
+
+.slp-small-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #333;
+}
+
+.slp-split {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slp-split.slp-left {
+    left: 0;
+    background: url("ps.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slp-split.slp-left::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--slp-left-bg-color)
+}
+
+.slp-split.slp-right {
+    right: 0;
+    background: url("xbox.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.slp-split.slp-right::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--slp-right-bg-color)
+}
+
+.slp-split.slp-right, 
+.slp-split.slp-left,
+.slp-split.slp-right::before,
+.slp-split.slp-left::before {
+    transition: all var(--slp-speed) ease-in-out;
+}
+
+.slp-hover-left .slp-left {
+    width: var(--slp-hover-width);
+}
+
+.slp-hover-left .slp-right {
+    width: var(--slp-other-width);
+}
+
+.slp-hover-right .slp-right {
+    width: var(--slp-hover-width);
+}
+
+.slp-hover-right .slp-left {
+    width: var(--slp-other-width);
+}
+
+@media(max-width: 800px) {
+    .slp-h1 {
+        font-size: 2rem;
+        top: 30%;
+    }
+
+    .slp-btn {
+        width: 12rem;
+        padding: 1.2rem;
+    }
+}
