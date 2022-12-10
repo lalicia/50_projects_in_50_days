@@ -35,6 +35,13 @@ const projectsdata = [
         description: "A blurred background image that sharpens into focus, with an in-focus loading percentage that fades out of view",
         image: require("../projects/BlurryLoading/blurryloading.JPG"),
         link: "/blurry-loading"
+    },
+    {
+        id: 6,
+        name: "Scroll Animation",
+        description: "Animated content that moves into view from opposite sides as the user scrolls",
+        image: require("../projects/ScrollAnimation/scrollanimation.JPG"),
+        link: "/scroll-animation"
     }
 
 ]
