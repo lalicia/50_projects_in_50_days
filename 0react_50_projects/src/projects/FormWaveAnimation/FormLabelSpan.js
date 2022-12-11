@@ -16,7 +16,7 @@ function FormLabelSpan({label}) {
             )
         })
 
-    console.log("this is arr:",arr);
+    //console.log("this is arr:",arr);
 
     return (
         <label>
