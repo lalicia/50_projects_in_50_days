@@ -49,6 +49,13 @@ const projectsdata = [
         description: "Each side expands when hovered over",
         image: require("../projects/SplitLandingPage/splitlandingpage.JPG"),
         link: "/split-landing-page"
+    },
+    {
+        id: 8,
+        name: "Form Wave Animation",
+        description: "Login form with animation on labels so they wave up when in focus",
+        image: require("../projects/FormWaveAnimation/formwaveanimation.JPG"),
+        link: "/form-wave-animation"
     }
 
 ]

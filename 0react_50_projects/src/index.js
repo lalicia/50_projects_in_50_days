@@ -13,6 +13,7 @@ import HiddenSearchWidget from "./projects/HiddenSearchWidget/HiddenSearchWidget
 import BlurryLoading from "./projects/BlurryLoading/BlurryLoading.js";
 import ScrollAnimation from "./projects/ScrollAnimation/ScrollAnimation.js";
 import SplitLandingPage from "./projects/SplitLandingPage/SplitLandingPage.js";
+import FormWaveAnimation from "./projects/FormWaveAnimation/FormWaveAnimation.js";
 
 //import { render } from "react-dom";
 import {
@@ -34,6 +35,7 @@ root.render(
         <Route path="/blurry-loading" element={<BlurryLoading />} />
         <Route path="/scroll-animation" element={<ScrollAnimation />} />
         <Route path="/split-landing-page" element={<SplitLandingPage />} />
+        <Route path="/form-wave-animation" element={<FormWaveAnimation />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
