@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+
+.fwa-container {
+    background-color: steelblue;
+    color: white;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.fwa-small-container {
+    background-color: rgba(0,0,0,0.4);
+    padding: 1.25rem;
+    border-radius: 5px;
+}
+
+.fwa-h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.fwa-container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.fwa-btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background: lightblue;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+}
+
+.fwa-btn:focus {
+    outline: 0;
+}
+
+.fwa-btn:active {
+    transform: scale(0.98);
+}
+
+.fwa-text {
+    margin-top: 2rem;
+}
+
+.fwa-form-control {
+    position: relative;
+    margin: 1.25rem 0 2.5rem;
+    width: 18.75rem;
+}
+
+.fwa-form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px white solid;
+    /*so on own line, not in-line*/
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.125rem;
+    color: white;
+}
+
+.fwa-form-control input:focus,
+.fwa-form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.fwa-form-control label {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    font-size: 1.125rem;
+}
+
+.fwa-form-control label span {
+    display: inline-block;
+    font-size: 1.125rem;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.fwa-form-control input:focus + label span,
+.fwa-form-control input:valid + label span {
+    color: lightblue;
+    transform: translateY(-2rem);
+}
