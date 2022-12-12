@@ -17,22 +17,6 @@ function SoundBoard() {
     //     <button className="sb-btn" onClick={handleClick}>{sound}</button>
     // )
 
-    // const songs = [
-    //     {id: 1, name: "applause", sound: {applause}}, 
-    //     // {id: 2, name: "boo", sound: {boo}}, 
-    //     // {id: 3, name: "gasp", sound: {gasp}}, 
-    //     // {id: 4, name: "tada", sound: {tada}}, 
-    //     // {id: 5, name: "victory", sound: {victory}}, 
-    //     // {id: 6, name: "wrong", sound: {wrong}}]
-    // ]
-
-    // let soundApplause = new Audio("./applause.mp3");
-    // function handleClick() {
-    //     // stopSongs();
-    //     soundApplause.play();
-    //     console.log("click");
-    // }
-
     const applauseRef = useRef();
     const booRef = useRef();
     const gaspRef = useRef();
@@ -86,11 +70,17 @@ function SoundBoard() {
 
     function stopSongs() {
       applauseRef.current.pause();
+      applauseRef.current.currentTime = 0;
       booRef.current.pause();
+      booRef.current.currentTime = 0;
       gaspRef.current.pause();
+      gaspRef.current.currentTime = 0;
       tadaRef.current.pause();
+      tadaRef.current.currentTime = 0;
       victoryRef.current.pause();
+      victoryRef.current.currentTime = 0;
       wrongRef.current.pause();
+      wrongRef.current.currentTime = 0;
     }
 
     return (
