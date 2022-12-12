@@ -3,14 +3,19 @@ import {useRef} from "react";
 
 import "./SoundBoard.css";
 import applauseSound from "./applause.mp3";
-// import boo from "./boo.mp3";
-// import gasp from "./gasp.mp3";
-// import tada from "./tada.mp3";
-// import victory from "./victory.mp3";
-// import wrong from "./wrong.mp3";
+import booSound from "./boo.mp3";
+import gaspSound from "./gasp.mp3";
+import tadaSound from "./tada.mp3";
+import victorySound from "./victory.mp3";
+import wrongSound from "./wrong.mp3";
 
 function SoundBoard() {
     // const sounds = ["applause", "boo", "gasp", "tada",  "victory", "wrong"];
+
+    //this is fine - generates buttons
+    // let array = sounds.map((sound) => 
+    //     <button className="sb-btn" onClick={handleClick}>{sound}</button>
+    // )
 
     // const songs = [
     //     {id: 1, name: "applause", sound: {applause}}, 
@@ -28,10 +33,16 @@ function SoundBoard() {
     //     console.log("click");
     // }
 
-    const audioRef = useRef();
+    const applauseRef = useRef();
+    const booRef = useRef();
+    const gaspRef = useRef();
+    const tadaRef = useRef();
+    const victoryRef = useRef();
+    const wrongRef = useRef();
 
-    function handleClick() {
-        const playPromise = audioRef.current.play() 
+    function handleApplauseClick() {
+        // stopSongs();
+        const playPromise = applauseRef.current.play() 
         
         if (playPromise !== undefined) {
           playPromise.then(() => {
@@ -40,26 +51,86 @@ function SoundBoard() {
         }
       }
 
+      function handleVictoryClick() {
+        // stopSongs();
+        const playPromise = victoryRef.current.play() 
+        
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            console.log("PLAY")
+          }).catch(error => console.log(error))
+        }
+      }
 
-    //this is fine - generates buttons
-    // let array = sounds.map((sound) => 
-    //     <button className="sb-btn" onClick={handleClick}>{sound}</button>
-    // )
+      function handleWrongClick() {
+        // stopSongs();
+        const playPromise = wrongRef.current.play() 
+        
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            console.log("PLAY")
+          }).catch(error => console.log(error))
+        }
+      }
 
+      function handleBooClick() {
+        // stopSongs();
+        const playPromise = booRef.current.play() 
+        
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            console.log("PLAY")
+          }).catch(error => console.log(error))
+        }
+      }
 
-    // function stopSongs(songs) {
-    //     for (let i = 0; i < songs; i++) {
-    //         songs[i].sound.pause();
-    //         songs[i].sound.currentTime = 0;
-    //     }
+      function handleGaspClick() {
+        // stopSongs();
+        const playPromise = gaspRef.current.play() 
+        
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            console.log("PLAY")
+          }).catch(error => console.log(error))
+        }
+      }
+
+      function handleTadaClick() {
+        // stopSongs();
+        const playPromise = tadaRef.current.play() 
+        
+        if (playPromise !== undefined) {
+          playPromise.then(() => {
+            console.log("PLAY")
+          }).catch(error => console.log(error))
+        }
+      }
+
+    // function stopSongs() {
+    //     if ()
     // }
 
     return (
         <div className="sb-container">
             <div id="buttons">
                 {/* {array} */}
-                <audio id="applause" src={applauseSound} ref={audioRef}></audio>
-                <button className="sb-btn" onClick={handleClick}></button>
+                <audio id="applause" src={applauseSound} ref={applauseRef}></audio>
+                <button className="sb-btn" onClick={handleApplauseClick}>applause</button>
+
+                <audio id="boo" src={booSound} ref={booRef}></audio>
+                <button className="sb-btn" onClick={handleBooClick}>boo</button>
+
+                <audio id="gasp" src={gaspSound} ref={gaspRef}></audio>
+                <button className="sb-btn" onClick={handleGaspClick}>gasp</button>
+
+                <audio id="tada" src={tadaSound} ref={tadaRef}></audio>
+                <button className="sb-btn" onClick={handleTadaClick}>tada</button>
+
+                <audio id="victory" src={victorySound} ref={victoryRef}></audio>
+                <button className="sb-btn" onClick={handleVictoryClick}>victory</button>
+
+                <audio id="wrong" src={wrongSound} ref={wrongRef}></audio>
+                <button className="sb-btn" onClick={handleWrongClick}>wrong</button>
             </div>
         </div>
     )
