@@ -40,70 +40,48 @@ function SoundBoard() {
     const victoryRef = useRef();
     const wrongRef = useRef();
 
+    function play(playPromise) {
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          console.log("PLAY")
+        }).catch(error => console.log(error))
+      }
+    }
+
     function handleApplauseClick() {
         // stopSongs();
         const playPromise = applauseRef.current.play() 
-        
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            console.log("PLAY")
-          }).catch(error => console.log(error))
-        }
+        play(playPromise);
       }
 
       function handleVictoryClick() {
         // stopSongs();
         const playPromise = victoryRef.current.play() 
-        
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            console.log("PLAY")
-          }).catch(error => console.log(error))
-        }
+        play(playPromise);
       }
 
       function handleWrongClick() {
         // stopSongs();
         const playPromise = wrongRef.current.play() 
-        
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            console.log("PLAY")
-          }).catch(error => console.log(error))
-        }
+        play(playPromise);
       }
 
       function handleBooClick() {
         // stopSongs();
         const playPromise = booRef.current.play() 
-        
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            console.log("PLAY")
-          }).catch(error => console.log(error))
-        }
+        play(playPromise);
       }
 
       function handleGaspClick() {
         // stopSongs();
         const playPromise = gaspRef.current.play() 
-        
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            console.log("PLAY")
-          }).catch(error => console.log(error))
-        }
+        play(playPromise);
       }
 
       function handleTadaClick() {
         // stopSongs();
         const playPromise = tadaRef.current.play() 
-        
-        if (playPromise !== undefined) {
-          playPromise.then(() => {
-            console.log("PLAY")
-          }).catch(error => console.log(error))
-        }
+        play(playPromise);
       }
 
     // function stopSongs() {
