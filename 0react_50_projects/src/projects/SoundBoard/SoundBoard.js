@@ -49,44 +49,49 @@ function SoundBoard() {
     }
 
     function handleApplauseClick() {
-        // stopSongs();
+        stopSongs();
         const playPromise = applauseRef.current.play() 
         play(playPromise);
       }
 
       function handleVictoryClick() {
-        // stopSongs();
+        stopSongs();
         const playPromise = victoryRef.current.play() 
         play(playPromise);
       }
 
       function handleWrongClick() {
-        // stopSongs();
+        stopSongs();
         const playPromise = wrongRef.current.play() 
         play(playPromise);
       }
 
       function handleBooClick() {
-        // stopSongs();
+        stopSongs();
         const playPromise = booRef.current.play() 
         play(playPromise);
       }
 
       function handleGaspClick() {
-        // stopSongs();
+        stopSongs();
         const playPromise = gaspRef.current.play() 
         play(playPromise);
       }
 
       function handleTadaClick() {
-        // stopSongs();
+        stopSongs();
         const playPromise = tadaRef.current.play() 
         play(playPromise);
       }
 
-    // function stopSongs() {
-    //     if ()
-    // }
+    function stopSongs() {
+      applauseRef.current.pause();
+      booRef.current.pause();
+      gaspRef.current.pause();
+      tadaRef.current.pause();
+      victoryRef.current.pause();
+      wrongRef.current.pause();
+    }
 
     return (
         <div className="sb-container">
