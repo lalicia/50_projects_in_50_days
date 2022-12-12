@@ -14,6 +14,7 @@ import BlurryLoading from "./projects/BlurryLoading/BlurryLoading.js";
 import ScrollAnimation from "./projects/ScrollAnimation/ScrollAnimation.js";
 import SplitLandingPage from "./projects/SplitLandingPage/SplitLandingPage.js";
 import FormWaveAnimation from "./projects/FormWaveAnimation/FormWaveAnimation.js";
+import SoundBoard from "./projects/SoundBoard/SoundBoard.js";
 
 //import { render } from "react-dom";
 import {
@@ -36,6 +37,7 @@ root.render(
         <Route path="/scroll-animation" element={<ScrollAnimation />} />
         <Route path="/split-landing-page" element={<SplitLandingPage />} />
         <Route path="/form-wave-animation" element={<FormWaveAnimation />} />
+        <Route path="/sound-board" element={<SoundBoard />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
