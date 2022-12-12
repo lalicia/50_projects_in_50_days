@@ -56,6 +56,13 @@ const projectsdata = [
         description: "Login form with animation on labels so they wave up when in focus",
         image: require("../projects/FormWaveAnimation/formwaveanimation.JPG"),
         link: "/form-wave-animation"
+    },
+    {
+        id: 9,
+        name: "Sound Board",
+        description: "Dashboard with buttons that play sounds, each sound will stop when next clicked",
+        image: require("../projects/SoundBoard/soundboard.JPG"),
+        link: "/sound-board"
     }
 
 ]
