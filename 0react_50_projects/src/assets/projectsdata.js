@@ -63,6 +63,13 @@ const projectsdata = [
         description: "Dashboard with buttons that play sounds, each sound will stop when next clicked",
         image: require("../projects/SoundBoard/soundboard.JPG"),
         link: "/sound-board"
+    },
+    {
+        id: 10,
+        name: "Dad Jokes",
+        description: "Joke generator that uses async/await fetch to make a GET request to an API",
+        image: require("../projects/DadJokes/dadjokes.JPG"),
+        link: "/dad-jokes"
     }
 
 ]

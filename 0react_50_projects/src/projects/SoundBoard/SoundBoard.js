@@ -9,6 +9,8 @@ import tadaSound from "./tada.mp3";
 import victorySound from "./victory.mp3";
 import wrongSound from "./wrong.mp3";
 
+import HomeButton from "../../components/HomeButton.js";
+
 function SoundBoard() {
     // const sounds = ["applause", "boo", "gasp", "tada",  "victory", "wrong"];
 
@@ -105,6 +107,8 @@ function SoundBoard() {
                 <audio id="wrong" src={wrongSound} ref={wrongRef}></audio>
                 <button className="sb-btn" onClick={handleWrongClick}>wrong</button>
             </div>
+
+            <HomeButton />
         </div>
     )
 }
