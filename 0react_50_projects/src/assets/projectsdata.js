@@ -70,6 +70,13 @@ const projectsdata = [
         description: "Joke generator that uses async/await fetch to make a GET request to an API",
         image: require("../projects/DadJokes/dadjokes.JPG"),
         link: "/dad-jokes"
+    },
+    {
+        id: 11,
+        name: "Event Keycodes",
+        description: "Facility to obtain keycode on keypress",
+        image: require("../projects/EventKeycodes/eventkeycodes.JPG"),
+        link: "/event-keycodes"
     }
 
 ]
