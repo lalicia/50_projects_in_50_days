@@ -23,12 +23,12 @@ function DadJokes() {
 
     return (
         <div className="dj-container">
-            <div class="dj-small-container">
+            <div className="dj-small-container">
                 <h3 className="dj-h3">Don't Laugh Challenge</h3>
-                <div id="joke" class="dj-joke">
+                <div id="joke" className="dj-joke">
                     {joke}
                 </div>
-                <button id="jokeBtn" class="dj-btn" onClick={generateJoke}>Get Another Joke</button>
+                <button id="jokeBtn" className="dj-btn" onClick={generateJoke}>Get Another Joke</button>
             </div>
 
             <HomeButton />
