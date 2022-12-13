@@ -16,6 +16,7 @@ import SplitLandingPage from "./projects/SplitLandingPage/SplitLandingPage.js";
 import FormWaveAnimation from "./projects/FormWaveAnimation/FormWaveAnimation.js";
 import SoundBoard from "./projects/SoundBoard/SoundBoard.js";
 import DadJokes from "./projects/DadJokes/DadJokes.js";
+import EventKeycodes from "./projects/EventKeycodes/EventKeycodes.js";
 
 //import { render } from "react-dom";
 import {
@@ -40,6 +41,7 @@ root.render(
         <Route path="/form-wave-animation" element={<FormWaveAnimation />} />
         <Route path="/sound-board" element={<SoundBoard />} />
         <Route path="/dad-jokes" element={<DadJokes />} />
+        <Route path="/event-keycodes" element={<EventKeycodes />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
