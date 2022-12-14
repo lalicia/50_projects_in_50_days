@@ -8,13 +8,11 @@
     overflow: auto;
 }
 
-/* .faq-next-container {
-    
-} */
-
 .faq-h1 {
     margin: 3.125rem 0 1.875rem;
     text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .faq-small-container {
@@ -38,11 +36,7 @@
     box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
 }
 
-/*this is for icons using font-awesome*/
-.faq-faq.faq-active::before,
-.faq-faq.faq-active::after {
-    content: "\f075";
-    font-family: 'Font Awesome';
+.faq-comment {
     color: #2ecc71;
     font-size: 7rem;
     position: absolute;
@@ -52,20 +46,35 @@
     z-index: 0;
 }
 
-.faq-faq.faq-active::before {
+.faq-comment-invisible {
+    display: none;
+}
+
+.faq-comment2 {
     color: #3498db;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
     top: -.625rem;
     left: -1.875rem;
+    z-index: 0;
     transform: rotateY(180deg);
+}
+
+.faq-comment2-invisible {
+    display: none;
 }
 
 .faq-faq-title {
     margin: 0 2.1875rem 0 0;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .faq-faq-text {
     display: none;
     margin: 1.875rem 0 0;
+    font-size: 1.1rem;
 }
 
 .faq-faq.faq-active .faq-faq-text {
