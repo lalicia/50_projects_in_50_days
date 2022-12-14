@@ -77,6 +77,13 @@ const projectsdata = [
         description: "Facility to obtain keycode on keypress",
         image: require("../projects/EventKeycodes/eventkeycodes.JPG"),
         link: "/event-keycodes"
+    },
+    {
+        id: 12,
+        name: "FAQ Boxes",
+        description: "FAQ boxes that expand on selection and retract when closed out of",
+        image: require("../projects/FaqBoxes/faqboxes.JPG"),
+        link: "/faq-boxes"
     }
 
 ]

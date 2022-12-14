@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.faq-container {
+    font-family: 'Muli', sans-serif;
+    background-color: #f0f0f0;
+    min-height: 100vh;
+    overflow: auto;
+}
+
+/* .faq-next-container {
+    
+} */
+
+.faq-h1 {
+    margin: 3.125rem 0 1.875rem;
+    text-align: center;
+}
+
+.faq-small-container {
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
+
+.faq-faq {
+    background-color: transparent;
+    border: 1px solid #9fa4a8;
+    border-radius: 10px;
+    margin: 1.25rem 0;
+    padding: 1.875rem;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.faq-faq.faq-active {
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1), 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/*this is for icons using font-awesome*/
+.faq-faq.faq-active::before,
+.faq-faq.faq-active::after {
+    content: "\f075";
+    font-family: 'Font Awesome';
+    color: #2ecc71;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 1.25rem;
+    left: 1.25rem;
+    z-index: 0;
+}
+
+.faq-faq.faq-active::before {
+    color: #3498db;
+    top: -.625rem;
+    left: -1.875rem;
+    transform: rotateY(180deg);
+}
+
+.faq-faq-title {
+    margin: 0 2.1875rem 0 0;
+}
+
+.faq-faq-text {
+    display: none;
+    margin: 1.875rem 0 0;
+}
+
+.faq-faq.faq-active .faq-faq-text {
+    display: block;
+}
+
+.faq-faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 0;
+    position: absolute;
+    top: 1.875rem;
+    right: 1.875rem;
+    height: 1.875rem;
+    width: 1.875rem;
+}
+
+.faq-faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-faq-toggle .faq-fa-times {
+    display: none;
+}
+
+.faq-faq.faq-active .faq-faq-toggle .faq-fa-times {
+    color: white;
+    display: block;
+}
+
+.faq-faq.faq-active .faq-faq-toggle .faq-fa-chevron-down {
+    display: none;
+}
+
+.faq-faq.faq-active .faq-faq-toggle {
+    background-color: #9fa4a8;
+}
