@@ -84,6 +84,13 @@ const projectsdata = [
         description: "FAQ boxes that expand on selection and retract when closed out of",
         image: require("../projects/FaqBoxes/faqboxes.JPG"),
         link: "/faq-boxes"
+    },
+    {
+        id: 13,
+        name: "Choice Picker",
+        description: "Enter choices which are created as tags and then one is chosen at random with an animation",
+        image: require("../projects/ChoicePicker/choicepicker.JPG"),
+        link: "/choice-picker"
     }
 
 ]
