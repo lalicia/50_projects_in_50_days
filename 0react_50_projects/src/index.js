@@ -17,6 +17,7 @@ import FormWaveAnimation from "./projects/FormWaveAnimation/FormWaveAnimation.js
 import SoundBoard from "./projects/SoundBoard/SoundBoard.js";
 import DadJokes from "./projects/DadJokes/DadJokes.js";
 import EventKeycodes from "./projects/EventKeycodes/EventKeycodes.js";
+import FaqBoxes from "./projects/FaqBoxes/FaqBoxes.js";
 
 //import { render } from "react-dom";
 import {
@@ -42,6 +43,7 @@ root.render(
         <Route path="/sound-board" element={<SoundBoard />} />
         <Route path="/dad-jokes" element={<DadJokes />} />
         <Route path="/event-keycodes" element={<EventKeycodes />} />
+        <Route path="/faq-boxes" element={<FaqBoxes />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
