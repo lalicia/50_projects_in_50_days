@@ -43,7 +43,7 @@ function RotatingNavigation() {
                 </div>
             </div>
 
-            <nav>
+            <nav className="rn-nav">
                 <ul>
                     <li><FontAwesomeIcon icon={faHouse} /> Home</li>
                     <li><FontAwesomeIcon icon={faUser} /> About</li>

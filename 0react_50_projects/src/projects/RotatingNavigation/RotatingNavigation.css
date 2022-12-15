@@ -71,24 +71,24 @@
     transform-origin: top left;
 }
 
-.rn-small-container.show-nav ~ nav li {
+.rn-small-container.show-nav ~ .rn-nav li {
     transform: translateX(0);
     transition-delay: 0.3s;
 }
 
-nav {
+.rn-nav {
     position: fixed;
     bottom: 2.5rem;
     left: 0;
     z-index: 100;
 }
 
-nav ul {
+.rn-nav ul {
     list-style-type: none;
     padding-left: 2rem;
 }
 
-nav ul li {
+.rn-nav ul li {
     text-transform: uppercase;
     color: white;
     margin: 2.5rem 0;
@@ -96,19 +96,19 @@ nav ul li {
     transition: transform 0.4s ease-in;
 }
 
-nav ul li i {
+.rn-nav ul li i {
     font-size: 1.25rem;
     margin-right: 10px;
 }
 
 /*lis after the intial li stick out*/
-nav ul li  + li {
+.rn-nav ul li  + li {
     margin-left: 15px;
     transform: translateX(-150%);
 }
 
 /*lis after the intial li stick out*/
-nav ul li  + li + li {
+.rn-nav ul li  + li + li {
     margin-left: 30px;
     transform: translateX(-200%);
 }
