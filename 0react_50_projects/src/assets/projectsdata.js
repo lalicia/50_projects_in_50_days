@@ -91,6 +91,13 @@ const projectsdata = [
         description: "Enter choices which are created as tags and then one is chosen at random with an animation",
         image: require("../projects/ChoicePicker/choicepicker.JPG"),
         link: "/choice-picker"
+    },
+    {
+        id: 14,
+        name: "Animated Navigation",
+        description: "A nav bar that when you click to open/close, transitions with various CSS transforms",
+        image: require("../projects/AnimatedNavigation/animatednavigation.JPG"),
+        link: "/animated-navigation"
     }
 
 ]
