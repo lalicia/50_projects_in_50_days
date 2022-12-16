@@ -20,6 +20,7 @@ import EventKeycodes from "./projects/EventKeycodes/EventKeycodes.js";
 import FaqBoxes from "./projects/FaqBoxes/FaqBoxes.js";
 import ChoicePicker from "./projects/ChoicePicker/ChoicePicker.js";
 import AnimatedNavigation from "./projects/AnimatedNavigation/AnimatedNavigation.js";
+import IncrementCounter from "./projects/IncrementCounter/IncrementCounter.js";
 
 //import { render } from "react-dom";
 import {
@@ -48,6 +49,7 @@ root.render(
         <Route path="/faq-boxes" element={<FaqBoxes />} />
         <Route path="/choice-picker" element={<ChoicePicker />} />
         <Route path="/animated-navigation" element={<AnimatedNavigation />} />
+        <Route path="/increment-counter" element={<IncrementCounter />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -98,6 +98,13 @@ const projectsdata = [
         description: "A nav bar that when you click to open/close, transitions with various CSS transforms",
         image: require("../projects/AnimatedNavigation/animatednavigation.JPG"),
         link: "/animated-navigation"
+    },
+    {
+        id: 15,
+        name: "Increment Counter",
+        description: "Counters for social media followings with an increment animation on load",
+        image: require("../projects/IncrementCounter/incrementcounter.JPG"),
+        link: "/increment-counter"
     }
 
 ]
