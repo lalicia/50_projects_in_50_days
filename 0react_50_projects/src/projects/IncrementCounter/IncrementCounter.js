@@ -1,59 +1,81 @@
 import React from "react";
-import {useState, useEffect} from "react";
+import {useState, useEffect, useRef} from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {faTwitter} from "@fortawesome/free-brands-svg-icons";
+import {faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 
 import "./IncrementCounter.css";
 import HomeButton from "../../components/HomeButton.js";
 
+let timer;
+
 function IncrementCounter() {
+    const [twitterCount, setTwitterCount] = useState(0);
+    const [youtubeCount, setYoutubeCount] = useState(0);
+    const [facebookCount, setFacebookCount] = useState(0);
 
-//     const counters = document.querySelectorAll(".counter");
+    const twitterRef = useRef(12000);
+    const youtubeRef = useRef(5000);
+    const facebookRef = useRef(7500);
 
-        // counters.forEach(counter => {
-        //     counter.innerText = "0";
+    useEffect(() => {
+        clearInterval(timer);
 
-        //     const updateCounter = () => {
-        //         //this is set against each div - will be a string so use "+" or Number() or parseInt() to make a Number
-        //         const target = +counter.getAttribute("data-target");
-        //         const c = +counter.innerText;
+        const twitterIncrement = twitterRef.current / 200;
+        const youtubeIncrement = youtubeRef.current / 200;
+        const facebookIncrement = facebookRef.current / 200;
 
-        //         //dividing by a fixed number like this means all will animate/increment at same time and finish together 
-        //         const increment = target / 200;
-        //         //console.log(increment);
+        timer = setInterval(() => {
+   
+           if (twitterCount < twitterRef.current) {
+            setTwitterCount(Math.ceil(twitterCount + twitterIncrement))
+           } else {
+            setTwitterCount(twitterRef.current)
+            clearInterval(timer)
+              return
+           }
+           
+            if (youtubeCount < youtubeRef.current) {
+                setYoutubeCount(Math.ceil(youtubeCount + youtubeIncrement))
+            } else {
+                setYoutubeCount(youtubeRef.current)
+                clearInterval(timer)
+                return
+            }
 
-        //         if(c < target) {
-        //             //Math.ceil rounds the number
-        //             counter.innerText = `${Math.ceil(c + increment)}`
+            if (facebookCount < facebookRef.current) {
+                setFacebookCount(Math.ceil(facebookCount + facebookIncrement))
+            } else {
+                setFacebookCount(facebookRef.current)
+                clearInterval(timer)
+                return
+            }
+            
+        }, 10)
+       
+        return () => clearInterval(timer)
+    }, [twitterCount, youtubeCount, facebookCount])
 
-        //             //calls the function every 1ms
-        //             setTimeout(updateCounter, 1);
-        //         } else {
-        //             //ensures doesn't go over the attribute figure
-        //             counter.innerText = target;
-        //         }
-        //     }
-
-        //     updateCounter();
-        // })
-
+    
     return (
         <div className="ic-container">
             <div className="ic-counter-container">
-                {/* <i class="fab fa-twitter fa-3x"></i> */}
-                <div className="ic-counter" data-target="12000"></div>
+                <FontAwesomeIcon icon={faTwitter} size="3x" />
+                <div className="ic-counter">{twitterCount}</div>
                 <span>Twitter Followers</span>
             </div>
 
             <div className="ic-counter-container">
-                {/* <i className="fab fa-youtube fa-3x"></i> */}
-                <div className="ic-counter" data-target="5000"></div>
+                <FontAwesomeIcon icon={faYoutube} size="3x" />
+                <div className="ic-counter">{youtubeCount}</div>
                 <span>YouTube Subscribers</span>
             </div>
 
             <div className="ic-counter-container">
-                {/* <i className="fab fa-facebook fa-3x"></i> */}
-                <div className="ic-counter" data-target="7500"></div>
+                <FontAwesomeIcon icon={faFacebook} size="3x" />
+                <div className="ic-counter">{facebookCount}</div>
                 <span>Facebook Fans</span>
             </div>
 
