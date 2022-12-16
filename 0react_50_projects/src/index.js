@@ -21,6 +21,7 @@ import FaqBoxes from "./projects/FaqBoxes/FaqBoxes.js";
 import ChoicePicker from "./projects/ChoicePicker/ChoicePicker.js";
 import AnimatedNavigation from "./projects/AnimatedNavigation/AnimatedNavigation.js";
 import IncrementCounter from "./projects/IncrementCounter/IncrementCounter.js";
+import DrinkWater from "./projects/DrinkWater/DrinkWater.js";
 
 //import { render } from "react-dom";
 import {
@@ -50,6 +51,8 @@ root.render(
         <Route path="/choice-picker" element={<ChoicePicker />} />
         <Route path="/animated-navigation" element={<AnimatedNavigation />} />
         <Route path="/increment-counter" element={<IncrementCounter />} />
+        <Route path="/drink-water" element={<DrinkWater />} />
+  
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -105,6 +105,13 @@ const projectsdata = [
         description: "Counters for social media followings with an increment animation on load",
         image: require("../projects/IncrementCounter/incrementcounter.JPG"),
         link: "/increment-counter"
+    },
+    {
+        id: 16,
+        name: "Drink Water",
+        description: "A large cup that fills in increments upon selecting how many small cups you've had to drink",
+        image: require("../projects/DrinkWater/drinkwater.JPG"),
+        link: "/drink-water"
     }
 
 ]
