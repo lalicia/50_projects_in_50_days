@@ -70,6 +70,7 @@
 }
 
 .dw-remained {
+    visibility: visible;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,6 +78,18 @@
     flex-direction: column;
     flex: 1;
     transition: 0.3s ease;
+}
+
+.dw-remained.hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+    transition: 0.3s ease;
+    visibility: hidden;
+    height: 0;
 }
 
 .dw-remained span {
