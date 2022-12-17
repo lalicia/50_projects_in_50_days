@@ -17,56 +17,116 @@ function DrinkWater() {
     };
 
     const [cups, setCups] = useState(smallCups);
+    const [percentage, setPercentage] = useState("");
+    const [litres, setLitres] = useState(2);
 
-    function handleClick() {
+    function handleClick1() {
         setCups(cups => ({ ...smallCups, cup1: !cups.cup1 }))
+        setPercentage(12.5);
+        if(cups.cup1 === false) {
+            setLitres(1.75);
+        }
+        else {
+            setLitres(2);
+        }
+    }
+
+    function handleClick2() {
+        setCups(cups => ({ ...smallCups, cup1: true, cup2: !cups.cup2 }))
+        //function needs to have backwards states to work - think due to execution within same function changing state
+        if(cups.cup2 === false) {
+            setPercentage(25);
+            setLitres(1.5);
+        }
+        else {
+            setPercentage(12.5);
+            setLitres(1.75);
+        }
     }
    
-    // const smallCups = [1,2,3,4,5,6,7,8];
+    function handleClick3() {
+        setCups(cups => ({ ...smallCups, 
+            cup1: true, cup2: true, cup3: !cups.cup3 }))
+        //function needs to have backwards states to work - think due to execution within same function changing state
+        if(cups.cup3 === false) {
+            setPercentage(37.5);
+            setLitres(1.25);
+        }
+        else {
+            setPercentage(25);
+            setLitres(1.5);
+        }
+    }
 
-    // smallCups.map((cup) => {
-    //     return <div className={!drank(cup) ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"}></div>
-        
-    //     {!drank1 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={() => setDrank1(!drank1)}>250 ml</div>
-    // })
+    function handleClick4() {
+        setCups(cups => ({ ...smallCups, 
+            cup1: true, cup2: true, cup3: true, cup4: !cups.cup4 }))
+        //function needs to have backwards states to work - think due to execution within same function changing state
+        if(cups.cup4 === false) {
+            setPercentage(50);
+            setLitres(1);
+        }
+        else {
+            setPercentage(37.5);
+            setLitres(1.25);
+        }
+    }
 
+    function handleClick5() {
+        setCups(cups => ({ ...smallCups, 
+            cup1: true, cup2: true, cup3: true, cup4: true, cup5: !cups.cup5 }))
+        //function needs to have backwards states to work - think due to execution within same function changing state
+        if(cups.cup5 === false) {
+            setPercentage(62.5);
+            setLitres(0.75);
+        }
+        else {
+            setPercentage(50);
+            setLitres(1)
+        }
+    }
 
-    // updateBigCup();
+    function handleClick6() {
+        setCups(cups => ({ ...smallCups, 
+            cup1: true, cup2: true, cup3: true, cup4: true, cup5: true, cup6: !cups.cup6 }))
+        //function needs to have backwards states to work - think due to execution within same function changing state
+        if(cups.cup6 === false) {
+            setPercentage(75);
+            setLitres(0.5);
+        }
+        else {
+            setPercentage(62.5);
+            setLitres(0.75);
+        }
+    }
 
-    // function updateBigCup() {
+    function handleClick7() {
+        setCups(cups => ({ ...smallCups, 
+            cup1: true, cup2: true, cup3: true, cup4: true, cup5: true, cup6: true, cup7: !cups.cup7 }))
+        //function needs to have backwards states to work - think due to execution within same function changing state
+        if(cups.cup7 === false) {
+            setPercentage(87.5);
+            setLitres(0.25);
+        }
+        else {
+            setPercentage(75);
+            setLitres(0.5);
+        }
+    }
 
-    //     const totalCups = 8;
-
-    //     if (drank1 === false && drank2 === false && drank3 === false && drank4 === false && drank5 === false && drank6 === false && drank7 === false && drank8 ===false) {
-    //         setPercentageHidden(true);
-    //         setPercentage("");
-    //     } 
-    //     else if (drank1 === true && drank2 === false && drank3 === false && drank4 === false && drank5 === false && drank6 === false && drank7 === false && drank8 ===false) {
-    //         setPercentageHidden(false);
-    //         setOne(true);
-    //         setPercentage(`${1 / totalCups * 100}%`)
-    //     }
-    //     else if (drank1 === true && drank2 === true && drank3 === false && drank4 === false && drank5 === false && drank6 === false && drank7 === false && drank8 ===false) {
-    //         setTwo(true);
-    //         setPercentage(`${2 / totalCups * 100}%`)
-    //     }
-    //     else if (drank1 === true && drank2 === true && drank3 === true && drank4 === false && drank5 === false && drank6 === false && drank7 === false && drank8 ===false) {
-    //         setThree(true);
-    //         setPercentage(`${3 / totalCups * 100}%`)
-    //     }
-    //     else if (drank1 === true && drank2 === true && drank3 === true && drank4 === true && drank5 === false && drank6 === false && drank7 === false && drank8 ===false) {
-    //         setFour(true);
-    //         setPercentage(`${4 / totalCups * 100}%`)
-    //     }
-
-    //     // if (fullCups === totalCups) {
-    //     //     remained.style.visibility = "hidden";
-    //     //     remained.style.height = 0;
-    //     // } else {
-    //     //     remained.style.visibility = "visible";
-    //     //     litres.innerText = `${2 - (250 * fullCups / 1000)}L`
-    //     // }
-    // }
+    function handleClick8() {
+        setCups(cups => ({ ...smallCups, 
+            cup1: true, cup2: true, cup3: true, cup4: true, cup5: true, cup6: true, cup7: true, cup8: !cups.cup8 }))
+        //function needs to have backwards states to work - think due to execution within same function changing state
+        if(cups.cup8 === false) {
+            setPercentage(100);
+            setLitres(0);
+        }
+        else {
+            setPercentage(87.5);
+            setLitres(0.25);
+        }
+    }
 
     return (
         <div className="dw-container">
@@ -74,24 +134,26 @@ function DrinkWater() {
             <h3 className="dw-h3">Goal: 2 Litres</h3>
 
             <div className="dw-cup">
-                <div className="dw-remained" id="remained">
-                    <span className="dw-span" id="litres"></span>
-                    <small>Remained</small>
+                <div className={!cups.cup8 ? "dw-remained" : "dw-remained hidden"} id="remained">
+                    {/* <span id="litres">{`${(100 - percentage)}%`}</span> */}
+                    <span id="litres">{`${litres}L`}</span>    
+
+                    <small>Remaining</small>
                 </div>
 
                 <div className={
                     cups.cup1 === false ? "dw-percentage-hidden"
-                    : cups.cup1 ? "dw-percentage dw-percentage-one"
-                    // : two ? "dw-percentage dw-percentage-two"
-                    // : three ? "dw-percentage dw-percentage-three"
-                    // : four ? "dw-percentage dw-percentage-four"
-                    // : five ? "dw-percentage dw-percentage-five"
-                    // : six ? "dw-percentage dw-percentage-six"
-                    // : seven ? "dw-percentage dw-percentage-seven"
+                    : percentage === 12.5 ? "dw-percentage dw-percentage-one"
+                    : percentage === 25 ? "dw-percentage dw-percentage-two"
+                    : percentage === 37.5 ? "dw-percentage dw-percentage-three"
+                    : percentage === 50 ? "dw-percentage dw-percentage-four"
+                    : percentage === 62.5 ? "dw-percentage dw-percentage-five"
+                    : percentage === 75 ? "dw-percentage dw-percentage-six"
+                    : percentage === 87.5 ? "dw-percentage dw-percentage-seven"
                     : "dw-percentage dw-percentage-full"
                     } 
                     id="percentage">
-                    {/* {percentage} */}
+                    {percentage}%
                     
                 </div>
             </div>
@@ -99,14 +161,21 @@ function DrinkWater() {
             <p className="dw-text">Select how many glasses of water you've had</p>
 
             <div className="dw-cups">
-                <div className={!cups.cup1 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick}>1<br></br><br></br>250 ml</div>
-                {/* <div className={!drank2 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick2}>2<br></br><br></br>250 ml</div>
-                <div className={!drank3 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick3}>3<br></br><br></br>250 ml</div>
-                <div className={!drank4 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick4}>4<br></br><br></br>250 ml</div>
-                <div className={!drank5 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick5}>5<br></br><br></br>250 ml</div>
-                <div className={!drank6 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick6}>6<br></br><br></br>250 ml</div>
-                <div className={!drank7 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick7}>7<br></br><br></br>250 ml</div>
-                <div className={!drank8 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick8}>8<br></br><br></br>250 ml</div> */}
+                <div className={!cups.cup1 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick1}>1<br></br><br></br>250 ml</div>
+                
+                <div className={!cups.cup2 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick2}>2<br></br><br></br>250 ml</div>
+                
+                <div className={!cups.cup3 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick3}>3<br></br><br></br>250 ml</div>
+                
+                <div className={!cups.cup4 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick4}>4<br></br><br></br>250 ml</div>
+                
+                <div className={!cups.cup5 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick5}>5<br></br><br></br>250 ml</div>
+                
+                <div className={!cups.cup6 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick6}>6<br></br><br></br>250 ml</div>
+                
+                <div className={!cups.cup7 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick7}>7<br></br><br></br>250 ml</div>
+                
+                <div className={!cups.cup8 ? "dw-cup dw-cup-small" : "dw-cup dw-cup-small dw-full"} onClick={handleClick8}>8<br></br><br></br>250 ml</div>
             </div>
 
             <HomeButton />

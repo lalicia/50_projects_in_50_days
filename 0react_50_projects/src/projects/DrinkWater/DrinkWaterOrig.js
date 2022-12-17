@@ -145,7 +145,7 @@ import HomeButton from "../../components/HomeButton.js";
             <div className="dw-cup">
                 <div className="dw-remained" id="remained">
                     <span className="dw-span" id="litres"></span>
-                    <small>Remained</small>
+                    <small>Remaining</small>
                 </div>
 
                 <div className={
