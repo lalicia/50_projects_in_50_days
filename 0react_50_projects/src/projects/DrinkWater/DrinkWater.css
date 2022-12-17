@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --dw-border-color: #144fc6;
+    --dw-fill-color: #6ab3f8;
+}
+
+.dw-container {
+    background-color: #3494e4;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-bottom: 2.5rem; */
+    min-height: 100vh;
+}
+
+.dw-h1 {
+    margin: 0.625rem 0 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.dw-h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 0.625rem 0;
+}
+
+.dw-cup {
+    background-color: white;
+    border: 4px solid var(--dw-border-color);
+    color: var(--dw-border-color);
+    border-radius: 0 0 40px 40px;
+    height: 20.625rem;
+    width: 9.375rem;
+    margin: 1.875rem 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.dw-cup.dw-cup-small {
+    width: 3.125rem;
+    height: 5.9375rem;
+    border-radius: 0 0 15px 15px;
+    background-color: rgba(255,255,255,0.9);
+    cursor: pointer;
+    font-size: 0.875rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0.3125rem;
+    transition: 0.3s ease;
+}
+
+.dw-cup.dw-cup-small.dw-full {
+    background-color: var(--dw-fill-color);
+    color: white;
+}
+
+.dw-cups {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 17.5rem;
+}
+
+.dw-remained {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.dw-remained.hidden {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    flex: 1;
+    transition: 0.3s ease;
+    visibility: hidden;
+    height: 0;
+}
+
+.dw-remained span {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.dw-remained small {
+    font-size: .75rem;
+}
+
+.dw-percentage {
+    background-color: var(--dw-fill-color);
+    font-size: 1.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    height: 0;
+    transition: 0.3s ease;
+}
+
+.dw-percentage-hidden {
+    height: 0;
+    visibility: hidden;
+}
+
+.dw-percentage-one {
+    height: 2.578125rem;
+    visibility: visible;
+}
+
+.dw-percentage-two {
+    height: 5.15625rem;
+    visibility: visible;
+}
+
+.dw-percentage-three {
+    height: 7.734375rem;
+    visibility: visible;
+}
+
+.dw-percentage-four {
+    height: 10.3125rem;
+    visibility: visible;
+}
+
+.dw-percentage-five {
+    height: 12.890625rem;
+    visibility: visible;
+}
+
+.dw-percentage-six {
+    height: 15.46875rem;
+    visibility: visible;
+}
+
+.dw-percentage-seven {
+    height: 18.046875rem;
+    visibility: visible;
+}
+
+.dw-percentage-full {
+    height: 20.625rem;
+    visibility: visible;
+}
+
+.dw-text {
+    text-align: center;
+    margin: 0 0 0.3125rem;
+}
