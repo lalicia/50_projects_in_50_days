@@ -112,6 +112,13 @@ const projectsdata = [
         description: "A large cup that fills in increments upon selecting how many small cups you've had to drink",
         image: require("../projects/DrinkWater/drinkwater.JPG"),
         link: "/drink-water"
+    },
+    {
+        id: 17,
+        name: "Movie App",
+        description: "Requesting info from The Movie DB API and displaying in an app, also providing a search function",
+        image: require("../projects/MovieApp/movieapp.JPG"),
+        link: "/movie-app"
     }
 
 ]

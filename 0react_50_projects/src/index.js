@@ -22,6 +22,7 @@ import ChoicePicker from "./projects/ChoicePicker/ChoicePicker.js";
 import AnimatedNavigation from "./projects/AnimatedNavigation/AnimatedNavigation.js";
 import IncrementCounter from "./projects/IncrementCounter/IncrementCounter.js";
 import DrinkWater from "./projects/DrinkWater/DrinkWater.js";
+import MovieApp from "./projects/MovieApp/MovieApp.js";
 
 //import { render } from "react-dom";
 import {
@@ -52,6 +53,7 @@ root.render(
         <Route path="/animated-navigation" element={<AnimatedNavigation />} />
         <Route path="/increment-counter" element={<IncrementCounter />} />
         <Route path="/drink-water" element={<DrinkWater />} />
+        <Route path="/movie-app" element={<MovieApp />} />
   
       </Routes>
     </BrowserRouter>
