@@ -119,6 +119,13 @@ const projectsdata = [
         description: "Requesting info from The Movie DB API and displaying in an app, also providing a search function",
         image: require("../projects/MovieApp/movieapp.JPG"),
         link: "/movie-app"
+    },
+    {
+        id: 18,
+        name: "Background Slider",
+        description: "Background and foreground images set on button click, sized to fit together",
+        image: require("../projects/BackgroundSlider/backgroundslider.JPG"),
+        link: "/background-slider"
     }
 
 ]
