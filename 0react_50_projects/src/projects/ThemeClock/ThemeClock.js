@@ -54,45 +54,43 @@ function ThemeClock() {
         stamp = new Date();
         setTime(stamp);
 
-        const month = stamp.getMonth();
-        const day = stamp.getDay();
-        const date = stamp.getDate();
-        const hours = stamp.getHours();
-        const hoursForClock = hours % 12;
-        const minutes = stamp.getMinutes();
-        const seconds = stamp.getSeconds();
+        const mnth = stamp.getMonth();
+        const dy = stamp.getDay();
+        const dte = stamp.getDate();
+        const hrs = stamp.getHours();
+        const hrsForClock = hours % 12;
+        const mins = stamp.getMinutes();
+        const secs = stamp.getSeconds();
         
-        setMonth(month);
-        setDay(day);
-        setDate(date);
-        setHours(hours);
-        setHoursForClock(hours % 12);
-        setMinutes(minutes);
-        setSeconds(seconds);
-
-        // //setting needles
-        // hourEl.style.transform = `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 11, 0, 360)}deg)`
-        // minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(minutes, 0, 59, 0, 360)}deg)`
-        // secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`
+        setMonth(mnth);
+        setDay(dy);
+        setDate(dte);
+        setHours(hrs);
+        setHoursForClock(hrsForClock);
+        setMinutes(mins);
+        setSeconds(secs);
     }
 
 
     return (
         <ThemeContext.Provider value={{toggleTheme}}>
             <div className="tc-container" id={theme}>
-                <button className="tc-toggle" onClick={toggleTheme}>Dark Mode</button>
+                <button className="tc-toggle" onClick={toggleTheme}>{
+                    theme === "light" ? "Dark Mode" : "Light Mode"
+                }
+                </button>
 
                 <div className="tc-clock-container">
                     <div className="tc-clock">
-                        <div className="tc-needle tc-hour"></div>
-                        <div className="tc-needle tc-minute"></div>
-                        <div className="tc-needle tc-second"></div>
+                        <div className="tc-needle tc-hour" style={{transform: `translate(-50%, -100%) rotate(${scale(hoursForClock, 0, 11, 0, 360)}deg)`}}></div>
+                        <div className="tc-needle tc-minute" style={{transform: `translate(-50%, -100%) rotate(${scale(minutes, 0, 59, 0, 360)}deg)`}}></div>
+                        <div className="tc-needle tc-second" style={{transform: `translate(-50%, -100%) rotate(${scale(seconds, 0, 59, 0, 360)}deg)`}}></div>
                         <div className="tc-centre-point"></div>
                     </div>
 
                     <div className="tc-time">{hours}:{minutes < 10 ? `0${minutes}` : minutes}</div>
 
-                    <div className="tc-date">{days[day]}, {months[month]}<span className="tc-circle">{date}</span></div>
+                    <div className="tc-date">{days[day]}, {months[month]} <span className="tc-circle">{date}</span></div>
                 </div>
 
                 <HomeButton />
