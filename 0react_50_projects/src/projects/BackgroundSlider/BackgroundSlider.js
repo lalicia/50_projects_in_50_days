@@ -31,7 +31,7 @@ function BackgroundSlider() {
         console.log("right click")
         // setActiveSlide(activeSlide + 1);
 
-        if(activeSlide > (slideImg.length - 1)) {
+        if(activeSlide > (slideImg.length - 2)) {
             setActiveSlide(0)
         } else {
             setActiveSlide(activeSlide + 1);
@@ -45,7 +45,7 @@ function BackgroundSlider() {
         console.log("left click")
         // setActiveSlide(activeSlide - 1);
         
-        if(activeSlide < 0) {
+        if(activeSlide === 0) {
             setActiveSlide(slideImg.length - 1);
         } else {
             setActiveSlide(activeSlide - 1);
@@ -57,6 +57,7 @@ function BackgroundSlider() {
 
     function setBgToBody() {
         setBgImg(slideImg[activeSlide]);
+        console.log(slideImg[activeSlide]);
     }
 
     function setCurrentSlide() {
