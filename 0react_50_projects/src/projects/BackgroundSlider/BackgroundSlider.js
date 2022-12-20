@@ -38,7 +38,6 @@ function BackgroundSlider() {
         }
 
         setBgToBody();
-        setCurrentSlide();
     }
 
     function handleClickLeft() {
@@ -52,7 +51,6 @@ function BackgroundSlider() {
         }
 
         setBgToBody();
-        setCurrentSlide();
     }
 
     function setBgToBody() {
@@ -60,23 +58,16 @@ function BackgroundSlider() {
         console.log(slideImg[activeSlide]);
     }
 
-    function setCurrentSlide() {
-        // slides.forEach(slide => {
-        //     slide.classList.remove("active");
-        // })
-
-        // slides[activeSlide].classList.add("active");
-    }
-
 
     return (
         <div className="bs-container" style={{backgroundImage: `url(${bgImg})`}}>
             <div className="bs-slider-container">
-                {
+                {/* {
                     slideImg.map((image) => {
                         <Slide slideImg={image} />
                     })
-                }
+                } */}
+                <Slide slideImg={slideImg[activeSlide]} />
             
                 <button className="bs-arrow bs-left-arrow" id="left" onClick={handleClickLeft}>
                     <FontAwesomeIcon icon={faArrowLeft} />
