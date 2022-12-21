@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.bre-container {
+    background-color: black;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.bre-button {
+    background-color: purple;
+    color: white;
+    border: 1px purple solid;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1.25rem 1.875rem;
+    overflow: hidden;
+    margin: 0.625rem 0;
+    position: relative;
+}
+
+.bre-button:focus {
+    outline: none;
+}
+
+.bre-button .bre-circle {
+    position: absolute;
+    background-color: white;
+    width: 6.25rem;
+    height: 6.25rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    animation: scale .5s ease-out;
+}
+
+@keyframes scale {
+    to {
+        transform: translate(-50%, -50%) scale(3);
+        opacity: 0;
+    }
+}

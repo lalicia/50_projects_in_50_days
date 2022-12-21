@@ -25,6 +25,7 @@ import DrinkWater from "./projects/DrinkWater/DrinkWater.js";
 import MovieApp from "./projects/MovieApp/MovieApp.js";
 import BackgroundSlider from "./projects/BackgroundSlider/BackgroundSlider.js";
 import ThemeClock from "./projects/ThemeClock/ThemeClock.js";
+import ButtonRippleEffect from "./projects/ButtonRippleEffect/ButtonRippleEffect.js";
 
 //import { render } from "react-dom";
 import {
@@ -58,6 +59,7 @@ root.render(
         <Route path="/movie-app" element={<MovieApp />} />
         <Route path="/background-slider" element={<BackgroundSlider />} />
         <Route path="/theme-clock" element={<ThemeClock />} />
+        <Route path="/button-ripple-effect" element={<ButtonRippleEffect />} />
   
       </Routes>
     </BrowserRouter>

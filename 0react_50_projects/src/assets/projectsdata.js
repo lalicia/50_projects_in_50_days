@@ -133,6 +133,13 @@ const projectsdata = [
         description: "Clock with time and date display, working from Date() function - also featuring dark/light mode toggle",
         image: require("../projects/ThemeClock/themeclock.JPG"),
         link: "/theme-clock"
+    },
+    {
+        id: 20,
+        name: "Button Ripple Effect",
+        description: "Button that captures where the user clicks and has a ripple animation",
+        image: require("../projects/ButtonRippleEffect/buttonrippleeffect.JPG"),
+        link: "/button-ripple-effect"
     }
 
 ]
