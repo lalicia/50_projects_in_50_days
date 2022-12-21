@@ -126,6 +126,13 @@ const projectsdata = [
         description: "Background and foreground images set on button click, sized to fit together",
         image: require("../projects/BackgroundSlider/backgroundslider.JPG"),
         link: "/background-slider"
+    },
+    {
+        id: 19,
+        name: "Theme Clock",
+        description: "Clock with time and date display, working from Date() function - also featuring dark/light mode toggle",
+        image: require("../projects/ThemeClock/themeclock.JPG"),
+        link: "/theme-clock"
     }
 
 ]

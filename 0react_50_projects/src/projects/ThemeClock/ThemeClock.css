@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+#light {
+    --tc-primary-color: black;
+    --tc-secondary-color: white;
+}
+
+html {
+    transition: all 0.5s ease-in;
+}
+
+#dark {
+    --tc-primary-color: white;
+    --tc-secondary-color: #333;
+}
+
+#dark {
+    background-color: #111;
+    color: var(--tc-primary-color)
+}
+
+.tc-container {
+    font-family: 'Heebo', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.tc-toggle {
+    background-color: var(--tc-primary-color);
+    color: var(--tc-secondary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: .5rem .75rem;
+    position: absolute;
+    top: 6.25rem;
+    cursor: pointer;
+}
+
+.tc-toggle:focus {
+    outline: none;
+}
+
+.tc-clock-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tc-clock {
+    position: relative;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.tc-needle {
+    background-color: var(--tc-primary-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 65px;
+    width: 3px;
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in;
+}
+
+.tc-needle.tc-hour {
+    /* on both X and Y axis */
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.tc-needle.tc-minute {
+    /* on both X and Y axis */
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+}
+
+.tc-needle.tc-second {
+    /* on both X and Y axis */
+    transform: translate(-50%, -100%) rotate(0deg);
+    height: 100px;
+    background-color: #e74c3c;
+}
+
+.tc-centre-point {
+    background-color: #e74c3c;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.tc-centre-point::after {
+    content: "";
+    background-color: var(--tc-primary-color);
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.tc-time {
+    font-size: 3.75rem;
+}
+
+.tc-date {
+    color: #aaa;
+    font-size: 0.875rem;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.tc-date .tc-circle {
+    background-color: var(--tc-primary-color);
+    color: var(--tc-secondary-color);
+    border-radius: 50%;
+    height: 1.2rem;
+    width: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.125rem;
+    transition: all 0.5s ease-in;
+    font-size: .75rem;
+    font-weight: bold;
+}
