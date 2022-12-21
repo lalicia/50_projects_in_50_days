@@ -20,17 +20,10 @@ function ThemeClock() {
     const [hoursForClock, setHoursForClock] = useState(hours % 12);
     const [minutes, setMinutes] = useState(time.getMinutes());
     const [seconds, setSeconds] = useState(time.getSeconds());
-    const [timeInterval, setTimeInterval] = useState(6)
-
-
+    const [timeInterval, setTimeInterval] = useState(6);
 
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
-
-    //needs to be above setTime - this function is from Stackoverflow
-    const scale = (num, in_min, in_max, out_min, out_max) => {
-        return (num - in_min) * (out_max - out_min) / (in_max - in_min) + out_min; 
-    }
 
     useEffect(() => {
         setClock();
@@ -44,6 +37,7 @@ function ThemeClock() {
     }, [])
     console.log(seconds)
 
+    
     //dark mode toggle
     function toggleTheme(e) {
         setTheme((current) => (current === "light" ? "dark" : "light"))
