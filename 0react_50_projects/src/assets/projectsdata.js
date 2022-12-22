@@ -140,6 +140,13 @@ const projectsdata = [
         description: "Button that captures where the user clicks and has a ripple animation",
         image: require("../projects/ButtonRippleEffect/buttonrippleeffect.JPG"),
         link: "/button-ripple-effect"
+    },
+    {
+        id: 21,
+        name: "Drag N Drop",
+        description: "Implementation of HTML Drag and Drop API with an image that can be dragged and dropped between boxes",
+        image: require("../projects/DragNDrop/dragndrop.JPG"),
+        link: "/drag-n-drop"
     }
 
 ]
