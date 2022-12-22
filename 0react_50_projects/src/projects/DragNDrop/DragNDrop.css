@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.dnd-container {
+    background-color: violet;
+    /* font-family: 'Roboto', sans-serif; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.dnd-empty {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    border: solid 3px black;
+    background: white;
+}
+
+.dnd-fill {
+    background-image: url("https://source.unsplash.com/random/150x150");
+    height: 145px;
+    width: 145px;
+    cursor: pointer;
+    /* these were additions to try and prevent Chrome issue stopping drag and drop working. Stackoverflow*/
+    /* transform: translate(0, 0);
+    z-index: 0; */
+}
+
+.dnd-hold {
+    border: solid 5px #ccc;
+}
+
+.dnd-hovered {
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    background-color: #333;
+    border-color: white;
+    border-style: dashed;
+}
+
+@media (max-width: 800px) {
+    .dnd-body {
+        flex-direction: column;
+    }
+}
