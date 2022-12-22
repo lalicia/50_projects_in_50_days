@@ -17,7 +17,6 @@ function ThemeClock() {
     const [day, setDay] = useState(time.getDay());
     const [date, setDate] = useState(time.getDate());
     const [hours, setHours] = useState(time.getHours());
-    const [hoursForClock, setHoursForClock] = useState(hours % 12);
     const [minutes, setMinutes] = useState(time.getMinutes());
     const [seconds, setSeconds] = useState(time.getSeconds());
     const [timeInterval, setTimeInterval] = useState(6);
@@ -27,15 +26,15 @@ function ThemeClock() {
 
     useEffect(() => {
         setClock();
-
+        console.log(hours)
     }, [])
 
     useEffect(() => {
         let interval = setInterval(setClock, 1000)
-
+        //console.log(hours);
         return () => clearInterval(interval);
     }, [])
-    console.log(seconds)
+    //console.log(seconds)
 
     
     //dark mode toggle
@@ -46,7 +45,7 @@ function ThemeClock() {
 
     //clock
     function setClock() {
-        console.log("setClock ran");
+        //console.log("setClock ran");
         stamp = new Date();
         setTime(stamp);
 
@@ -54,7 +53,6 @@ function ThemeClock() {
         const dy = stamp.getDay();
         const dte = stamp.getDate();
         const hrs = stamp.getHours();
-        const hrsForClock = hours % 12;
         const mins = stamp.getMinutes();
         const secs = stamp.getSeconds();
         
@@ -62,7 +60,6 @@ function ThemeClock() {
         setDay(dy);
         setDate(dte);
         setHours(hrs);
-        setHoursForClock(hrsForClock);
         setMinutes(mins);
         setSeconds(secs);
     }
@@ -78,9 +75,13 @@ function ThemeClock() {
 
                 <div className="tc-clock-container">
                     <div className="tc-clock">
-                        <div className="tc-needle tc-hour" style={{transform: `translate(-50%, -100%) rotate(${hoursForClock + minutes / 2}}deg)`}}></div>
+
+                        <div className="tc-needle tc-hour" style={{transform: `translate(-50%, -100%) rotate(${hours * 30 + minutes / 2}deg)`}}></div>
+
                         <div className="tc-needle tc-minute" style={{transform: `translate(-50%, -100%) rotate(${minutes * timeInterval + seconds / 10}deg)`}}></div>
+
                         <div className="tc-needle tc-second" style={{transition: "none", transform: `translate(-50%, -100%) rotate(${seconds * timeInterval}deg)`}}></div>
+
                         <div className="tc-centre-point"></div>
                     </div>
 
