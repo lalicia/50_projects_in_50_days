@@ -147,6 +147,13 @@ const projectsdata = [
         description: "Implementation of HTML Drag and Drop API with an image that can be dragged and dropped between boxes",
         image: require("../projects/DragNDrop/dragndrop.JPG"),
         link: "/drag-n-drop"
+    },
+    {
+        id: 22,
+        name: "Drawing App",
+        description: "Using Canvas API to create drawing app where user can change colour/size of pen and draw",
+        image: require("../projects/DrawingApp/drawingapp.JPG"),
+        link: "/drawing-app"
     }
 
 ]

@@ -27,6 +27,7 @@ import BackgroundSlider from "./projects/BackgroundSlider/BackgroundSlider.js";
 import ThemeClock from "./projects/ThemeClock/ThemeClock.js";
 import ButtonRippleEffect from "./projects/ButtonRippleEffect/ButtonRippleEffect.js";
 import DragNDrop from "./projects/DragNDrop/DragNDrop.js";
+import DrawingApp from "./projects/DrawingApp/DrawingApp.js";
 
 //import { render } from "react-dom";
 import {
@@ -62,6 +63,7 @@ root.render(
         <Route path="/theme-clock" element={<ThemeClock />} />
         <Route path="/button-ripple-effect" element={<ButtonRippleEffect />} />
         <Route path="/drag-n-drop" element={<DragNDrop />} />
+        <Route path="/drawing-app" element={<DrawingApp />} />
 
       </Routes>
     </BrowserRouter>
