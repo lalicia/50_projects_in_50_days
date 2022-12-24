@@ -18,7 +18,7 @@
 
 .da-toolbox {
     background-color: indigo;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     display: flex;
     width: 504px;
     padding: 1rem;
@@ -37,8 +37,13 @@
     margin: .25rem;
     padding: .25rem;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .da-toolbox > *:last-child {
     margin-left: auto;
+}
+
+.da-toolbox > *:not(.da-size):active {
+    transform: scale(0.92);
 }
