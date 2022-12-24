@@ -63,3 +63,5 @@ I'm also picking up new things in CSS with styling some of the elements, which i
 [How to create Ripple Button using React](https://www.youtube.com/watch?v=MK309yA22pM) (Button Ripple Effect)
 
 [How to Implement Drag and Drop Feature for your React Component](https://www.pluralsight.com/guides/implement-drag-drop-react-component) (Drag N Drop)
+
+[Building a Drawing App using Canvas and React](https://www.youtube.com/watch?v=_N9xf1r1yD4) / [Mouse Position](https://stackoverflow.com/questions/17130395/real-mouse-position-in-canvas) (Drawing App)
