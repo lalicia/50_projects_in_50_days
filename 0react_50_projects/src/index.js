@@ -29,6 +29,7 @@ import ButtonRippleEffect from "./projects/ButtonRippleEffect/ButtonRippleEffect
 import DragNDrop from "./projects/DragNDrop/DragNDrop.js";
 import DrawingApp from "./projects/DrawingApp/DrawingApp.js";
 import KineticLoader from "./projects/KineticLoader/KineticLoader.js";
+import ContentPlaceholderCard from "./projects/ContentPlaceholderCard/ContentPlaceholderCard.js";
 
 //import { render } from "react-dom";
 import {
@@ -66,6 +67,7 @@ root.render(
         <Route path="/drag-n-drop" element={<DragNDrop />} />
         <Route path="/drawing-app" element={<DrawingApp />} />
         <Route path="/kinetic-loader" element={<KineticLoader />} />
+        <Route path="/content-placeholder-card" element={<ContentPlaceholderCard />} />
 
       </Routes>
     </BrowserRouter>

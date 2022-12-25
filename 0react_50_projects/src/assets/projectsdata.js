@@ -161,6 +161,13 @@ const projectsdata = [
         description: "Loading animation with triangles animated by keyframes",
         image: require("../projects/KineticLoader/kineticloader.JPG"),
         link: "/kinetic-loader"
+    },
+    {
+        id: 24,
+        name: "Content Placeholder Card",
+        description: "Card with a keyframe animated placeholder for loading",
+        image: require("../projects/ContentPlaceholderCard/contentplaceholdercard.JPG"),
+        link: "/content-placeholder-card"
     }
 
 ]
