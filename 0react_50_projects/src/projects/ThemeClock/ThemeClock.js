@@ -76,9 +76,9 @@ function ThemeClock() {
                 <div className="tc-clock-container">
                     <div className="tc-clock">
 
-                        <div className="tc-needle tc-hour" style={{transform: `translate(-50%, -100%) rotate(${hours * 30 + minutes / 2}deg)`}}></div>
+                        <div className="tc-needle tc-hour" style={{transition: "none", transform: `translate(-50%, -100%) rotate(${hours * 30 + minutes / 2}deg)`}}></div>
 
-                        <div className="tc-needle tc-minute" style={{transform: `translate(-50%, -100%) rotate(${minutes * timeInterval + seconds / 10}deg)`}}></div>
+                        <div className="tc-needle tc-minute" style={{transition: "none", transform: `translate(-50%, -100%) rotate(${minutes * timeInterval + seconds / 10}deg)`}}></div>
 
                         <div className="tc-needle tc-second" style={{transition: "none", transform: `translate(-50%, -100%) rotate(${seconds * timeInterval}deg)`}}></div>
 
