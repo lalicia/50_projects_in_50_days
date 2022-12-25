@@ -28,6 +28,7 @@ import ThemeClock from "./projects/ThemeClock/ThemeClock.js";
 import ButtonRippleEffect from "./projects/ButtonRippleEffect/ButtonRippleEffect.js";
 import DragNDrop from "./projects/DragNDrop/DragNDrop.js";
 import DrawingApp from "./projects/DrawingApp/DrawingApp.js";
+import KineticLoader from "./projects/KineticLoader/KineticLoader.js";
 
 //import { render } from "react-dom";
 import {
@@ -64,6 +65,7 @@ root.render(
         <Route path="/button-ripple-effect" element={<ButtonRippleEffect />} />
         <Route path="/drag-n-drop" element={<DragNDrop />} />
         <Route path="/drawing-app" element={<DrawingApp />} />
+        <Route path="/kinetic-loader" element={<KineticLoader />} />
 
       </Routes>
     </BrowserRouter>

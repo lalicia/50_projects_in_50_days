@@ -154,6 +154,13 @@ const projectsdata = [
         description: "Using Canvas API to create drawing app where user can change colour/size of pen and draw",
         image: require("../projects/DrawingApp/drawingapp.JPG"),
         link: "/drawing-app"
+    },
+    {
+        id: 23,
+        name: "Kinetic Loader",
+        description: "Loading animation with triangles animated by keyframes",
+        image: require("../projects/KineticLoader/kineticloader.JPG"),
+        link: "/kinetic-loader"
     }
 
 ]
