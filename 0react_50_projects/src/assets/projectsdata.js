@@ -168,6 +168,13 @@ const projectsdata = [
         description: "Card with a keyframe animated placeholder for loading",
         image: require("../projects/ContentPlaceholderCard/contentplaceholdercard.JPG"),
         link: "/content-placeholder-card"
+    },
+    {
+        id: 25,
+        name: "Sticky Navigation",
+        description: "A sticky navbar that remains at the top of the page but changes style/size upon scroll",
+        image: require("../projects/StickyNavigation/stickynavigation.JPG"),
+        link: "/sticky-navigation"
     }
 
 ]
