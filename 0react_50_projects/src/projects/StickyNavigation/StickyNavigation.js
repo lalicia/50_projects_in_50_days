@@ -10,6 +10,7 @@ function StickyNavigation() {
 
     //found on Stackoverflow
     useEffect(() => {
+        window.scrollTo(0, 0);
         window.addEventListener("scroll", fixNav);
         
         return () => {
