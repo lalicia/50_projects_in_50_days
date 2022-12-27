@@ -88,3 +88,11 @@
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
+
+@media (max-width: 650px) {
+    .dvs-left-slide {width: 50%;}
+    .dvs-right-slide {width: 50%;  left: 50%;}
+    .dvs-left-slide h1 {font-size: 24px; margin-top: -150%;}
+    .dvs-left-slide p {font-size: 18px;}
+    .dvs-slider-container .dvs-action-buttons button {left: 50%;} 
+  }
