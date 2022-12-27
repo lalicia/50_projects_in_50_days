@@ -9,7 +9,7 @@ function HomeButton() {
     return (
         <button className="home-btn">
             <Link to={"/"}>
-                <FontAwesomeIcon icon={faHouse} />
+                <FontAwesomeIcon icon={faHouse}/>
             </Link>
         </button>
     )
