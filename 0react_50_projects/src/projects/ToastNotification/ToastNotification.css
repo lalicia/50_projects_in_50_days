@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.tn-container {
+    background-color: rebeccapurple;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.tn-btn {
+    background-color: white;
+    color: rebeccapurple;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.tn-btn:focus {
+    outline: none;
+}
+
+.tn-btn:active {
+    transform: scale(0.98);
+}
+
+.tn-toasts {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.tn-toast {
+    background-color: white;
+    color: rebeccapurple;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+}
+
+.tn-toast.tn-info {
+    color: rebeccapurple;
+}
+
+.tn-toast.tn-success {
+    color: green;
+}
+
+.tn-toast.tn-error {
+    color: red;
+}
