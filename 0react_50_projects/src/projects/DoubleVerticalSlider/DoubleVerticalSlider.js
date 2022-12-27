@@ -16,7 +16,7 @@ function DoubleVerticalSlider() {
     const slideRightRef = useRef();
     const sliderContainerRef = useRef();
     const [activeSlideIndex, setActiveSlideIndex] = useState(0);
-    const [sliderHeight, setSliderHeight] = useState(sliderContainerRef.clientHeight)
+    const [sliderHeight, setSliderHeight] = useState(sliderContainerRef.clientHeight);
 
     const textInfo = [
         {
@@ -60,13 +60,14 @@ function DoubleVerticalSlider() {
     const changeSlide = (direction) => {
         setSliderHeight(slideRightRef.current.clientHeight);
 
-        if(direction === "up") {
+        //switch up/down in if statements as think it works better with not scrolling through to beginning onclick for the text side first time
+        if(direction === "down") {
             setActiveSlideIndex(activeSlideIndex + 1)
 
             if(activeSlideIndex > imageInfo.length - 2) {
                 setActiveSlideIndex(0);
             }
-        } else if(direction === "down") {
+        } else if(direction === "up") {
             setActiveSlideIndex(activeSlideIndex - 1)
 
             if(activeSlideIndex < 1) {
@@ -82,7 +83,9 @@ function DoubleVerticalSlider() {
     return(
         <div className="dvs-container">
             <div className="dvs-slider-container" ref={sliderContainerRef}>
-                <div className="dvs-left-slide" ref={slideLeftRef} style={{top: `-${(imageInfo.length - 1) * 100}vh`, transform: `translateY(${activeSlideIndex * sliderHeight}px)`}}>
+                <div className="dvs-left-slide" 
+                ref={slideLeftRef} 
+                style={{top: `-${(imageInfo.length - 1) * 100}vh`, transform: `translateY(${activeSlideIndex * sliderHeight}px)`}}>
                     {
                         textInfo.map((slide, index) => {
                             return <TextSlide key={index} title={slide.title} blurb={slide.blurb} style={slide.style}/>
@@ -90,7 +93,8 @@ function DoubleVerticalSlider() {
                     }
                 </div>
 
-                <div className="dvs-right-slide" ref={slideRightRef} style={{transform: `translateY(-${activeSlideIndex * sliderHeight}px)`}}>
+                <div className="dvs-right-slide" ref={slideRightRef} 
+                style={{transform: `translateY(-${activeSlideIndex * sliderHeight}px)`}}>
                     {/* images in this div are reverse order of the above slider */}
                     {
                         imageInfo.map((image, index) => {
