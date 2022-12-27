@@ -175,6 +175,13 @@ const projectsdata = [
         description: "A sticky navbar that remains at the top of the page but changes style/size upon scroll",
         image: require("../projects/StickyNavigation/stickynavigation.JPG"),
         link: "/sticky-navigation"
+    },
+    {
+        id: 26,
+        name: "Double Vertical Slider",
+        description: "A double-slider that navigates two sides up and down to match images and explanations moving in opposite directions",
+        image: require("../projects/DoubleVerticalSlider/doubleverticalslider.JPG"),
+        link: "/double-vertical-slider"
     }
 
 ]

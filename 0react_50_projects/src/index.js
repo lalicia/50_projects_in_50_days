@@ -31,6 +31,7 @@ import DrawingApp from "./projects/DrawingApp/DrawingApp.js";
 import KineticLoader from "./projects/KineticLoader/KineticLoader.js";
 import ContentPlaceholderCard from "./projects/ContentPlaceholderCard/ContentPlaceholderCard.js";
 import StickyNavigation from "./projects/StickyNavigation/StickyNavigation.js";
+import DoubleVerticalSlider from "./projects/DoubleVerticalSlider/DoubleVerticalSlider.js";
 
 //import { render } from "react-dom";
 import {
@@ -70,6 +71,7 @@ root.render(
         <Route path="/kinetic-loader" element={<KineticLoader />} />
         <Route path="/content-placeholder-card" element={<ContentPlaceholderCard />} />
         <Route path="/sticky-navigation" element={<StickyNavigation />} />
+        <Route path="/double-vertical-slider" element={<DoubleVerticalSlider />} />
 
       </Routes>
     </BrowserRouter>
