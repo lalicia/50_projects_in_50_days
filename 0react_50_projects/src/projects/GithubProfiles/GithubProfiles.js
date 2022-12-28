@@ -79,9 +79,12 @@ function GithubProfiles() {
     }
 
     function handleSubmit(e) {
-        e.preventDefault()   
+        e.preventDefault()
+        //need to reset these states to prevent wrong thing being returned in ternary below
+        setName("");   
         setErrorUser(false)
         setErrorRepos(false)
+        
         console.log("input is: ", input)
         setSearch(input)
         e.target.reset();
