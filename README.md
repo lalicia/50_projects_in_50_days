@@ -24,7 +24,7 @@ This could be considered a simple app in terms of it doesn't really 'do' anythin
 
 ## Tech
 
-React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Netlify
+React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, Netlify
 
 ## Some Thoughts
 
@@ -33,6 +33,8 @@ This project is obviously ongoing, but so far I'm finding it really useful in th
 I've learnt about [Font-Awesome]() which is great, because this will be so helpful when needing icons in the future. The documentation on their site, however, is problematic as the React code snippets simply don't work - after quite a bit of faffing I managed to stumble onto the right way, but yeah...
 
 I'm also picking up new things in CSS with styling some of the elements, which is always nice :smile:
+
+I've used Axios for the first time, during the Github Profiles project, and been able to successfully fetch data and display it to the user.
 
 ## Other Useful Links
 
@@ -67,3 +69,5 @@ I'm also picking up new things in CSS with styling some of the elements, which i
 [Building a Drawing App using Canvas and React](https://www.youtube.com/watch?v=_N9xf1r1yD4) / [Mouse Position](https://stackoverflow.com/questions/17130395/real-mouse-position-in-canvas) (Drawing App)
 
 [Create a Toast Notification Component with React](https://www.youtube.com/watch?v=kkA_iMkSJDk) (Toast Notification - explanation RE removing toasts and closure issues with useEffect)
+
+[How to get form input value on submit in React](https://codingbeautydev.com/blog/react-get-form-input-value-on-submit/) (Github Profiles)
