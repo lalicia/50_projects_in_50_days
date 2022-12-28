@@ -189,6 +189,13 @@ const projectsdata = [
         description: "Pressing the button will issue a notification (set to a random message with a random 'type' (for color)",
         image: require("../projects/ToastNotification/toastnotification.JPG"),
         link: "/toast-notification"
+    },
+    {
+        id: 28,
+        name: "Github Profiles",
+        description: "A search to lookup a Github user and return their username, bio, and 5 most recent repos on a card",
+        image: require("../projects/GithubProfiles/githubprofiles.JPG"),
+        link: "/github-profiles"
     }
 
 ]

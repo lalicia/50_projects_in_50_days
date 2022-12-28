@@ -33,6 +33,7 @@ import ContentPlaceholderCard from "./projects/ContentPlaceholderCard/ContentPla
 import StickyNavigation from "./projects/StickyNavigation/StickyNavigation.js";
 import DoubleVerticalSlider from "./projects/DoubleVerticalSlider/DoubleVerticalSlider.js";
 import ToastNotification from "./projects/ToastNotification/ToastNotification.js";
+import GithubProfiles from "./projects/GithubProfiles/GithubProfiles.js";
 
 //import { render } from "react-dom";
 import {
@@ -74,6 +75,7 @@ root.render(
         <Route path="/sticky-navigation" element={<StickyNavigation />} />
         <Route path="/double-vertical-slider" element={<DoubleVerticalSlider />} />
         <Route path="/toast-notification" element={<ToastNotification />} />
+        <Route path="/github-profiles" element={<GithubProfiles />} />
 
       </Routes>
     </BrowserRouter>
