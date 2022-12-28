@@ -22,7 +22,6 @@ function GithubProfiles() {
     const [repo3, setRepo3] = useState({name: "", link: ""});
     const [repo4, setRepo4] = useState({name: "", link: ""});
     const [repo5, setRepo5] = useState({name: "", link: ""});
-    // const [APIURL, setAPIURL] = useState(`https://api.github.com/users/`)
 
     const APIURL = `https://api.github.com/users/`
 
@@ -30,7 +29,6 @@ function GithubProfiles() {
         console.log("search is: ", search)
         if(search !== null) {
             getUser(search)
-            // setSearch("")
         }
     }, [search])
 
@@ -39,9 +37,6 @@ function GithubProfiles() {
         try {
             const res = await axios.get(APIURL + username)
             const data = res.data;
-            //can destructure:
-            //const {data} = await axios.get(APIURL + username)
-            
             console.log(data)
 
             setName(data.name)
@@ -60,8 +55,8 @@ function GithubProfiles() {
                 setErrMsg("No profile with that username")
             }
         }
-        console.log("get user ran, username was: ", username)
-        console.log(await axios.get(APIURL + username))    
+        //console.log("get user ran, username was: ", username)
+        //console.log(await axios.get(APIURL + username))    
     }
 
     //GET repos
@@ -84,19 +79,12 @@ function GithubProfiles() {
     }
 
     function handleSubmit(e) {
-        e.preventDefault()
-    
+        e.preventDefault()   
         setErrorUser(false)
         setErrorRepos(false)
         console.log("input is: ", input)
         setSearch(input)
         e.target.reset();
-        // if(search !== "") {
-        //     getUser(search)
-            
-        //     e.target.reset();
-        //     setSearch("")
-        // }
     }
 
     return (
