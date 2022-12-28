@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.gp-container {
+    background-color: #2a2a72;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.gp-user-form {
+    width: 100%;
+    max-width: 43.75rem;
+}
+
+.gp-user-form input {
+    width: 100%;
+    display: block;
+    background-color: #4c2885;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: inherit;
+    font-size: 1rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.gp-user-form input::placeholder {
+    color: #bbb;
+}
+
+.gp-user-form input:focus {
+    outline: none;
+}
+
+.gp-card {
+    max-width: 50rem;
+    background-color: #4c2885;
+    border-radius: 1.25rem;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 3rem;
+    margin: 0 1.5rem;
+}
+
+.gp-avatar {
+    border-radius: 50%;
+    border: 10px solid #2a2a72;
+    height: 9.375rem;
+    width: 9.375rem;
+    max-width: 9.375rem;
+}
+
+.gp-user-info {
+    color: #eee;
+    margin-left: 2rem;
+}
+
+.gp-user-info h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.gp-user-info ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    max-width: 25rem;
+    margin: .5rem 0;
+}
+
+.gp-user-info ul li {
+    display: flex;
+    align-items: center;
+}
+
+.gp-user-info ul li strong {
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+.gp-repo {
+    text-decoration: none;
+    color: white;
+    background-color: #2a2a72;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+@media(max-width: 500px) {
+    .gp-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gp-user-form {
+        max-width: 25rem;
+    }
+}
