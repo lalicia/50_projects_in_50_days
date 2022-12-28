@@ -182,6 +182,13 @@ const projectsdata = [
         description: "A double-slider that navigates two sides up and down to match images and explanations moving in opposite directions",
         image: require("../projects/DoubleVerticalSlider/doubleverticalslider.JPG"),
         link: "/double-vertical-slider"
+    },
+    {
+        id: 27,
+        name: "Toast Notification",
+        description: "Pressing the button will issue a notification (set to a random message with a random 'type' (for color)",
+        image: require("../projects/ToastNotification/toastnotification.JPG"),
+        link: "/toast-notification"
     }
 
 ]

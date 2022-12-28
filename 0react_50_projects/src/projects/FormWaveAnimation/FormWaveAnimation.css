@@ -28,7 +28,7 @@
     margin-bottom: 2rem;
 }
 
-.fwa-container a {
+.fwa-container a:not(.home-btn a) {
     text-decoration: none;
     color: lightblue;
 }
