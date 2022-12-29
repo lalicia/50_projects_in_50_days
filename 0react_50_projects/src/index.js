@@ -35,6 +35,7 @@ import DoubleVerticalSlider from "./projects/DoubleVerticalSlider/DoubleVertical
 import ToastNotification from "./projects/ToastNotification/ToastNotification.js";
 import GithubProfiles from "./projects/GithubProfiles/GithubProfiles.js";
 import DoubleClickHeart from "./projects/DoubleClickHeart/DoubleClickHeart.js";
+import AutoTextEffect from "./projects/AutoTextEffect/AutoTextEffect.js";
 
 //import { render } from "react-dom";
 import {
@@ -78,6 +79,7 @@ root.render(
         <Route path="/toast-notification" element={<ToastNotification />} />
         <Route path="/github-profiles" element={<GithubProfiles />} />
         <Route path="/double-click-heart" element={<DoubleClickHeart />} />
+        <Route path="/auto-text-effect" element={<AutoTextEffect />} />
 
       </Routes>
     </BrowserRouter>

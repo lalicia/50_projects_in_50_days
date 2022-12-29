@@ -203,6 +203,13 @@ const projectsdata = [
         description: "Double clicking the image will produce a heart animation and increment the number of likes",
         image: require("../projects/DoubleClickHeart/doubleclickheart.JPG"),
         link: "/double-click-heart"
+    },
+    {
+        id: 30,
+        name: "Auto Text Effect",
+        description: "Text has a typing animation effect and user can alter the speed setting",
+        image: require("../projects/AutoTextEffect/autotexteffect.JPG"),
+        link: "/auto-text-effect"
     }
 
 ]
