@@ -71,3 +71,5 @@ I've used Axios for the first time, during the Github Profiles project, and been
 [Create a Toast Notification Component with React](https://www.youtube.com/watch?v=kkA_iMkSJDk) (Toast Notification - explanation RE removing toasts and closure issues with useEffect)
 
 [How to get form input value on submit in React](https://codingbeautydev.com/blog/react-get-form-input-value-on-submit/) (Github Profiles)
+
+[Code your own Typing Effect with React](https://www.youtube.com/watch?v=N4899I-tAW4) (Auto Text Effect - the useEffect to actually run the animation the first time)
