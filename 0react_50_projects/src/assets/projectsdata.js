@@ -196,6 +196,13 @@ const projectsdata = [
         description: "A search to lookup a Github user and return their username, bio, and 5 most recent repos on a card",
         image: require("../projects/GithubProfiles/githubprofiles.JPG"),
         link: "/github-profiles"
+    },
+    {
+        id: 29,
+        name: "Double Click Heart",
+        description: "Double clicking the image will produce a heart animation and increment the number of likes",
+        image: require("../projects/DoubleClickHeart/doubleclickheart.JPG"),
+        link: "/double-click-heart"
     }
 
 ]
