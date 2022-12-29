@@ -34,6 +34,7 @@ import StickyNavigation from "./projects/StickyNavigation/StickyNavigation.js";
 import DoubleVerticalSlider from "./projects/DoubleVerticalSlider/DoubleVerticalSlider.js";
 import ToastNotification from "./projects/ToastNotification/ToastNotification.js";
 import GithubProfiles from "./projects/GithubProfiles/GithubProfiles.js";
+import DoubleClickHeart from "./projects/DoubleClickHeart/DoubleClickHeart.js";
 
 //import { render } from "react-dom";
 import {
@@ -44,7 +45,7 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <React.StrictMode>
+  <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
@@ -76,10 +77,11 @@ root.render(
         <Route path="/double-vertical-slider" element={<DoubleVerticalSlider />} />
         <Route path="/toast-notification" element={<ToastNotification />} />
         <Route path="/github-profiles" element={<GithubProfiles />} />
+        <Route path="/double-click-heart" element={<DoubleClickHeart />} />
 
       </Routes>
     </BrowserRouter>
-  // {/* </React.StrictMode> */}
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
