@@ -217,6 +217,13 @@ const projectsdata = [
         description: "User can select length and inclusion of types of characters, generate a password, and copy to clipboard",
         image: require("../projects/PasswordGenerator/passwordgenerator.JPG"),
         link: "/password-generator"
+    },
+    {
+        id: 32,
+        name: "Good Cheap Fast Checkboxes",
+        description: "Checkboxes styled as toggles, with logic where only two out of three can be selected and clicking a third will de-select an option",
+        image: require("../projects/GoodCheapFastCheckboxes/goodcheapfastcheckboxes.JPG"),
+        link: "/good-cheap-fast-checkboxes"
     }
 
 ]
