@@ -210,6 +210,13 @@ const projectsdata = [
         description: "Text has a typing animation effect and user can alter the speed setting",
         image: require("../projects/AutoTextEffect/autotexteffect.JPG"),
         link: "/auto-text-effect"
+    },
+    {
+        id: 31,
+        name: "Password Generator",
+        description: "User can select length and inclusion of types of characters, generate a password, and copy to clipboard",
+        image: require("../projects/PasswordGenerator/passwordgenerator.JPG"),
+        link: "/password-generator"
     }
 
 ]
