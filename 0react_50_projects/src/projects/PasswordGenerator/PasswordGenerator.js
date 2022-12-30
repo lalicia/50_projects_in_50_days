@@ -29,7 +29,7 @@ function PasswordGenerator() {
         const hasUpper = checkedUpper
         const hasNumber = checkedNumber
         const hasSymbol = checkedSymbol
-        console.log(hasLower, hasUpper, hasNumber, hasSymbol)
+        //console.log(hasLower, hasUpper, hasNumber, hasSymbol)
         
         generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
     }
@@ -52,7 +52,7 @@ function PasswordGenerator() {
     
         //we only want to know which are true (which are selected)
         const typesArr = [{lower}, {upper}, {number}, {symbol}].filter(item  => Object.values(item)[0])
-        console.log(typesArr)
+        //console.log(typesArr)
     
         //if nothing selected to be in password, nothing returned
         if(typesCount === 0) {
