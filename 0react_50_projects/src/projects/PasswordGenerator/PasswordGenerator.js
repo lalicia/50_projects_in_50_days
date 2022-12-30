@@ -39,6 +39,12 @@ function PasswordGenerator() {
         setLength(e.target.value)
     }
 
+    //for copying to clipboard using Clipboard API and writeText (google for info)
+    function handleClickCopy() {
+        navigator.clipboard.writeText(password)
+        alert("Password copied to clipboard!")
+    }
+
     function generatePassword(lower, upper, number, symbol, length) {
         let generatedPassword = "";
         //count of how many selected options
@@ -94,7 +100,7 @@ function PasswordGenerator() {
 
                 <div className="pg-result-container">
                     <span className="pg-result" id="result">{password}</span>
-                    <button className="pg-btn" id="clipboard">
+                    <button className="pg-btn" id="clipboard" onClick={handleClickCopy}>
                         <FontAwesomeIcon icon={faClipboard} />
                     </button>
                 </div>
