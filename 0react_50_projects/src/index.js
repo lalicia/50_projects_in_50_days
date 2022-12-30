@@ -37,6 +37,7 @@ import GithubProfiles from "./projects/GithubProfiles/GithubProfiles.js";
 import DoubleClickHeart from "./projects/DoubleClickHeart/DoubleClickHeart.js";
 import AutoTextEffect from "./projects/AutoTextEffect/AutoTextEffect.js";
 import PasswordGenerator from "./projects/PasswordGenerator/PasswordGenerator.js";
+import GoodCheapFastCheckboxes from "./projects/GoodCheapFastCheckboxes/GoodCheapFastCheckboxes.js";
 
 //import { render } from "react-dom";
 import {
@@ -82,6 +83,7 @@ root.render(
         <Route path="/double-click-heart" element={<DoubleClickHeart />} />
         <Route path="/auto-text-effect" element={<AutoTextEffect />} />
         <Route path="/password-generator" element={<PasswordGenerator />} />
+        <Route path="/good-cheap-fast-checkboxes" element={<GoodCheapFastCheckboxes />} />
 
       </Routes>
     </BrowserRouter>
