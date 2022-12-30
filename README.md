@@ -73,3 +73,5 @@ I've used Axios for the first time, during the Github Profiles project, and been
 [How to get form input value on submit in React](https://codingbeautydev.com/blog/react-get-form-input-value-on-submit/) (Github Profiles)
 
 [Code your own Typing Effect with React](https://www.youtube.com/watch?v=N4899I-tAW4) (Auto Text Effect - the useEffect to actually run the animation the first time)
+
+[How to create a React checkbox](https://www.robinwieruch.de/react-checkbox/) / [Copying text to clipboard in React](https://stackoverflow.com/questions/39501289/in-reactjs-how-to-copy-text-to-clipboard) (Password Generator)
