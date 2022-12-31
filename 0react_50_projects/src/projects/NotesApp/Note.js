@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
+import ReactMarkdown from 'react-markdown'
+
 import "./NotesApp.css";
 
 function Note({id, text, handleDeleteNote, loadState, handleEdit, handleInput}) {
@@ -21,7 +23,10 @@ function Note({id, text, handleDeleteNote, loadState, handleEdit, handleInput}) 
 
             <div 
             className={loadState ? "na-main" : " na-main na-hidden"}
-            >{text}</div>
+            >
+                {/* {text} */}
+                <ReactMarkdown children={text} />
+            </div>
             <textarea 
             className={loadState ? "na-hidden" : ""} 
             onInput={(e) => handleInput(e, id)} 

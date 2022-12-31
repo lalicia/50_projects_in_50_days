@@ -61,6 +61,24 @@
     padding: 1.25rem;
 }
 
+.na-main h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.na-main li {
+    margin-left: 1.5rem;
+}
+
+.na-main a {
+    text-decoration: none;
+    color: rgb(199, 20, 67);
+}
+
+.na-main a:hover {
+    color:rgb(25, 97, 50);
+}
+
 .na-hidden {
     display: none;
 }
