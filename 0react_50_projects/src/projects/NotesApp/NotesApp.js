@@ -11,12 +11,23 @@ import HomeButton from "../../components/HomeButton.js";
 import NotesList from "./NotesList.js";
 
 function NotesApp() {
+    //state for whether shows open note or closed note
     const [editable, setEditable] = useState(true);
+
     const [notes, setNotes] = useState(
         () => {
             return JSON.parse(localStorage.getItem("react-notes-app-data")) || []
           }
     )
+
+    //to make the existing notes load in uneditable mode
+    useEffect(() => {
+        notes.forEach((note) => {
+            if(note.loadState === false) {
+                note.loadState = !note.loadState
+            }
+        })
+    }, [])
 
     //save notes to localStorage
     useEffect(() => {

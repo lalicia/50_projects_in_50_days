@@ -26,7 +26,7 @@
 .na-note {
     background-color: white;
     box-shadow: 0 0 10px 4px rgba(0,0,0,0.1);
-    margin: 1.875rem 1.25rem;
+    margin: 1.875rem 1.25rem 2.5rem 1.25rem;
     height: 25rem;
     width: 25rem;
 }
@@ -52,7 +52,7 @@
     font-family: inherit;
     font-size: 1.2rem;
     border: none;
-    height: 25rem;
+    height: 24rem;
     width: 100%;
     padding: 1.25rem;
 }
