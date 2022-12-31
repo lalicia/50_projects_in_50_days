@@ -7,9 +7,9 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 import "./NotesApp.css";
 
-function Note({id, text, handleDeleteNote, loadState, handleEdit}) {
+function Note({id, text, handleDeleteNote, loadState, handleEdit, handleInput}) {
 
-    console.log(loadState)
+    //console.log(loadState)
 
     return (
         <div className="na-note">
@@ -27,7 +27,7 @@ function Note({id, text, handleDeleteNote, loadState, handleEdit}) {
             >{text}</div>
             <textarea 
             className={loadState ? "na-hidden" : ""} 
-            // onInput={onInput} 
+            onInput={(e) => handleInput(e, id)} 
             spellCheck="false" maxLength="200" value={text}></textarea>
         </div>
     )

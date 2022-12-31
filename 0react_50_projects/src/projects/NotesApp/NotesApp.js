@@ -58,13 +58,19 @@ function NotesApp() {
         setNotes(newNotes)    
     }
 
-    //     //keeps updated text when edited
-    //     function onInput(e) {
-    //         const {value} = e.target
-    //         setDisplayText(value);
-    //         // updateLS();
-    //     }
-    // }
+    //keeps updated text when edited
+    function handleInput(e, id) {
+        const {value} = e.target
+        const newNotes = [...notes]
+
+        for(let i = 0; i < newNotes.length; i++) {
+            if(id === newNotes[i].id) {
+                newNotes[i].text = value
+            }
+        }
+        setNotes(newNotes)
+        // updateLS();
+    }
 
     return (
         <div className="na-container">
@@ -75,7 +81,8 @@ function NotesApp() {
             <NotesList notes={notes} 
             handleDeleteNote={handleDeleteNote} 
             editable={editable} 
-            handleEdit={handleEdit} />
+            handleEdit={handleEdit}
+            handleInput={handleInput} />
 
             <HomeButton />
         </div>
