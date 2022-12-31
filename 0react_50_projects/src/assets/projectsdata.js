@@ -224,6 +224,13 @@ const projectsdata = [
         description: "Checkboxes styled as toggles, with logic where only two out of three can be selected and clicking a third will de-select an option",
         image: require("../projects/GoodCheapFastCheckboxes/goodcheapfastcheckboxes.JPG"),
         link: "/good-cheap-fast-checkboxes"
+    },
+    {
+        id: 33,
+        name: "Notes App",
+        description: "A notes app that uses local storage - users can create, update, delete - making this a CRUD application",
+        image: require("../projects/NotesApp/notesapp.JPG"),
+        link: "/notes-app"
     }
 
 ]
