@@ -24,17 +24,25 @@ This could be considered a simple app in terms of it doesn't really 'do' anythin
 
 ## Tech
 
-React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, Netlify
+React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, react-markdown, nanoid, Netlify
 
 ## Some Thoughts
 
 This project is obviously ongoing, but so far I'm finding it really useful in that it's making me feel more confident about JavaScript, and challenging in that some of this is really difficult to figure out! A couple of the projects I really struggled to re-make in React, but thankfully found tutorials to help - others, however, have been surprisingly easy to translate over so that's been nice!
 
-I've learnt about [Font-Awesome]() which is great, because this will be so helpful when needing icons in the future. The documentation on their site, however, is problematic as the React code snippets simply don't work - after quite a bit of faffing I managed to stumble onto the right way, but yeah...
+I've learnt about [Font-Awesome](https://fontawesome.com/v5/docs/web/use-with/react) which is great, because this will be so helpful when needing icons in the future. The documentation on their site, however, is problematic as the React code snippets simply don't work - after quite a bit of faffing I managed to stumble onto the right way, but yeah...
 
 I'm also picking up new things in CSS with styling some of the elements, which is always nice :smile:
 
-I've used Axios for the first time, during the Github Profiles project, and been able to successfully fetch data and display it to the user.
+## Github Profiles
+
+I've used Axios for the first time, and been able to successfully fetch data and display it to the user.
+
+## Notes App
+
+I used local storage for the first time and learned about setting it with useEffect and retrieving it directly in state because of useEffect being asynchronous (see useful links).
+
+Also, I tried to use the marked npm library and found this wouldn't display the notes correctly, but would display the HTML markup in the note. Having researched, I switched to [react-markdown](https://www.npmjs.com/package/react-markdown) and was able to implement this successfully - though I did learn I had to write CSS styles for the functionality to work fully in displaying different styles.
 
 ## Other Useful Links
 
@@ -75,3 +83,5 @@ I've used Axios for the first time, during the Github Profiles project, and been
 [Code your own Typing Effect with React](https://www.youtube.com/watch?v=N4899I-tAW4) (Auto Text Effect - the useEffect to actually run the animation the first time)
 
 [How to create a React checkbox](https://www.robinwieruch.de/react-checkbox/) / [Copying text to clipboard in React](https://stackoverflow.com/questions/39501289/in-reactjs-how-to-copy-text-to-clipboard) (Password Generator)
+
+[Problems with local storage resetting/not retrieving](https://stackoverflow.com/questions/72222728/why-is-localstorage-getting-cleared-whenever-i-refresh-the-page) / [React state not updating immediately](https://www.daggala.com/react-state-not-updating-immediately/) / [React Notes App Tutorial](https://www.youtube.com/watch?v=8KB3DHI-QbM) (Notes App)
