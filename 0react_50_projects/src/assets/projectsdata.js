@@ -231,6 +231,13 @@ const projectsdata = [
         description: "A notes app that uses local storage - users can create, update, delete - making this a CRUD application",
         image: require("../projects/NotesApp/notesapp.JPG"),
         link: "/notes-app"
+    },
+    {
+        id: 34,
+        name: "Animated Countdown",
+        description: "A countdown animation with a message to GO and an option to replay",
+        image: require("../projects/AnimatedCountdown/animatedcountdown.JPG"),
+        link: "/animated-countdown"
     }
 
 ]
