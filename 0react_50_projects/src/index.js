@@ -39,6 +39,7 @@ import AutoTextEffect from "./projects/AutoTextEffect/AutoTextEffect.js";
 import PasswordGenerator from "./projects/PasswordGenerator/PasswordGenerator.js";
 import GoodCheapFastCheckboxes from "./projects/GoodCheapFastCheckboxes/GoodCheapFastCheckboxes.js";
 import NotesApp from "./projects/NotesApp/NotesApp.js";
+import AnimatedCountdown from "./projects/AnimatedCountdown/AnimatedCountdown.js";
 
 //import { render } from "react-dom";
 import {
@@ -86,6 +87,7 @@ root.render(
         <Route path="/password-generator" element={<PasswordGenerator />} />
         <Route path="/good-cheap-fast-checkboxes" element={<GoodCheapFastCheckboxes />} />
         <Route path="/notes-app" element={<NotesApp />} />
+        <Route path="/animated-countdown" element={<AnimatedCountdown />} />
 
       </Routes>
     </BrowserRouter>
