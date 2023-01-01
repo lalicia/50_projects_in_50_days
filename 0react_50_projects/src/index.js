@@ -40,6 +40,7 @@ import PasswordGenerator from "./projects/PasswordGenerator/PasswordGenerator.js
 import GoodCheapFastCheckboxes from "./projects/GoodCheapFastCheckboxes/GoodCheapFastCheckboxes.js";
 import NotesApp from "./projects/NotesApp/NotesApp.js";
 import AnimatedCountdown from "./projects/AnimatedCountdown/AnimatedCountdown.js";
+import ImageCarousel from "./projects/ImageCarousel/ImageCarousel.js";
 
 //import { render } from "react-dom";
 import {
@@ -88,6 +89,7 @@ root.render(
         <Route path="/good-cheap-fast-checkboxes" element={<GoodCheapFastCheckboxes />} />
         <Route path="/notes-app" element={<NotesApp />} />
         <Route path="/animated-countdown" element={<AnimatedCountdown />} />
+        <Route path="/image-carousel" element={<ImageCarousel />} />
 
       </Routes>
     </BrowserRouter>

@@ -238,6 +238,13 @@ const projectsdata = [
         description: "A countdown animation with a message to GO and an option to replay",
         image: require("../projects/AnimatedCountdown/animatedcountdown.JPG"),
         link: "/animated-countdown"
+    },
+    {
+        id: 35,
+        name: "Image Carousel",
+        description: "A carousel of images that changes automatically or can be controlled with buttons by the user",
+        image: require("../projects/ImageCarousel/imagecarousel.JPG"),
+        link: "/image-carousel"
     }
 
 ]
