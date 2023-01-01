@@ -245,6 +245,13 @@ const projectsdata = [
         description: "A carousel of images that changes automatically or can be controlled with buttons by the user",
         image: require("../projects/ImageCarousel/imagecarousel.JPG"),
         link: "/image-carousel"
+    },
+    {
+        id: 36,
+        name: "Hoverboard",
+        description: "A board with squares that 'light up' and fade out in random colours as the used hovers their mouse over the board",
+        image: require("../projects/Hoverboard/hoverboard.JPG"),
+        link: "/hoverboard"
     }
 
 ]
