@@ -10,8 +10,8 @@ function Hoverboard() {
     const [color, setColor] = useState(colors[Math.floor(Math.random() * colors.length)]);
 
     //to store id
-    const [selected, setSelected] = useState();
-    
+    const [selected, setSelected] = useState(false);
+
     //to make the squares
     const SQUARES = 500;
     let theSquares = [];
@@ -23,6 +23,7 @@ function Hoverboard() {
         })
         console.log("squares created")
     }
+
 
     //picks a new color for the next time as asynchronous, then sets selected as the square id - the ternary in the return determines whether the square should be normal or the state color
     function handleMouseEnter(id) {
@@ -49,7 +50,7 @@ function Hoverboard() {
                             onMouseOver={() => {handleMouseEnter(square.id)}}
                             onMouseOut={() => {handleMouseLeave()}}
                             ></div>
-                        )
+                         )
                     })
                 }
 
@@ -66,6 +67,65 @@ export default Hoverboard;
                            // style={{backgroundColor: color, 
                             // boxShadow: dim ? `0 0 2px black`
                             // : `0 0 2px ${color}, 0 0 10px ${color}`}}
+
+
+// //REFACTORED - working but STILL lagged, faster though
+// function Hoverboard() {
+//     const colors = ["#6632a8", "#6ff55b", "#e5e82c", "#d656b2", "#295e96"];
+//     const [color, setColor] = useState(colors[Math.floor(Math.random() * colors.length)]);
+
+//     //to store id
+//     const [selected, setSelected] = useState();
+    
+//     //to make the squares
+//     const SQUARES = 500;
+//     let theSquares = [];
+
+//     for(let i = 0; i < SQUARES; i++) {
+//         theSquares.push({
+//             id: i,
+//             className: "hboard-square",
+//         })
+//         console.log("squares created")
+//     }
+
+//     //picks a new color for the next time as asynchronous, then sets selected as the square id - the ternary in the return determines whether the square should be normal or the state color
+//     function handleMouseEnter(id) {
+//         setColor(colors[Math.floor(Math.random() * colors.length)])
+//         setSelected(id)
+//     }
+
+//     //when moving over squares the selected changes automatically so it keeps lighting and fading them out naturally, but when leave the hoverboard the last square remains lit without the below
+//     function handleMouseLeave() {
+//         setSelected("")
+//     }
+
+//     return (
+//         <div className="hboard-big-container">
+//             <div className="hboard-container" id="container">
+
+//                 {
+//                     theSquares.map((square) => {
+//                         return (
+//                             <div key={square.id} className="hboard-square"
+//                             style={{backgroundColor: selected === square.id ? color : "#1d1d1d", 
+//                             boxShadow: selected !== square.id ? `0 0 2px black`
+//                             : `0 0 2px ${color}, 0 0 10px ${color}`}}
+//                             onMouseOver={() => {handleMouseEnter(square.id)}}
+//                             onMouseOut={() => {handleMouseLeave()}}
+//                             ></div>
+//                         )
+//                     })
+//                 }
+
+//             </div>
+
+//             <HomeButton />
+//         </div>
+//     )
+// }
+
+// export default Hoverboard;
 
 
 //WORKING BUT LAGGED
