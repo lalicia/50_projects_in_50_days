@@ -4,7 +4,9 @@ import {useState} from "react";
 import "./Hoverboard.css";
 import HomeButton from "../../components/HomeButton.js";
 
-//REFACTORED - working but STILL lagged, faster though
+//import the array which now not created in this component means speed is awesome and 500 squares not re-rendered every change. Because array was in here it was being created on every render triggering the map - this is no longer the case
+import {theSquares} from "./squaresArr.js";
+
 function Hoverboard() {
     const colors = ["#6632a8", "#6ff55b", "#e5e82c", "#d656b2", "#295e96"];
     const [color, setColor] = useState(colors[Math.floor(Math.random() * colors.length)]);
@@ -12,18 +14,17 @@ function Hoverboard() {
     //to store id
     const [selected, setSelected] = useState(false);
 
-    //to make the squares
-    const SQUARES = 500;
-    let theSquares = [];
+    // //to make the squares - MOVED OUT TO SEPARATE FILE WHICH STOPS THE RE-RENDERING OF THE MAP ON EACH CHANGE AND SPEEDS IT UP!! :D
+    // const SQUARES = 500;
+    // let theSquares = [];
 
-    for(let i = 0; i < SQUARES; i++) {
-        theSquares.push({
-            id: i,
-            className: "hboard-square",
-        })
-        console.log("squares created")
-    }
-
+    // for(let i = 0; i < SQUARES; i++) {
+    //     theSquares.push({
+    //         id: i,
+    //         className: "hboard-square",
+    //     })
+    //     console.log("squares created")
+    // }
 
     //picks a new color for the next time as asynchronous, then sets selected as the square id - the ternary in the return determines whether the square should be normal or the state color
     function handleMouseEnter(id) {
