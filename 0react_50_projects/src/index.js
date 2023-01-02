@@ -43,6 +43,7 @@ import AnimatedCountdown from "./projects/AnimatedCountdown/AnimatedCountdown.js
 import ImageCarousel from "./projects/ImageCarousel/ImageCarousel.js";
 import Hoverboard from "./projects/Hoverboard/Hoverboard.js";
 import Pokedex from "./projects/Pokedex/Pokedex.js";
+import MobileTabNavigation from "./projects/MobileTabNavigation/MobileTabNavigation.js";
 
 //import { render } from "react-dom";
 import {
@@ -94,6 +95,7 @@ root.render(
         <Route path="/image-carousel" element={<ImageCarousel />} />
         <Route path="/hoverboard" element={<Hoverboard />} />
         <Route path="/pokedex" element={<Pokedex />} />
+        <Route path="/mobile-tab-navigation" element={<MobileTabNavigation />} />
 
       </Routes>
     </BrowserRouter>
