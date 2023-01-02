@@ -259,6 +259,13 @@ const projectsdata = [
         description: "A Pokedex fetching data from the PokeApi and displaying colour-based-on-type cards with data for each Pokemon",
         image: require("../projects/Pokedex/pokedex.JPG"),
         link: "/pokedex"
+    },
+    {
+        id: 38,
+        name: "Mobile Tab Navigation",
+        description: "A mobile navigation layout with a bottom navbar",
+        image: require("../projects/MobileTabNavigation/mobiletabnavigation.JPG"),
+        link: "/mobile-tab-navigation"
     }
 
 ]
