@@ -42,6 +42,7 @@ import NotesApp from "./projects/NotesApp/NotesApp.js";
 import AnimatedCountdown from "./projects/AnimatedCountdown/AnimatedCountdown.js";
 import ImageCarousel from "./projects/ImageCarousel/ImageCarousel.js";
 import Hoverboard from "./projects/Hoverboard/Hoverboard.js";
+import Pokedex from "./projects/Pokedex/Pokedex.js";
 
 //import { render } from "react-dom";
 import {
@@ -92,6 +93,7 @@ root.render(
         <Route path="/animated-countdown" element={<AnimatedCountdown />} />
         <Route path="/image-carousel" element={<ImageCarousel />} />
         <Route path="/hoverboard" element={<Hoverboard />} />
+        <Route path="/pokedex" element={<Pokedex />} />
 
       </Routes>
     </BrowserRouter>

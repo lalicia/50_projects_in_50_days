@@ -252,6 +252,13 @@ const projectsdata = [
         description: "A board with squares that 'light up' and fade out in random colours as the used hovers their mouse over the board",
         image: require("../projects/Hoverboard/hoverboard.JPG"),
         link: "/hoverboard"
+    },
+    {
+        id: 37,
+        name: "Pokedex",
+        description: "A Pokedex fetching data from the PokeApi and displaying colour-based-on-type cards with data for each Pokemon",
+        image: require("../projects/Pokedex/pokedex.JPG"),
+        link: "/pokedex"
     }
 
 ]
