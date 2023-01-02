@@ -1,14 +1,17 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {useState} from "react";
 
 import "./Hoverboard.css";
 import HomeButton from "../../components/HomeButton.js";
 
-//WORKING BUT LAGGED
+//REFACTORED - working but STILL lagged, faster though
 function Hoverboard() {
     const colors = ["#6632a8", "#6ff55b", "#e5e82c", "#d656b2", "#295e96"];
     const [color, setColor] = useState(colors[Math.floor(Math.random() * colors.length)]);
 
+    //to store id
+    const [selected, setSelected] = useState();
+    
     //to make the squares
     const SQUARES = 500;
     let theSquares = [];
@@ -21,6 +24,17 @@ function Hoverboard() {
         console.log("squares created")
     }
 
+    //picks a new color for the next time as asynchronous, then sets selected as the square id - the ternary in the return determines whether the square should be normal or the state color
+    function handleMouseEnter(id) {
+        setColor(colors[Math.floor(Math.random() * colors.length)])
+        setSelected(id)
+    }
+
+    //when moving over squares the selected changes automatically so it keeps lighting and fading them out naturally, but when leave the hoverboard the last square remains lit without the below
+    function handleMouseLeave() {
+        setSelected("")
+    }
+
     return (
         <div className="hboard-big-container">
             <div className="hboard-container" id="container">
@@ -29,19 +43,11 @@ function Hoverboard() {
                     theSquares.map((square) => {
                         return (
                             <div key={square.id} className="hboard-square"
-                            onMouseEnter={(e) => {
-                                setColor("#1d1d1d")
-                                e.target.style.backgroundColor = color
-                                e.target.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
-                                console.log(e.target)
-                                }} 
-                            onMouseLeave={(e) => {
-                                setColor(colors[Math.floor(Math.random() * colors.length)])
-                                e.target.style.backgroundColor = color
-                                e.target.style.boxShadow = `0 0 2px black`
-                                console.log(e.target)
-                            }}
- 
+                            style={{backgroundColor: selected === square.id ? color : "#1d1d1d", 
+                            boxShadow: selected !== square.id ? `0 0 2px black`
+                            : `0 0 2px ${color}, 0 0 10px ${color}`}}
+                            onMouseOver={() => {handleMouseEnter(square.id)}}
+                            onMouseOut={() => {handleMouseLeave()}}
                             ></div>
                         )
                     })
