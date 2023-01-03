@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@300;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.vaui-big-container {
+    background-color: #fbfcfe;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.vaui-container {
+    background-color: white;
+    border: 3px black solid;
+    border-radius: 10px;
+    padding: 1.875rem;
+    max-width: 62.5rem;
+    text-align: center;
+}
+
+.vaui-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.vaui-code-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem 0;
+}
+
+.vaui-code {
+    border-radius: 5px;
+    font-size: 4.6875rem;
+    height: 7.5rem;
+    width: 6.25rem;
+    border: 1px solid #eee;
+    margin: 1%;
+    text-align: center;
+    font-weight: 300;
+    -moz-appearance: textfield; /*this does below for Firefox*/
+}
+
+/* to get rid of arrows on inputs to increase/decrease numbers on Chrome/Safari */ 
+.vaui-code::-webkit-outer-spin-button,
+.vaui-code::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.vaui-code:valid {
+    border-color: #3498bb;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,0.25);
+}
+
+.vaui-info {
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 0.625rem;
+    line-height: 1.25rem;
+    max-width: 25rem;
+    color: #777;
+    border-radius: 5px;
+}
+
+@media(max-width: 600px) {
+    .vaui-code-container {
+        flex-wrap: wrap;
+    }
+
+    .vaui-code {
+        font-size: 3.75rem;
+        height: 5rem;
+        max-width: 4.375rem;
+    }
+}

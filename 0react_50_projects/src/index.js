@@ -46,6 +46,7 @@ import Pokedex from "./projects/Pokedex/Pokedex.js";
 import MobileTabNavigation from "./projects/MobileTabNavigation/MobileTabNavigation.js";
 import PasswordStrengthBackground from "./projects/PasswordStrengthBackground/PasswordStrengthBackground.js";
 import ThreeDBoxesBackground from "./projects/ThreeDBoxesBackground/ThreeDBoxesBackground.js";
+import VerifyAccountUI from "./projects/VerifyAccountUI/VerifyAccountUI.js";
 
 //import { render } from "react-dom";
 import {
@@ -100,6 +101,7 @@ root.render(
         <Route path="/mobile-tab-navigation" element={<MobileTabNavigation />} />
         <Route path="/password-strength-background" element={<PasswordStrengthBackground />} />
         <Route path="/3d-boxes-background" element={<ThreeDBoxesBackground />} />
+        <Route path="/verify-account-ui" element={<VerifyAccountUI />} />
 
       </Routes>
     </BrowserRouter>
