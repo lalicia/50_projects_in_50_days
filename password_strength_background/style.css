@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.background {
+    background: url("https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80") no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
+}
+
+.checker-box {
+    background-color: white;
+    border-radius: 3px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+.checker-box h1 {
+    margin-top: 0;
+}
+
+.checker-box p {
+    margin-top: -.75rem;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.email label {
+    text-align: start;
+    margin: .5rem 0;
+}
+
+.checker-box input {
+    padding: 0.5rem;
+    width: 100%;
+    border:lightgray 1px solid;
+    border-radius: 3px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+}
+
+.password label {
+    text-align: start;
+    margin: .5rem 0;
+}
+
+.checker-button {
+    background-color: black;
+    width: 100%;
+    color: white;
+    padding: .5rem 0;
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 3px;
+}

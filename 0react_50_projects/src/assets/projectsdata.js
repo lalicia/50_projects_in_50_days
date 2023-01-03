@@ -266,6 +266,13 @@ const projectsdata = [
         description: "A mobile navigation layout with a bottom navbar",
         image: require("../projects/MobileTabNavigation/mobiletabnavigation.JPG"),
         link: "/mobile-tab-navigation"
+    },
+    {
+        id: 39,
+        name: "Password Strength Background",
+        description: "The password is checked for length and the longer the input, the clearer the background image",
+        image: require("../projects/PasswordStrengthBackground/passwordstrengthbackground.JPG"),
+        link: "/password-strength-background"
     }
 
 ]
