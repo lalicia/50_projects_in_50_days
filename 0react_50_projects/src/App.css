@@ -152,3 +152,10 @@ video {
 .home-btn a {
   color: rgb(134, 13, 9);
 }
+
+
+@media(max-width: 600px) {
+  html {
+      font-size: 14px;
+  }
+}
