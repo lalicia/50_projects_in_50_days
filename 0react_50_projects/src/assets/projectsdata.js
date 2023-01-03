@@ -273,6 +273,13 @@ const projectsdata = [
         description: "The password is checked for length and the longer the input, the clearer the background image",
         image: require("../projects/PasswordStrengthBackground/passwordstrengthbackground.JPG"),
         link: "/password-strength-background"
+    },
+    {
+        id: 40,
+        name: "3d Boxes Background",
+        description: "A gif that when the button is clicked splits into individual boxes with animations, but still displays the whole gif",
+        image: require("../projects/ThreeDBoxesBackground/threedboxesbackgound.JPG"),
+        link: "/3d-boxes-background"
     }
 
 ]

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.tdbb-container {
+    background-color: #fafafa;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.tdbb-magic {
+    background-color: #f9ca24;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    border: 0;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: .75rem 1.25rem;
+    cursor: pointer;
+    position: fixed;
+    top: 1.25rem;
+    letter-spacing: 1px;
+    box-shadow: 0 3px rgba(249,202,36, 0.5);
+    z-index: 100;
+}
+
+.tdbb-magic:focus {
+    outline: none;
+}
+
+.tdbb-magic:active {
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+
+.tdbb-boxes {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 31.25rem;
+    width: 31.25rem;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.tdbb-boxes.tdbb-big {
+    width: 37.5rem;
+    height: 37.5rem;
+}
+
+.tdbb-boxes.tdbb-big .tdbb-box {
+    transform: rotateZ(360deg);
+}
+
+.tdbb-box {
+    background-image: url("https://media1.giphy.com/media/4wz743geRfNDO/giphy.gif?cid=ecf05e4746pjz623efgfl1fhvhz0qz7dc5f5rjhofu4lh0cj&rid=giphy.gif&ct=g");
+    background-repeat: no-repeat;
+    background-size: 31.25rem 31.25rem;
+    position: relative; /* so can use psuedo elements in absolute*/
+    height: 7.8125rem;
+    width: 7.8125rem;
+    transition: 0.4s ease;
+}
+
+.tdbb-box::after {
+    content: "";
+    background-color: #f6e58d;
+    position: absolute;
+    top: .5rem;
+    right: -0.9375rem;
+    height: 100%;
+    width: 0.9375rem;
+    transform: skewY(45deg);
+}
+
+.tdbb-box::before {
+    content: "";
+    background-color: #f9ca24;
+    position: absolute;
+    bottom: -0.9375rem;
+    left: .5rem;
+    height: 0.9375rem;
+    width: 100%;
+    transform: skewX(45deg);
+}
