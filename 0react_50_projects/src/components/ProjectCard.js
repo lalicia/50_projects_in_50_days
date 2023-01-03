@@ -2,7 +2,7 @@ import React from "react";
 import {Link} from "react-router-dom";
 
 function ProjectCard({name, description, image, link}) {
-    console.log('this is link ',link)
+    //console.log('this is link ',link)
 
     return (
         <div className="card">
