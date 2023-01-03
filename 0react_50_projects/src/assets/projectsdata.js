@@ -280,6 +280,13 @@ const projectsdata = [
         description: "A gif that when the button is clicked splits into individual boxes with animations, but still displays the whole gif",
         image: require("../projects/ThreeDBoxesBackground/threedboxesbackgound.JPG"),
         link: "/3d-boxes-background"
+    },
+    {
+        id: 41,
+        name: "Verify Account UI",
+        description: "UI for account verification where inputs accept single number, automatically progress to next input, and allow correction by backspace",
+        image: require("../projects/VerifyAccountUI/verifyaccountui.JPG"),
+        link: "/verify-account-ui"
     }
 
 ]

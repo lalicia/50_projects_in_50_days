@@ -99,3 +99,5 @@ Here I more fought with CSS than anything - the original project used tailwind b
 [Problems with local storage resetting/not retrieving](https://stackoverflow.com/questions/72222728/why-is-localstorage-getting-cleared-whenever-i-refresh-the-page) / [React state not updating immediately](https://www.daggala.com/react-state-not-updating-immediately/) / [React Notes App Tutorial](https://www.youtube.com/watch?v=8KB3DHI-QbM) (Notes App)
 
 [Absolute position and overflow hidden](https://stackoverflow.com/questions/5513382/absolute-position-and-overflowhidden) (Password Strength Background)
+
+[Clear Input Value in React](https://bobbyhadz.com/blog/react-clear-input-value) (Verify Account UI)
