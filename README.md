@@ -101,3 +101,5 @@ Here I more fought with CSS than anything - the original project used tailwind b
 [Absolute position and overflow hidden](https://stackoverflow.com/questions/5513382/absolute-position-and-overflowhidden) (Password Strength Background)
 
 [Clear Input Value in React](https://bobbyhadz.com/blog/react-clear-input-value) (Verify Account UI)
+
+[Search Filter React Tutorial](https://www.youtube.com/watch?v=mZvKPtH9Fzo&t=39s) (Live User Filter)
