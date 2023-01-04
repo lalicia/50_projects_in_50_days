@@ -47,6 +47,7 @@ import MobileTabNavigation from "./projects/MobileTabNavigation/MobileTabNavigat
 import PasswordStrengthBackground from "./projects/PasswordStrengthBackground/PasswordStrengthBackground.js";
 import ThreeDBoxesBackground from "./projects/ThreeDBoxesBackground/ThreeDBoxesBackground.js";
 import VerifyAccountUI from "./projects/VerifyAccountUI/VerifyAccountUI.js";
+import LiveUserFilter from "./projects/LiveUserFilter/LiveUserFilter.js";
 
 //import { render } from "react-dom";
 import {
@@ -102,6 +103,7 @@ root.render(
         <Route path="/password-strength-background" element={<PasswordStrengthBackground />} />
         <Route path="/3d-boxes-background" element={<ThreeDBoxesBackground />} />
         <Route path="/verify-account-ui" element={<VerifyAccountUI />} />
+        <Route path="/live-user-filter" element={<LiveUserFilter />} />
 
       </Routes>
     </BrowserRouter>
