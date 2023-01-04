@@ -16,10 +16,17 @@ function FeedbackUIDesign() {
     const [selectedRating, setSelectedRating] = useState("");
     const [active, setActive] = useState(false);
 
-    function handleClickUnhappy(e) {
+    function handleClick(e, ref) {
         console.log(e.target)
         setActive(true);
-        setSelectedRating("Unhappy")
+
+        if(ref === refUnhappy) {
+            setSelectedRating("Unhappy")
+        } else if(ref === refNeutral) {
+            setSelectedRating("Neutral")
+        } else {
+            setSelectedRating("Satisfied")
+        }
     }
 
     function handleSubmit() {
@@ -39,20 +46,29 @@ function FeedbackUIDesign() {
                         <div className={active && selectedRating === "Unhappy" ? 
                         "fuid-rating fuid-active"
                         : "fuid-rating"}
-                        ref={refUnhappy}>
-                            <img src="https://cdn-icons-png.flaticon.com/512/187/187150.png" alt="unhappy face" 
-                            onClick={(e) => handleClickUnhappy(e)}    
-                            />
+                        ref={refUnhappy}
+                        onClick={(e) => handleClick(e, refUnhappy)}>
+                            <img src="https://cdn-icons-png.flaticon.com/512/187/187150.png" alt="unhappy face"/>
                             <small>Unhappy</small>
                         </div>
 
-                        <div className="fuid-rating">
-                            <img src="https://cdn-icons-png.flaticon.com/512/187/187136.png" alt="neutral face" />
+                        <div className={active && selectedRating === "Neutral" ? 
+                        "fuid-rating fuid-active"
+                        : "fuid-rating"}
+                        ref={refNeutral}
+                        onClick={(e) => handleClick(e, refNeutral)} 
+                            >
+                            <img src="https://cdn-icons-png.flaticon.com/512/187/187136.png" alt="neutral face"/>
                             <small>Neutral</small>
                         </div>
 
-                        <div className="fuid-rating">
-                            <img src="https://cdn-icons-png.flaticon.com/512/187/187133.png" alt="satisfied face" />
+                        <div className={active && selectedRating === "Satisfied" ? 
+                        "fuid-rating fuid-active"
+                        : "fuid-rating"}
+                        ref={refSatisfied}
+                        onClick={(e) => handleClick(e, refSatisfied)} 
+                            >
+                            <img src="https://cdn-icons-png.flaticon.com/512/187/187133.png" alt="satisfied face"/>
                             <small>Satisfied</small>
                         </div>
                     </div>

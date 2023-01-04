@@ -48,7 +48,7 @@
 .fuid-rating:hover,
 .fuid-rating.fuid-active {
     border-radius: 4px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
 .fuid-rating img {
