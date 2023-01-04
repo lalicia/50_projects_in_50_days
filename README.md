@@ -12,15 +12,15 @@ Project Page Example:
 
 ## The Concept
 
-I treated myself to this [Udemy course](https://www.udemy.com/course/50-projects-50-days/?src=sac&kw=project) as I really liked the look of the small projects, and I also feel a bit insecure about my knowledge of vanilla JavaScript - so this seemed like a fun way of exposing myself to more of that as well as learning new things.
+I treated myself to this [Udemy course](https://www.udemy.com/course/50-projects-50-days/?src=sac&kw=project) as I really liked the look of the small projects, and I also felt insecure about my knowledge of vanilla JavaScript - so this seemed like a fun way of exposing myself to more of that as well as learning new things.
 
 The course is by [Brad Traversy](https://github.com/bradtraversy), with the projects designed by [Florin Pop](https://github.com/florinpop17).
 
-As well as making the projects, I wanted to try and 'translate' them into React, as oftentimes when I'm working on projects and find something that's done in vanilla JS, I struggle or can't figure out how to accomplish the same thing in an app.
+As well as making the projects, I wanted to try and 'translate' or convert them into React, as oftentimes when I'm working on projects and find something that's done in vanilla JS, I struggle or can't figure out how to accomplish the same thing in an app.
 
 ## The App
 
-This could be considered a simple app in terms of it doesn't really 'do' anything, but some of the projects really take a lot of research and trial and error to implement! So for me, the re-making of the projects is a learning experience. It's nice to have them all collected together, and I think it's a nice little library of components and features that maybe I could use or implement in the future.
+This could be considered a simple app in terms of it doesn't really 'do' anything, but some of the projects really take a lot of research and trial and error to convert over! So for me, the re-making of the projects is a learning experience. It's nice to have them all collected together, and I think it's a great little library of components and features that maybe I could use or implement in the future.
 
 ## Tech
 
@@ -30,6 +30,8 @@ React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, 
 
 [Unsplash - gorgeous free use images](https://unsplash.com/)
 
+[Font-Awesome - icons](https://fontawesome.com/v5/docs/web/use-with/react)
+
 [TheMovieDB - API for movie data](https://www.themoviedb.org/documentation/api)
 
 [PokeApi - API for Pokemon data](https://pokeapi.co/)
@@ -38,21 +40,21 @@ React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, 
 
 ## Some Thoughts
 
-This project is obviously ongoing, but so far I'm finding it really useful in that it's making me feel more confident about JavaScript, and challenging in that some of this is really difficult to figure out! A couple of the projects I really struggled to re-make in React, but thankfully found tutorials to help - others, however, have been surprisingly easy to translate over so that's been nice!
+This project has been incredibly challenging at times but it's really made me feel more confident in my ability to work through problems and in my use of JavaScript. As a community, developers really are amazing - so many articles and tutorials and stackoverflow posts have gone into my being able to figure some of this stuff out.
 
-I've learnt about [Font-Awesome](https://fontawesome.com/v5/docs/web/use-with/react) which is great, because this will be so helpful when needing icons in the future. The documentation on their site, however, is problematic as the React code snippets simply don't work - after quite a bit of faffing I managed to stumble onto the right way, but yeah...
+I've also seen so many amazing things that can be accomplished without the use of special libraries and particularly with CSS. Some of these things I would never have even known to look up without this course - I just wouldn't have thought them possible/thought to think if they were!
 
-I'm also picking up new things in CSS with styling some of the elements, which is always nice :smile:
+I've learnt about [Font-Awesome](https://fontawesome.com/v5/docs/web/use-with/react) which is I'm grateful for after struggling with icons in the past, so this should be helpful in the future. The documentation on their site, however, is problematic as the React code snippets simply don't work - after quite a bit of faffing I managed to stumble onto the right way, but yeah... If you've had a painful experience with trying to implement this library take a look at some of these projects and you should see how easy it actually is once you know.
 
 ### Github Profiles
 
-I've used Axios for the first time, and been able to successfully fetch data and display it to the user.
+This is the first time I used Axios and I can see why people like it. It's not that different to fetch with async/await, but yeah.
 
 ### Notes App
 
-I used local storage for the first time and learned about setting it with useEffect and retrieving it directly in state because of useEffect being asynchronous (see useful links).
+I used local storage for the first time, and learned about setting it with useEffect and retrieving it directly in state because of useEffect being asynchronous (see useful links).
 
-Also, I tried to use the marked npm library and found this wouldn't display the notes correctly, but would display the HTML markup in the note. Having researched, I switched to [react-markdown](https://www.npmjs.com/package/react-markdown) and was able to implement this successfully - though I did learn I had to write CSS styles for the functionality to work fully in displaying different styles.
+Also, I tried to use the marked npm library and found this wouldn't display the notes correctly (it would display the HTML markup in the note). Having researched, I switched to [react-markdown](https://www.npmjs.com/package/react-markdown) and was able to implement this successfully - though I did learn I had to write CSS styles for the functionality to work fully in displaying different styles.
 
 ### Hoverboard
 
@@ -60,11 +62,11 @@ This was definitely one of the harder conversions - I struggled with state manag
 
 I learned the importance of having an extra boolean state (or reference/id state), and how to set ternary conditions for this AND this, to be able to change state on one element not all.
 
-I also learned that if you're returning a map of elements in the component (ie the boxes in this instance) - creating the array outside of the component and importing it in means that the map won't re-render every time state changes. When you think about it this makes sense as otherwise the array is getting created everytime so would be re-rendered, but until you realise...yeah this held me back a lot! I believe useMemo can also be handy in some situations but yeah...another time.
+I also learned that if you're returning a map of elements in the component (ie the boxes in this instance) - creating the array outside of the component and importing it in means that the map won't re-render every time state changes. When you think about it this makes sense as otherwise the array is getting created everytime so would be re-rendered, but until you realise...yeah this held me back a lot! I believe useMemo can also be handy in some situations but that's for another time.
 
 ### Password Strength Background
 
-Here I more fought with CSS than anything - the original project used tailwind but I didn't want to do this so I wrote my own CSS. This was fine until trying to get rid of the white edges on the blurred background. After trying multiple ways of removing this and not having scroll bars, I discovered a stackoverflow on the relationship between absolute child components and overflow hidden - this is linked in Useful Links - and adding an extra div allowed me to get rid of both my scrollbars and white edges!
+Here I more fought with CSS than anything - the original project used Tailwind but I didn't want to do this so I wrote my own CSS. This was fine until trying to get rid of the white edges on the blurred background (which actually were still a problem in the Tailwind version on the course). After trying multiple ways of removing this and not having scroll bars, I discovered a stackoverflow on the relationship between position absolute child components and overflow hidden - this is linked in Useful Links - and adding an extra div allowed me to get rid of both my scrollbars and white edges!
 
 ## Other Useful Links
 
