@@ -49,6 +49,7 @@ import ThreeDBoxesBackground from "./projects/ThreeDBoxesBackground/ThreeDBoxesB
 import VerifyAccountUI from "./projects/VerifyAccountUI/VerifyAccountUI.js";
 import LiveUserFilter from "./projects/LiveUserFilter/LiveUserFilter.js";
 import FeedbackUIDesign from "./projects/FeedbackUIDesign/FeedbackUIDesign.js";
+import CustomRangeSlider from "./projects/CustomRangeSlider/CustomRangeSlider.js";
 
 //import { render } from "react-dom";
 import {
@@ -106,6 +107,7 @@ root.render(
         <Route path="/verify-account-ui" element={<VerifyAccountUI />} />
         <Route path="/live-user-filter" element={<LiveUserFilter />} />
         <Route path="/feedback-ui-design" element={<FeedbackUIDesign />} />
+        <Route path="/custom-range-slider" element={<CustomRangeSlider />} />
 
       </Routes>
     </BrowserRouter>
