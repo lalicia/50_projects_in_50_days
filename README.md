@@ -26,6 +26,16 @@ This could be considered a simple app in terms of it doesn't really 'do' anythin
 
 React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, react-markdown, nanoid, Netlify
 
+## Assets and Resources
+
+[Unsplash - gorgeous free use images](https://unsplash.com/)
+
+[TheMovieDB - API for movie data](https://www.themoviedb.org/documentation/api)
+
+[PokeApi - API for Pokemon data](https://pokeapi.co/)
+
+[Random User Generator - API for user data](https://randomuser.me/)
+
 ## Some Thoughts
 
 This project is obviously ongoing, but so far I'm finding it really useful in that it's making me feel more confident about JavaScript, and challenging in that some of this is really difficult to figure out! A couple of the projects I really struggled to re-make in React, but thankfully found tutorials to help - others, however, have been surprisingly easy to translate over so that's been nice!
