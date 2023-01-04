@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.luf-big-container {
+    background-color: #f8f9fd;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.luf-container {
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+    width: 18.75rem;
+}
+
+.luf-title {
+    margin: 0;
+}
+
+.luf-subtitle {
+    display: inline-block;
+    margin: 0.3125rem 0 1.25rem;
+    opacity: 0.8;
+}
+
+.luf-header {
+    background-color: #3e57db;
+    color: white;
+    padding: 1.875rem 1.25rem;
+}
+
+.luf-header input {
+    background-color: rgba(0,0,0,0.3);
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    font-size: 0.875rem;
+    padding: 0.625rem 0.9375rem;
+    width: 100%;
+}
+
+.luf-header input:focus {
+    outline: none;
+}
+
+.luf-user-list {
+    background-color: white;
+    list-style-type: none;
+    margin: 0;
+    max-height: 25rem;
+    overflow-y: auto;
+    padding: 0;
+}
+
+.luf-user-list li {
+    display: flex;
+    padding: 1.25rem;
+}
+
+.luf-user-list img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 3.125rem;
+    width: 3.125rem;
+}
+
+.luf-user-list .luf-user-info {
+    margin-left: 0.625rem;
+}
+
+.luf-user-list .luf-user-info h4 {
+    margin: 0 0 0.625rem;
+}
+
+.luf-user-list .luf-user-info p {
+    margin: 0;
+    font-size: .75rem;
+}
+
+.luf-user-list li:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+}
+
+.luf-user-list li.luf-hide {
+    display: none;
+}

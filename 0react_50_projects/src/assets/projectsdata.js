@@ -287,6 +287,13 @@ const projectsdata = [
         description: "UI for account verification where inputs accept single number, automatically progress to next input, and allow correction by backspace",
         image: require("../projects/VerifyAccountUI/verifyaccountui.JPG"),
         link: "/verify-account-ui"
+    },
+    {
+        id: 42,
+        name: "Live User Filter",
+        description: "A searchbar that filters through a list of users and returns any that match the searchterm",
+        image: require("../projects/LiveUserFilter/liveuserfilter.JPG"),
+        link: "/live-user-filter"
     }
 
 ]
