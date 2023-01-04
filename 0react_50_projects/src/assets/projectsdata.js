@@ -301,6 +301,13 @@ const projectsdata = [
         description: "A UI design with confirmation of the user's feedback selection displayed upon submission",
         image: require("../projects/FeedbackUIDesign/feedbackuidesign.JPG"),
         link: "/feedback-ui-design"
+    },
+    {
+        id: 44,
+        name: "Custom Range Slider",
+        description: "A slider with custom styling for cross-browser compatibility, and label that keeps pace with the thumb's position on the track",
+        image: require("../projects/CustomRangeSlider/customrangeslider.JPG"),
+        link: "/custom-range-slider"
     }
 
 ]
