@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.fuid-container {
+    background-color: #fef9f2;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.fuid-panel-container {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    font-size: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.875rem;
+    max-width: 25rem;
+    text-align: center;
+}
+
+.fuid-panel-container strong {
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.25rem;
+}
+
+.fuid-ratings-container {
+    display: flex;
+    margin: 1.25rem 0;
+}
+
+.fuid-rating {
+    /* Makes equal */
+    flex: 1;
+    cursor: pointer;
+    padding: 1.25rem;
+    margin: 0.625rem 0.3125rem;
+}
+
+.fuid-rating:hover,
+.fuid-rating.fuid-active {
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.fuid-rating img {
+    width: 2.5rem;
+    margin: 0 auto;
+}
+
+.fuid-rating small {
+    font-size: 0.9rem;
+    color: #555;
+    display: inline-block;
+    margin: 0.625rem 0 0 ;
+}
+
+.fuid-rating:hover small,
+.fuid-rating.fuid-active small {
+    color: #111;
+}
+
+.fuid-btn {
+    background-color: #302d2b;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    padding: .75rem 1.875rem;
+    cursor: pointer;
+}
+
+.fuid-btn:focus {
+    outline: 0;
+}
+
+.fuid-btn:active {
+    transform: scale(0.98);
+}
+
+.fuid-fa-heart {
+    color: red;
+    font-size: 1.875rem;
+    margin-bottom: 0.625rem;
+}
