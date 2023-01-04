@@ -48,6 +48,7 @@ import PasswordStrengthBackground from "./projects/PasswordStrengthBackground/Pa
 import ThreeDBoxesBackground from "./projects/ThreeDBoxesBackground/ThreeDBoxesBackground.js";
 import VerifyAccountUI from "./projects/VerifyAccountUI/VerifyAccountUI.js";
 import LiveUserFilter from "./projects/LiveUserFilter/LiveUserFilter.js";
+import FeedbackUIDesign from "./projects/FeedbackUIDesign/FeedbackUIDesign.js";
 
 //import { render } from "react-dom";
 import {
@@ -104,6 +105,7 @@ root.render(
         <Route path="/3d-boxes-background" element={<ThreeDBoxesBackground />} />
         <Route path="/verify-account-ui" element={<VerifyAccountUI />} />
         <Route path="/live-user-filter" element={<LiveUserFilter />} />
+        <Route path="/feedback-ui-design" element={<FeedbackUIDesign />} />
 
       </Routes>
     </BrowserRouter>

@@ -294,6 +294,13 @@ const projectsdata = [
         description: "A searchbar that filters through a list of users and returns any that match the searchterm",
         image: require("../projects/LiveUserFilter/liveuserfilter.JPG"),
         link: "/live-user-filter"
+    },
+    {
+        id: 43,
+        name: "Feedback UI Design",
+        description: "A UI design with confirmation of the user's feedback selection displayed upon submission",
+        image: require("../projects/FeedbackUIDesign/feedbackuidesign.JPG"),
+        link: "/feedback-ui-design"
     }
 
 ]
