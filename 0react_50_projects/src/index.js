@@ -50,6 +50,7 @@ import VerifyAccountUI from "./projects/VerifyAccountUI/VerifyAccountUI.js";
 import LiveUserFilter from "./projects/LiveUserFilter/LiveUserFilter.js";
 import FeedbackUIDesign from "./projects/FeedbackUIDesign/FeedbackUIDesign.js";
 import CustomRangeSlider from "./projects/CustomRangeSlider/CustomRangeSlider.js";
+import NetflixNavigation from "./projects/NetflixNavigation/NetflixNavigation.js";
 
 //import { render } from "react-dom";
 import {
@@ -108,6 +109,7 @@ root.render(
         <Route path="/live-user-filter" element={<LiveUserFilter />} />
         <Route path="/feedback-ui-design" element={<FeedbackUIDesign />} />
         <Route path="/custom-range-slider" element={<CustomRangeSlider />} />
+        <Route path="/netflix-navigation" element={<NetflixNavigation />} />
 
       </Routes>
     </BrowserRouter>

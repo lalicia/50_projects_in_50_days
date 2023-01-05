@@ -308,6 +308,13 @@ const projectsdata = [
         description: "A slider with custom styling for cross-browser compatibility, and label that keeps pace with the thumb's position on the track",
         image: require("../projects/CustomRangeSlider/customrangeslider.JPG"),
         link: "/custom-range-slider"
+    },
+    {
+        id: 45,
+        name: "Netflix Navigation",
+        description: "A mobile hamburger navigation that expands with a CSS transition fan effect",
+        image: require("../projects/NetflixNavigation/netflixnavigation.JPG"),
+        link: "/netflix-navigation"
     }
 
 ]
