@@ -52,6 +52,7 @@ import FeedbackUIDesign from "./projects/FeedbackUIDesign/FeedbackUIDesign.js";
 import CustomRangeSlider from "./projects/CustomRangeSlider/CustomRangeSlider.js";
 import NetflixNavigation from "./projects/NetflixNavigation/NetflixNavigation.js";
 import QuizApp from "./projects/QuizApp/QuizApp.js";
+import TestimonialBoxSwitcher from "./projects/TestimonialBoxSwitcher/TestimonialBoxSwitcher.js";
 
 //import { render } from "react-dom";
 import {
@@ -112,6 +113,7 @@ root.render(
         <Route path="/custom-range-slider" element={<CustomRangeSlider />} />
         <Route path="/netflix-navigation" element={<NetflixNavigation />} />
         <Route path="/quiz-app" element={<QuizApp />} />
+        <Route path="/testimonial-box-switcher" element={<TestimonialBoxSwitcher />} />
 
       </Routes>
     </BrowserRouter>
