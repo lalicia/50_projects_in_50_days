@@ -68,6 +68,12 @@ I also learned that if you're returning a map of elements in the component (ie t
 
 Here I more fought with CSS than anything - the original project used Tailwind but I didn't want to do this so I wrote my own CSS. This was fine until trying to get rid of the white edges on the blurred background (which actually were still a problem in the Tailwind version on the course). After trying multiple ways of removing this and not having scroll bars, I discovered a stackoverflow on the relationship between position absolute child components and overflow hidden - this is linked in Useful Links - and adding an extra div allowed me to get rid of both my scrollbars and white edges!
 
+### Quiz App
+
+I really struggled with state in this one, and from bringing over too much from the vanilla js that actually made my state control more difficult. I eventually found a tutorial where I could apply some of the logic as there were enough similarities, but yeah I found state very confusing on this one.
+
+I also had to research how to have the radio buttons 'reset' when the next question came up, as the previous selection was still showing as checked. This took a little testing but was actually easy to implement once I found a good resource. (see below for links)
+
 ## Other Useful Links
 
 [Expanding Cards Youtube Tutorial](https://www.youtube.com/watch?v=XmeGQ5cz_aI&t=3300s)
@@ -115,3 +121,5 @@ Here I more fought with CSS than anything - the original project used Tailwind b
 [Clear Input Value in React](https://bobbyhadz.com/blog/react-clear-input-value) (Verify Account UI)
 
 [Search Filter React Tutorial](https://www.youtube.com/watch?v=mZvKPtH9Fzo&t=39s) (Live User Filter)
+
+[Coding a Quiz App in React](https://www.youtube.com/watch?v=8LNb18ibNGs) / [Handle and manage radio button state in React](https://surajsharma.net/blog/react-handle-radio-buttons) (Quiz App)
