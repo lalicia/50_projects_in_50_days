@@ -322,6 +322,13 @@ const projectsdata = [
         description: "A simple quiz app with an array of questions, that returns a score after answering all, and will reload ready to use again",
         image: require("../projects/QuizApp/quizapp.JPG"),
         link: "/quiz-app"
+    },
+    {
+        id: 47,
+        name: "Testimonial Box Switcher",
+        description: "A testimonial display iterating through a data set with a progress bar that shows the time until the next testimonial is displayed",
+        image: require("../projects/TestimonialBoxSwitcher/testimonialboxswitcher.JPG"),
+        link: "/testimonial-box-switcher"
     }
 
 ]
