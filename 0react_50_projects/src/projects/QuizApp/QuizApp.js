@@ -10,13 +10,15 @@ function QuizApp() {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [score, setScore] = useState(0);
     const [optionChosen, setOptionChosen] = useState("");
+    //state for radio button(s) to ensure don't show checked before user selects on each question
+    const [checked, setChecked] = useState("");
     //to show either quiz or results
     const [complete, setComplete] = useState(false);
 
     //not doing anything, just a test
-    // useEffect(() => {
-    //     console.log(optionChosen);
-    // }, [optionChosen])
+    useEffect(() => {
+        console.log(optionChosen);
+    }, [optionChosen])
 
     function handleSubmit() {
         if(quizData[currentQuestion].correct === optionChosen) {
@@ -28,13 +30,16 @@ function QuizApp() {
     
         if(currentQuestion === quizData.length - 1) {
             setComplete(true);
-        } 
+        }
+
+        //this is how we stop the next question already having a radio button selected from the previous question choice
+        setChecked("");
     }
 
     return (
         <div className="quiz-big-container">
                 <div className="quiz-quiz-container" id="quiz">
-                
+
                     {
                         !complete ? 
                         <>
@@ -43,28 +48,48 @@ function QuizApp() {
                             <ul>
                                 <li>
                                     <input type="radio" name="answer" id="a" className="quiz-answer"
-                                    onChange={() => setOptionChosen("a")}
+                                    value="a"
+                                    checked={checked === "a"}
+                                    onChange={() => {
+                                        setOptionChosen("a");
+                                        setChecked("a")
+                                    }}
                                     />
                                     <label htmlFor="a" id="a_text">{quizData[currentQuestion].a}</label>
                                 </li>
 
                                 <li>
                                     <input type="radio" name="answer" id="b" className="quiz-answer"
-                                    onChange={() => setOptionChosen("b")}
+                                    value="b"
+                                    checked={checked === "b"}
+                                    onChange={() => {
+                                        setOptionChosen("b");
+                                        setChecked("b")
+                                    }}
                                     />
                                     <label htmlFor="b" id="b_text">{quizData[currentQuestion].b}</label>
                                 </li>
 
                                 <li>
                                     <input type="radio" name="answer" id="c" className="quiz-answer"
-                                    onChange={() => setOptionChosen("c")}
+                                    value="c"
+                                    checked={checked === "c"}
+                                    onChange={() => {
+                                        setOptionChosen("c");
+                                        setChecked("c")
+                                    }}
                                     />
                                     <label htmlFor="c" id="c_text">{quizData[currentQuestion].c}</label>
                                 </li>
 
                                 <li>
                                     <input type="radio" name="answer" id="d" className="quiz-answer"
-                                    onChange={() => setOptionChosen("d")}
+                                    value="d"
+                                    checked={checked === "d"}
+                                    onChange={() => {
+                                        setOptionChosen("d");
+                                        setChecked("d")
+                                    }}
                                     />
                                     <label htmlFor="d" id="d_text">{quizData[currentQuestion].d}</label>
                                 </li>
