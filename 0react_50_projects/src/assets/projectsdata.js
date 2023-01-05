@@ -315,6 +315,13 @@ const projectsdata = [
         description: "A mobile hamburger navigation that expands with a CSS transition fan effect",
         image: require("../projects/NetflixNavigation/netflixnavigation.JPG"),
         link: "/netflix-navigation"
+    },
+    {
+        id: 46,
+        name: "Quiz App",
+        description: "A simple quiz app with an array of questions, that returns a score after answering all, and will reload ready to use again",
+        image: require("../projects/QuizApp/quizapp.JPG"),
+        link: "/quiz-app"
     }
 
 ]
