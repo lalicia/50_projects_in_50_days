@@ -28,7 +28,7 @@ function TestimonialBoxSwitcher() {
     useEffect(() => {
         const {name, position, photo, text} = testimonials[index];
 
-        //time on this setInterval should match CSS animation time, but if does it is slightly out of sync - testing showed this kept them together quite well
+        //time on this setInterval should match CSS animation time, but if does it is slightly out of sync - testing showed this kept them together quite well - one live did not hold up at 4970, changed back to match
         let interval = setInterval(() => {
             setText(text);
             setPhoto(photo);
@@ -40,7 +40,7 @@ function TestimonialBoxSwitcher() {
             if(index === testimonials.length - 1) {
                 setIndex(0);
             }
-            }, 4970);
+            }, 5000);
 
         return () => clearInterval(interval)
 
