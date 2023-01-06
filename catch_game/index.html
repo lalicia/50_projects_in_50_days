@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Catch the Snack</title>
+</head>
+<body>
+    <div class="screen">
+        <h1>Catch the Snack</h1>
+        <button class="btn" id="start-btn">Play Game</button>
+    </div>
+
+    <div class="screen">
+        <h1>What's your favourite snack?</h1>
+        <ul class="snacks-list">
+            <li>
+                <button class="choose-snack-btn">
+                    <p>Cake</p>
+                    <img src="https://pngimg.com/uploads/cake/small/cake_PNG97026.png" alt="cake">
+                </button>
+            </li>
+
+            <li>
+                <button class="choose-snack-btn">
+                    <p>Ice Cream</p>
+                    <img src="https://pngimg.com/uploads/ice_cream/small/ice_cream_PNG98194.png" alt="ice cream">
+                </button>
+            </li>
+
+            <li>
+                <button class="choose-snack-btn">
+                    <p>Fries</p>
+                    <img src="https://pngimg.com/uploads/fries/small/fries_PNG97885.png" alt="fries">
+                </button>
+            </li>
+
+            <li>
+                <button class="choose-snack-btn">
+                    <p>Fruit (?!)</p>
+                    <img src="https://pngimg.com/uploads/strawberry/small/strawberry_PNG2611.png" alt="fruit">
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="screen game-container" id="game-container">
+        <h3 id="time" class="time">Time: 00:00</h3>
+        <h3 id="score" class="score">Score: 0</h3>
+        <h5 id="message" class="message">Are you full yet? <br />
+        If not just keep going, this whole game is kinda pointless</h5>
+
+        <!-- temporary -->
+        <!-- <div class="snack">
+            <img src="https://pngimg.com/uploads/fries/small/fries_PNG97885.png" alt="fries">
+        </div> -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
