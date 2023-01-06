@@ -46,6 +46,10 @@ I've also seen so many amazing things that can be accomplished without the use o
 
 I've learnt about [Font-Awesome](https://fontawesome.com/v5/docs/web/use-with/react) which is I'm grateful for after struggling with icons in the past, so this should be helpful in the future. The documentation on their site, however, is problematic as the React code snippets simply don't work - after quite a bit of faffing I managed to stumble onto the right way, but yeah... If you've had a painful experience with trying to implement this library take a look at some of these projects and you should see how easy it actually is once you know.
 
+### Anytime you're using setInterval in React...
+
+...you're probably going to have a bad time until you learn about cleanup functions. There's a link in the section below, but basically you want to clear the setInterval... Definitely look it up if you're having a hard time with it, because it will make any project where you're dealing with timers/intervals a nightmare until you understand the fix (or at least copy and paste it in).
+
 ### Github Profiles
 
 This is the first time I used Axios and I can see why people like it. It's not that different to fetch with async/await, but yeah.
@@ -73,6 +77,14 @@ Here I more fought with CSS than anything - the original project used Tailwind b
 I really struggled with state in this one, and from bringing over too much from the vanilla js that actually made my state control more difficult. I eventually found a tutorial where I could apply some of the logic as there were enough similarities, but yeah I found state very confusing on this one.
 
 I also had to research how to have the radio buttons 'reset' when the next question came up, as the previous selection was still showing as checked. This took a little testing but was actually easy to implement once I found a good resource. (see below for links)
+
+### Todo List
+
+This one's difficulties lay in the retrieval of local storage, and the changing of the todo list state from checked to unchecked. I tried implementing some of the local storage logic I had from the Notes App and some worked but other bits didn't - I kept getting the todos state as [ null ] which prevented me being able to update it or render it in the return. I STILL don't know why, but somehow I managed to get away from that...
+
+Never underestimate the power of deleting the code you have that's not working and starting over. Some things aren't meant to be saved.
+
+I also learned the importance of setting a value on inputs in React, and that when you have a value you need an onChange function. The console will scream this at you if you don't want to take my word for it. The onChange sets a state - which is what you use as the value - and captures the user input by taking e.target.value. Might sound simple to some but yeah, to me this was a grateful revelation. If you're struggling with this problem and this writeup doesn't make sense, just take a look at the code and hopefully you can see from that.
 
 ## Other Useful Links
 
@@ -123,3 +135,5 @@ I also had to research how to have the radio buttons 'reset' when the next quest
 [Search Filter React Tutorial](https://www.youtube.com/watch?v=mZvKPtH9Fzo&t=39s) (Live User Filter)
 
 [Coding a Quiz App in React](https://www.youtube.com/watch?v=8LNb18ibNGs) / [Handle and manage radio button state in React](https://surajsharma.net/blog/react-handle-radio-buttons) (Quiz App)
+
+[Build a todo list app with React](https://www.youtube.com/watch?v=6otDXxMHnk0) (Todo List)
