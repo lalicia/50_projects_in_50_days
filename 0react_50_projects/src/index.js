@@ -54,6 +54,7 @@ import NetflixNavigation from "./projects/NetflixNavigation/NetflixNavigation.js
 import QuizApp from "./projects/QuizApp/QuizApp.js";
 import TestimonialBoxSwitcher from "./projects/TestimonialBoxSwitcher/TestimonialBoxSwitcher.js";
 import RandomImageFeed from "./projects/RandomImageFeed/RandomImageFeed.js";
+import TodoList from "./projects/TodoList/TodoList.js";
 
 //import { render } from "react-dom";
 import {
@@ -116,6 +117,7 @@ root.render(
         <Route path="/quiz-app" element={<QuizApp />} />
         <Route path="/testimonial-box-switcher" element={<TestimonialBoxSwitcher />} />
         <Route path="/random-image-feed" element={<RandomImageFeed />} />
+        <Route path="/todo-list" element={<TodoList />} />
 
       </Routes>
     </BrowserRouter>

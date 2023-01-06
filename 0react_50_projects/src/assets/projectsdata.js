@@ -336,6 +336,13 @@ const projectsdata = [
         description: "Image feed generated using the unsplash random URL and Math.random to ensure unqiue images",
         image: require("../projects/RandomImageFeed/randomimagefeed.JPG"),
         link: "/random-image-feed"
+    },
+    {
+        id: 49,
+        name: "Todo List",
+        description: "Users can create, cross off, delete todos - all of which is saved to local storage for persistence",
+        image: require("../projects/TodoList/todolist.JPG"),
+        link: "/todo-list"
     }
 
 ]
