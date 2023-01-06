@@ -329,6 +329,13 @@ const projectsdata = [
         description: "A testimonial display iterating through a data set with a progress bar that shows the time until the next testimonial is displayed",
         image: require("../projects/TestimonialBoxSwitcher/testimonialboxswitcher.JPG"),
         link: "/testimonial-box-switcher"
+    },
+    {
+        id: 48,
+        name: "Random Image Feed",
+        description: "Image feed generated using the unsplash random URL and Math.random to ensure unqiue images",
+        image: require("../projects/RandomImageFeed/randomimagefeed.JPG"),
+        link: "/random-image-feed"
     }
 
 ]
