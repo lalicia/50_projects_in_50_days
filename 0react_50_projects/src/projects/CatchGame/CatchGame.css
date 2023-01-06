@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+.cg-container {
+    background-color: #516dff;
+    color: white;
+    font-family: 'Press Start 2P', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    text-align: center;
+}
+
+.cg-a {
+    color: white;
+}
+
+.cg-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+
+.cg-btn {
+    border: 0;
+    background-color: white;
+    color: #516dff;
+    padding: 1rem 1.25rem;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.cg-btn:focus {
+    outline: 0;
+}
+
+.cg-btn:hover {
+    opacity: 0.9;
+}
+
+.cg-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    transition: margin 0.5s ease-out;
+}
+
+.cg-screen.cg-up {
+    margin-top: -100vh;
+}
+
+.cg-snacks-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.cg-snacks-list li {
+    margin: 0.625rem;
+}
+
+.cg-choose-snack-btn {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    width: 9.375rem;
+    height: 9.375rem;
+}
+
+.cg-choose-snack-btn:hover {
+    background-color: white;
+    color: #516dff;
+}
+
+.cg-choose-snack-btn:active {
+    background-color: rgba(255,255,255,0.7);
+}
+
+.cg-choose-snack-btn .cg-img {
+    margin: 0.25rem auto 0;
+    width: 6.25rem;
+    height: 6.25rem;
+    object-fit: contain;
+}
+
+.cg-game-container {
+    position: relative;
+}
+
+.cg-time, 
+.cg-score {
+    position: absolute;
+    top: 1.25rem;
+}
+
+.cg-time {
+    left: 1.25rem;
+}
+
+.cg-score {
+    right: 1.25rem;
+}
+
+.cg-message {
+    line-height: 1.7;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    padding: 1.25rem;
+    z-index: 100;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    transition: transform 0.4s ease-in;
+}
+
+.cg-message.cg-visible {
+    transform: translate(-50%, 150%);
+    opacity: 1;
+}
+
+.cg-snack {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 6.25rem;
+    height: 6.25rem;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 0.3s ease-out;
+}
+
+.cg-snack.cg-caught {
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.cg-snack .cg-img {
+    width: 6.25rem;
+    height: auto;
+}

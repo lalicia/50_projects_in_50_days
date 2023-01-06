@@ -55,6 +55,7 @@ import QuizApp from "./projects/QuizApp/QuizApp.js";
 import TestimonialBoxSwitcher from "./projects/TestimonialBoxSwitcher/TestimonialBoxSwitcher.js";
 import RandomImageFeed from "./projects/RandomImageFeed/RandomImageFeed.js";
 import TodoList from "./projects/TodoList/TodoList.js";
+import CatchGame from "./projects/CatchGame/CatchGame.js";
 
 //import { render } from "react-dom";
 import {
@@ -118,6 +119,7 @@ root.render(
         <Route path="/testimonial-box-switcher" element={<TestimonialBoxSwitcher />} />
         <Route path="/random-image-feed" element={<RandomImageFeed />} />
         <Route path="/todo-list" element={<TodoList />} />
+        <Route path="/catch-game" element={<CatchGame />} />
 
       </Routes>
     </BrowserRouter>

@@ -343,6 +343,13 @@ const projectsdata = [
         description: "Users can create, cross off, delete todos - all of which is saved to local storage for persistence",
         image: require("../projects/TodoList/todolist.JPG"),
         link: "/todo-list"
+    },
+    {
+        id: 50,
+        name: "Catch Game",
+        description: "An impossible game where the user 'catches' snacks, but every snack caught renders two more snacks. Features a timer and score",
+        image: require("../projects/CatchGame/catchgame.JPG"),
+        link: "/catch-game"
     }
 
 ]
