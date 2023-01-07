@@ -55,6 +55,7 @@ import QuizApp from "./projects/QuizApp/QuizApp.js";
 import TestimonialBoxSwitcher from "./projects/TestimonialBoxSwitcher/TestimonialBoxSwitcher.js";
 import RandomImageFeed from "./projects/RandomImageFeed/RandomImageFeed.js";
 import TodoList from "./projects/TodoList/TodoList.js";
+import CatchGame from "./projects/CatchGame/CatchGame.js";
 
 //import { render } from "react-dom";
 import {
@@ -65,7 +66,7 @@ import {
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
@@ -118,10 +119,11 @@ root.render(
         <Route path="/testimonial-box-switcher" element={<TestimonialBoxSwitcher />} />
         <Route path="/random-image-feed" element={<RandomImageFeed />} />
         <Route path="/todo-list" element={<TodoList />} />
+        <Route path="/catch-game" element={<CatchGame />} />
 
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>
+  // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

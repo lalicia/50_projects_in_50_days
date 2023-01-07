@@ -16,11 +16,15 @@ I treated myself to this [Udemy course](https://www.udemy.com/course/50-projects
 
 The course is by [Brad Traversy](https://github.com/bradtraversy), with the projects designed by [Florin Pop](https://github.com/florinpop17).
 
-As well as making the projects, I wanted to try and 'translate' or convert them into React, as oftentimes when I'm working on projects and find something that's done in vanilla JS, I struggle or can't figure out how to accomplish the same thing in an app.
+As well as making the projects as per the course, I wanted to try and 'translate' or convert them into React, as oftentimes when I'm working on projects and find something that's done in vanilla JS, I struggle or can't figure out how to accomplish the same thing in an app.
 
 ## The App
 
-This could be considered a simple app in terms of it doesn't really 'do' anything, but some of the projects really take a lot of research and trial and error to convert over! So for me, the re-making of the projects is a learning experience. It's nice to have them all collected together, and I think it's a great little library of components and features that maybe I could use or implement in the future.
+Initially I said here that this could be considered a simple app in terms of it doesn't really 'do' anything, but oh boy was I naive. Some of the later projects are entirely app worthy on their own in my opinion, and things like the Notes App and Todo List have local storage and can actually be used.
+
+Some of the projects really took a lot of research and trial and error to convert over, so for me the re-making of the original projects was a learning experience and lesson in perseverance. It's nice to have them all collected together, and I think it's a great little library of components and features that maybe I could use or implement in the future.
+
+I also hope this helps other learners. The makers of the course are really popular and have a big following, so I know there can't just be me who wonders about trying to convert over the projects. I'd like to think this repo/app can help people who might be taking the course in future, or are researching some of the functionality. It would be nice to pay it back, having been helped by some many developers on the internet who'll never know they saved my day.
 
 ## Tech
 
@@ -38,6 +42,8 @@ React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, 
 
 [Random User Generator - API for user data](https://randomuser.me/)
 
+[pngimg - web design resource](https://pngimg.com/)
+
 ## Some Thoughts
 
 This project has been incredibly challenging at times but it's really made me feel more confident in my ability to work through problems and in my use of JavaScript. As a community, developers really are amazing - so many articles and tutorials and stackoverflow posts have gone into my being able to figure some of this stuff out.
@@ -48,7 +54,7 @@ I've learnt about [Font-Awesome](https://fontawesome.com/v5/docs/web/use-with/re
 
 ### Anytime you're using setInterval in React...
 
-...you're probably going to have a bad time until you learn about cleanup functions. There's a link in the section below, but basically you want to clear the setInterval... Definitely look it up if you're having a hard time with it, because it will make any project where you're dealing with timers/intervals a nightmare until you understand the fix (or at least copy and paste it in).
+...you're probably going to have a bad time until you learn about cleanup functions. There's a link in the section below, but basically (forget I said that - nothing's basic about setInterval in React) you want to clear the setInterval... Definitely look it up if you're having a hard time with it, because it will make any project where you're dealing with timers/intervals a nightmare until you understand the fix (or at least copy and paste it in).
 
 ### Github Profiles
 
@@ -85,6 +91,28 @@ This one's difficulties lay in the retrieval of local storage, and the changing 
 Never underestimate the power of deleting the code you have that's not working and starting over. Some things aren't meant to be saved.
 
 I also learned the importance of setting a value on inputs in React, and that when you have a value you need an onChange function. The console will scream this at you if you don't want to take my word for it. The onChange sets a state - which is what you use as the value - and captures the user input by taking e.target.value. Might sound simple to some but yeah, to me this was a grateful revelation. If you're struggling with this problem and this writeup doesn't make sense, just take a look at the code and hopefully you can see from that.
+
+### Catch Game
+
+First of all apologies if you were expecting creepy crawlies (the course has this as an insect catch game) - I wasn't about to spend hours of my life looking at bugs.
+
+I struggled with this in a good old-fashioned console log everything and try to figure out where it's going wrong kind of way. Initially I had a problem with the timer not functioning correctly, but I fixed this with a combination of stackoverflow and looking at my Theme Clock code.
+
+Then I struggled with trying to apply the rotate and top/left styles for the snacks in the third screen - trial and error showed they only worked well one way round (for which there's probably a reason but I've been staring so long at the code now I can't see it - another day it will probably be obvious).
+
+But mostly I struggled with updating the state for the snacks (returned in the map) in two places - removing snacks and adding them - and these state updates clashing and interrupting one another. Only moving things around fixed this, and I believe setTimeout and state asynchronicity were battling me.
+
+### And overall
+
+I really have learned throughout this entire project that sometimes you have to step back and go through things one by one. Comment a line of code out and run it again - what happens differently? Do you need a useEffect - do you know why you might? Console log the world.
+
+I've really questioned why React, and libraries/frameworks in general, are so lauded over vanilla code. A lot of creation is achievable without these things, and in my experience here, more easily in a lot of cases! Perhaps this is still space for growth on my part, and I'm aware I'm not taking performance metrics into account as well as probably many other things - but these are just my thoughts.
+
+I completed the Udemy course AND the React conversions in just over a month, and honestly I worked longer days than I probably should have :laugh: I wish I'd made more reflective notes on the earlier projects but oh well.
+
+I think the main takeaway is that if something intimidates you or seems completely out of reach, it's not. It's a series of steps and struggles and that's it. You just keep going and then you look back and realise you've actually come quite a long way, even if there's still a ways to go.
+
+In the words of Samwise Gamgee, "It's the job that's never started as takes longest to finish." So if you don't know how to do something just start from where you are now, because that's the only way you'll ever figure it out.
 
 ## Other Useful Links
 
@@ -137,3 +165,5 @@ I also learned the importance of setting a value on inputs in React, and that wh
 [Coding a Quiz App in React](https://www.youtube.com/watch?v=8LNb18ibNGs) / [Handle and manage radio button state in React](https://surajsharma.net/blog/react-handle-radio-buttons) (Quiz App)
 
 [Build a todo list app with React](https://www.youtube.com/watch?v=6otDXxMHnk0) (Todo List)
+
+[Start the timer when a button's clicked](https://stackoverflow.com/questions/51978683/start-the-timer-when-button-is-clicked-in-react-js) (Catch Game)
