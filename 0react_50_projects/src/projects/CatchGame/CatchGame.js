@@ -113,27 +113,19 @@ function CatchGame() {
         }
     }
 
-    //WORKING
+    //WORKING - modified to make a snack straight away
     function catchSnack(id) {
         setCaughtId(id);
         const replacementSnacks = [...allSnacks.filter((snack) => snack !== id)]
         setAllSnacks(replacementSnacks)
         increaseScore();
-        setTimeout(() => setAddSnacks(true), 500);
-        //console.log("catchSnack ran")
+
+        createSnack()
+        setTimeout(() => makeSnacks, 500)
     }
 
-    //WORKING I think
-    useEffect(() => {
-        if(addSnacks) {
-            makeSnacks();
-        }
-        setAddSnacks(false)
-    }, [addSnacks])
-
-    //not working perfectly - initially makes one snack...
+    //Working ok now but not displayed immediately - with current setup ok though
     function makeSnacks() {
-        setTimeout(createSnack, 500);
         setTimeout(createSnack, 1500);
     }
     
