@@ -108,7 +108,7 @@ I really have learned throughout this entire project that sometimes you have to 
 
 I've really questioned why React, and libraries/frameworks in general, are so lauded over vanilla code. A lot of creation is achievable without these things, and in my experience here, more easily in a lot of cases! Perhaps this is still space for growth on my part, and I'm aware I'm not taking performance metrics into account as well as probably many other things - but these are just my thoughts.
 
-I completed the Udemy course AND the React conversions in just over a month, and honestly I worked longer days than I probably should have :laugh: I wish I'd made more reflective notes on the earlier projects but oh well.
+I completed the Udemy course AND the React conversions in just over a month, and honestly I worked longer days than I probably should have :joy: I wish I'd made more reflective notes on the earlier projects but oh well.
 
 I think the main takeaway is that if something intimidates you or seems completely out of reach, it's not. It's a series of steps and struggles and that's it. You just keep going and then you look back and realise you've actually come quite a long way, even if there's still a ways to go.
 
