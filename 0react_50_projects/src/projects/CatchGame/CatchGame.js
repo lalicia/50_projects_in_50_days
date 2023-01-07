@@ -8,6 +8,7 @@ import HomeButton from "../../components/HomeButton.js";
 
 function CatchGame() {
     const cakeRef = useRef();
+    //console.log(cakeRef.current.src)
     const iceCreamRef = useRef();
     const friesRef = useRef();
     const fruitRef = useRef();
@@ -26,18 +27,20 @@ function CatchGame() {
     const [snack, setSnack] = useState(false);
     const [msgVisible, setMsgVisible] = useState(false);
     const [allSnacks, setAllSnacks] = useState([]);
+    const [rotate, setRotate] = useState();
     const [caughtId, setCaughtId] = useState();
-
-    //console.log(cakeRef.current.src)
-    
-    //useEffect1
-    useEffect(() => {
-        let interval = setInterval(increaseTime, 1000);
-
-        console.log("useEffect1 ran")
-        return () => clearInterval(interval)
-    }, [screen3, seconds])
+    const [addSnacks, setAddSnacks] = useState(false);
     //console.log(selectedSnack)
+    
+    //WORKING - useEffect1, timer only
+    useEffect(() => {
+        let timer = null;
+            if(screen3){
+                timer = setInterval(increaseTime, 1000);
+            }
+        //console.log("useEffect1 (timer) ran")
+        return () => {clearInterval(timer);};
+    }, [screen3, seconds])
 
     function increaseTime() {
         let m = Math.floor(seconds / 60);
@@ -52,96 +55,98 @@ function CatchGame() {
         setSeconds(seconds + 1)
     }
 
-    
-    //useEffect2
+//**************************Don't touch above, timer is working */
+    //for first snack onscreen
     useEffect(() => {
-        function createSnack() {
-            const {x, y} = getRandomLocation();
-        
-            setX(x);
-            setY(y);
+        const {xValue, yValue} = getRandomLocation();
+        setX(xValue);
+        setY(yValue);
 
-            setAllSnacks([{
-                id: nanoid(),
-                src: selectedSnack.src,
-                alt: selectedSnack.alt,
-            }])
-
-            setSnack(true);
-            console.log("createSnack ran")
+        let snackOnScreen;
+        setRotate(Math.random() * 360)
+        if(screen3) {
+            snackOnScreen = setTimeout(createSnack, 1000);
         }
-        setTimeout(createSnack, 1000);
-        console.log("useEffect2 ran")
-    }, [selectedSnack])
+        return () => clearTimeout(snackOnScreen)
+    }, [screen3])
 
+    function createSnack() {
+        const {xValue, yValue} = getRandomLocation();
+        setX(xValue);
+        setY(yValue);
+        //console.log("x, y", x, y)
+        setRotate(Math.random() * 360);
+
+        const newSnack = {
+            id: nanoid(),
+            src: selectedSnack.src,
+            alt: selectedSnack.alt,
+            x: x, 
+            y: y, 
+            rotate: rotate
+        }
+
+        setAllSnacks([...allSnacks, newSnack])
+        //console.log(allSnacks)
+        setSnack(true);
+        //console.log("createSnack ran")
+    }
+
+    //WORKING
     function getRandomLocation() {
         const width = window.innerWidth;
         const height = window.innerHeight;
     
-        const x = Math.random() * (width - 200) + 100;
-        const y = Math.random() * (height - 200) + 100;
-    
-        console.log("getRandomLocation ran")
-        return {x, y}
+        const xValue = Math.floor(Math.random() * (width - 200) + 100);
+        const yValue = Math.floor(Math.random() * (height - 200) + 100);
+        
+        return {xValue, yValue}
     }
+    /********************************all above working***********/
 
+    //WORKING
     function increaseScore() {
         setScore(score + 1)
-        if(score > 19) {
+
+        if(score >= 10) {
             setMsgVisible(true);
         }
-        console.log("increase score ran")
     }
 
+    //WORKING
     function catchSnack(id) {
-        increaseScore();
-        //adds class to the element clicked
         setCaughtId(id);
-        setTimeout(() => {
-            setAllSnacks([...allSnacks.filter((snack) => snack !== id)])
-        }, 2000)
-        console.log("catchSnack ran")
+        const replacementSnacks = [...allSnacks.filter((snack) => snack !== id)]
+        setAllSnacks(replacementSnacks)
+        increaseScore();
+        setTimeout(() => setAddSnacks(true), 500);
+        //console.log("catchSnack ran")
+    }
+
+    //WORKING I think
+    useEffect(() => {
+        if(addSnacks) {
+            makeSnacks();
+        }
+        setAddSnacks(false)
+    }, [addSnacks])
+
+    //not working perfectly - initially makes one snack...
+    function makeSnacks() {
+        setTimeout(createSnack, 500);
+        setTimeout(createSnack, 1500);
     }
     
-    //useEffect3
-    useEffect(() => {
-        addSnacks();
-
-        function addSnacks() {
-            function createSnack() {
-                const {x, y} = getRandomLocation();
-            
-                setX(x);
-                setY(y);
     
-                setAllSnacks([{
-                    id: nanoid(),
-                    src: selectedSnack.src,
-                    alt: selectedSnack.alt,
-                }])
-    
-                setSnack(true);
-                console.log("createSnack ran")
-            }
-        
-            function getRandomLocation() {
-                const width = window.innerWidth;
-                const height = window.innerHeight;
-            
-                const x = Math.random() * (width - 200) + 100;
-                const y = Math.random() * (height - 200) + 100;
-            
-                //console.log("getRandomLocation ran")
-                return {x, y}
-            }
-    
-            setTimeout(createSnack, 1000);
-            setTimeout(createSnack, 1500);
-        }
-        console.log("useEffect3 ran")
-    }, [score])
-    
-
+/*******************************************below appears ok */
+    //WORKING
+    function snackChosen(ref) {
+        setAllSnacks([])
+        setScreen3(true)
+        setSrc(ref.current.src)
+        setAlt(ref.current.alt)
+        setSelectedSnack({src, alt});
+    }
 
     return (
         <div className="cg-container">
@@ -157,12 +162,7 @@ function CatchGame() {
                 <ul className="cg-snacks-list">
                     <li>
                         <button className="cg-choose-snack-btn"
-                        onClick={() => {
-                            setScreen3(true)
-                            setSrc(cakeRef.current.src)
-                            setAlt(cakeRef.current.alt)
-                            setSelectedSnack({src, alt});
-                            }}>
+                        onClick={() => snackChosen(cakeRef)}>
                             <p>Cake</p>
                             <img ref={cakeRef} className="cg-img" src="https://pngimg.com/uploads/cake/small/cake_PNG97026.png" alt="cake" />
                         </button>
@@ -170,32 +170,32 @@ function CatchGame() {
 
                     <li>
                         <button className="cg-choose-snack-btn"
-                        onClick={() => setScreen3(true)}>
+                        onClick={() => snackChosen(iceCreamRef)}>
                             <p>Ice Cream</p>
-                            <img className="cg-img" src="https://pngimg.com/uploads/ice_cream/small/ice_cream_PNG98194.png" alt="ice cream" />
+                            <img ref={iceCreamRef} className="cg-img" src="https://pngimg.com/uploads/ice_cream/small/ice_cream_PNG98194.png" alt="ice cream" />
                         </button>
                     </li>
 
                     <li>
                         <button className="cg-choose-snack-btn"
-                        onClick={() => setScreen3(true)}>
+                        onClick={() => snackChosen(friesRef)}>
                             <p>Fries</p>
-                            <img className="cg-img" src="https://pngimg.com/uploads/fries/small/fries_PNG97885.png" alt="fries" />
+                            <img ref={friesRef} className="cg-img" src="https://pngimg.com/uploads/fries/small/fries_PNG97885.png" alt="fries" />
                         </button>
                     </li>
 
                     <li>
                         <button className="cg-choose-snack-btn"
-                        onClick={() => setScreen3(true)}>
+                        onClick={() => snackChosen(fruitRef)}>
                             <p>Fruit (?!)</p>
-                            <img className="cg-img" src="https://pngimg.com/uploads/strawberry/small/strawberry_PNG2611.png" alt="fruit" />
+                            <img ref={fruitRef} className="cg-img" src="https://pngimg.com/uploads/strawberry/small/strawberry_PNG2611.png" alt="fruit" />
                         </button>
                     </li>
                 </ul>
             </div>
 
             <div className="cg-screen cg-game-container" id="game-container">
-                <h3 id="time" className="cg-time">Time: {m}:{s}</h3>
+                <h3 id="time" className="cg-time">Time: {m ? m : "--"}:{s ? s : "--"}</h3>
                 <h3 id="score" className="cg-score">Score: {score}</h3>
                 <h5 id="message" className={msgVisible ? "cg-message cg-visible" : "cg-message"}>Are you full yet? <br />
                 If not just keep going, this whole game is kinda pointless</h5>
@@ -203,19 +203,19 @@ function CatchGame() {
                 {
                     snack ? 
                     allSnacks.map((snack) => {
-                        return <div id={snack.id} className={caughtId === snack.id ? "cg-snack cg-caught" : "cg-snack"}>
-                            <img className="cg-img" src={src} alt={alt}
-                            style={{top: `${y}px`, left: `${x}px`, transform: `rotate(${Math.random() * 360}deg)`}}
+                        {/* the top and left MUST be on div or aren't applied */}
+                        return <div key={snack.id} id={snack.id}
+                        style={{top: `${snack.y}px`, left: `${snack.x}px`}}
+                        className={caughtId === snack.id ? "cg-snack cg-caught" : "cg-snack"}>
+                            {/* for some reason though rotate will be applied either way, it's more stable here */}
+                            <img className="cg-img" src={src} alt={alt} id={snack.id}
+                            style={{transform: `rotate(${snack.rotate}deg)`}}
                             onClick={() => catchSnack(snack.id)} 
                             />
                     </div>})
                     : null
                 }
                 
-                {/* <!-- temporary -->
-                <div className="snack">
-                    <img className="cg-img" src="https://pngimg.com/uploads/fries/small/fries_PNG97885.png" alt="fries" />
-                </div> */}
             </div>
 
             <HomeButton />
