@@ -24,7 +24,9 @@ Initially I said here that this could be considered a simple app in terms of it 
 
 Some of the projects really took a lot of research and trial and error to convert over, so for me the re-making of the original projects was a learning experience and lesson in perseverance. It's nice to have them all collected together, and I think it's a great little library of components and features that maybe I could use or implement in the future.
 
-I also hope this helps other learners. The makers of the course are really popular and have a big following, so I know there can't just be me who wonders about trying to convert over the projects. I'd like to think this repo/app can help people who might be taking the course in future, or are researching some of the functionality. It would be nice to pay it back, having been helped by some many developers on the internet who'll never know they saved my day.
+In no way am I saying these conversions are perfect. I've really tried not to directly manipulate the DOM, but I'm still learning all of what that entails so I'm sure there are things I could have done better. But I've tried! Some of the code is horribly repetitive, but my main aim was to make things work and in fairness I learned things along the way that probably could have helped in other projects with reducing that - which is what it's all about.
+
+Might be daydreaming, but I really hope this project helps other learners. The makers of the course are really popular and have a big following, so I know there can't just be me who wonders about trying to convert over the projects. I'd love if this repo/app can help someone who might be taking the course in future, or who is researching some of the functionality. It would be nice to pay it back, having been helped by some many developers on the internet who'll never know they saved my day.
 
 ## Tech
 
@@ -42,7 +44,7 @@ React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, 
 
 [Random User Generator - API for user data](https://randomuser.me/)
 
-[pngimg - web design resource](https://pngimg.com/)
+[pngimg - pngs for web design](https://pngimg.com/)
 
 ## Some Thoughts
 
@@ -58,7 +60,7 @@ I've learnt about [Font-Awesome](https://fontawesome.com/v5/docs/web/use-with/re
 
 ### Github Profiles
 
-This is the first time I used Axios and I can see why people like it. It's not that different to fetch with async/await, but yeah.
+This was the first time I've used Axios and I can see why people like it. It's not that different to fetch with async/await, but yeah.
 
 ### Notes App
 
@@ -106,11 +108,11 @@ But mostly I struggled with updating the state for the snacks (returned in the m
 
 I really have learned throughout this entire project that sometimes you have to step back and go through things one by one. Comment a line of code out and run it again - what happens differently? Do you need a useEffect - do you know why you might? Console log the world.
 
-I've really questioned why React, and libraries/frameworks in general, are so lauded over vanilla code. A lot of creation is achievable without these things, and in my experience here, more easily in a lot of cases! Perhaps this is still space for growth on my part, and I'm aware I'm not taking performance metrics into account as well as probably many other things - but these are just my thoughts.
+I've questioned why React and libraries/frameworks in general are so lauded over vanilla code. A lot of creation is achievable without these things, and in my experience here, more easily in a lot of cases! Perhaps this is still space for growth on my part, and I'm aware I'm not taking performance metrics into account as well as probably many other things - but these are just my thoughts.
 
 I completed the Udemy course AND the React conversions in just over a month, and honestly I worked longer days than I probably should have :joy: I wish I'd made more reflective notes on the earlier projects but oh well.
 
-I think the main takeaway is that if something intimidates you or seems completely out of reach, it's not. It's a series of steps and struggles and that's it. You just keep going and then you look back and realise you've actually come quite a long way, even if there's still a ways to go.
+My main takeaway (I know you didn't ask) is that if something intimidates you or seems completely out of reach, it's not. It's a series of steps and struggles and that's it. You just keep going and then you look back and realise you've actually come quite a long way, even if there's still a ways to go.
 
 In the words of Samwise Gamgee, "It's the job that's never started as takes longest to finish." So if you don't know how to do something just start from where you are now, because that's the only way you'll ever figure it out.
 
