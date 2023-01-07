@@ -26,6 +26,8 @@ Some of the projects really took a lot of research and trial and error to conver
 
 In no way am I saying these conversions are perfect. I've really tried not to directly manipulate the DOM, but I'm still learning all of what that entails so I'm sure there are things I could have done better. But I've tried! Some of the code is horribly repetitive, but my main aim was to make things work and in fairness I learned things along the way that probably could have helped in other projects with reducing that - which is what it's all about.
 
+Some of the projects in the app will work on mobile and some won't - some on the course were specifically designed with responsivity, and I've used rems in the CSS with a media query to try and help a little, but mobile versions weren't my focus. This could be something I look at in the future. Also worth noting is that several of the projects use functionality that (I don't think) is available on mobile, like mouse events and hovers. I'm sure there are ways to achieve the same things but again, this wasn't my focus here :nerd_face:
+
 Might be daydreaming, but I really hope this project helps other learners. The makers of the course are really popular and have a big following, so I know there can't just be me who wonders about trying to convert over the projects. I'd love if this repo/app can help someone who might be taking the course in future, or who is researching some of the functionality. It would be nice to pay it back, having been helped by some many developers on the internet who'll never know they saved my day.
 
 ## Tech
