@@ -10,12 +10,15 @@ function ChoicePicker() {
     const [textAllow, setTextAllow] = useState(false);
     const [selected, setSelected] = useState([]);
 
+    const [inputValue, setInputValue] = useState("");
+
     function textInput(e) {
         createTags(e.target.value)
 
         if(e.key === "Enter") {
             setTimeout(() => {
-                e.target.value = "";
+                setInputValue("")
+                // e.target.value = "";
                 setTextAllow(true);
             }, 10);
     
@@ -80,7 +83,10 @@ function ChoicePicker() {
                 </h3>
 
                 {/*need to use keyUp event otherwise last character doesn't show in tag prior to typing next if using keyDown. cannot use onChange as doesn't give access to e.key Enter event*/}
-                <textarea className="cp-textarea" id="textarea" placeholder="Enter choices here..." autoFocus onKeyUp={textInput} disabled={textAllow} onFocus={clearTags}></textarea>
+                <textarea className="cp-textarea" id="textarea" placeholder="Enter choices here..." autoFocus onKeyUp={textInput} disabled={textAllow} onFocus={clearTags}
+                value={inputValue}
+                onChange={(e) => setInputValue(e.target.value)}
+                ></textarea>
 
                 <div className="cp-tags" id="tags">
                     {/* <Choice tag={tag} highlight={highlight} /> */}

@@ -8,7 +8,7 @@ function Slide({slideImg}) {
     return (
         
         <div className="bs-slide bs-active" 
-            style={{backgroundImage: `url(${slideImg})`}}>
+            style={{backgroundImage: `${slideImg}`}}>
         </div>
             
                
