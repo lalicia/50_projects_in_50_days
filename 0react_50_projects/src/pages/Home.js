@@ -19,6 +19,8 @@ function Home() {
                     return <ProjectCard key={project.id} name={project.name} description={project.description} image={project.image} link={project.link} />
                 })}
             </div>
+
+            <h4 className="home-siteby">site by <a href="https://github.com/lalicia" target="_blank" rel="noreferrer">@lalicia</a></h4>
         </div>
     )
 }

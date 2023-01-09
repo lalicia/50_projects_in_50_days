@@ -99,6 +99,22 @@ video {
   margin-right: 2rem;
 }
 
+.home-siteby {
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.home-siteby a {
+  color: white;
+  /* text-decoration: none; */
+}
+
+.home-siteby a:hover {
+  color: teal;
+}
+
 /******************************************ProjectCard.js*/
 .card {
   background-color: rgb(97, 97, 97, 0.8);
