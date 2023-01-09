@@ -28,8 +28,6 @@ In no way am I saying these conversions are perfect. I've really tried not to di
 
 Some of the projects in the app will work on mobile and some won't - some on the course were specifically designed with responsivity, and I've used rems in the CSS with a media query to try and help a little, but mobile versions weren't my focus. This could be something I look at in the future. Also worth noting is that several of the projects use functionality that (I don't think) is available on mobile, like mouse events and hovers. I'm sure there are ways to achieve the same things but again, this wasn't my focus here :nerd_face:
 
-Might be daydreaming, but I really hope this project helps other learners. The makers of the course are really popular and have a big following, so I know there can't just be me who wonders about trying to convert over the projects. I'd love if this repo/app can help someone who might be taking the course in future, or who is researching some of the functionality. It would be nice to pay it back, having been helped by some many developers on the internet who'll never know they saved my day.
-
 ## Tech
 
 React, CSS, JavaScript, HTML, Font-Awesome, React Intersection Observer, Axios, react-markdown, nanoid, Netlify
@@ -108,11 +106,13 @@ But mostly I struggled with updating the state for the snacks (returned in the m
 
 ### And overall
 
-I really have learned throughout this entire project that sometimes you have to step back and go through things one by one. Comment a line of code out and run it again - what happens differently? Do you need a useEffect - do you know why you might? Console log the world.
+I really have learned throughout this entire project that sometimes you have to step back and go through things one by one. Comment a line of code out and run it again - what happens differently? Do you need a useEffect - do you know why you might? Console log THE WORLD.
 
-I've questioned why React and libraries/frameworks in general are so lauded over vanilla code. A lot of creation is achievable without these things, and in my experience here, more easily in a lot of cases! Perhaps this is still space for growth on my part, and I'm aware I'm not taking performance metrics into account as well as probably many other things - but these are just my thoughts.
+I've questioned why React and libraries/frameworks in general are so lauded over vanilla code. A lot of creation is achievable without these things, and in my experience here, more easily in a lot of cases! Perhaps this is still space for growth on my part, and I'm aware I'm not taking performance metrics into account as well as probably many other things - but these are just my thoughts. And on the flipside, I've struggled with some things I probably could have just used a library for, and am incredibly grateful for things that exist to make life easier!
 
 I completed the Udemy course AND the React conversions in just over a month, and honestly I worked longer days than I probably should have :joy: I wish I'd made more reflective notes on the earlier projects but oh well.
+
+Might be daydreaming, but I really hope this project helps other learners. The makers of the course are really popular and have a big following, so I know there can't just be me who wonders about trying to convert over the projects. I'd love if this repo/app can help someone who might be taking the course in future, or who is researching some of the functionality. It would be nice to pay it back, having been helped by some many developers on the internet who'll never know they saved my day.
 
 My main takeaway (I know you didn't ask) is that if something intimidates you or seems completely out of reach, it's not. It's a series of steps and struggles and that's it. You just keep going and then you look back and realise you've actually come quite a long way, even if there's still a ways to go.
 
